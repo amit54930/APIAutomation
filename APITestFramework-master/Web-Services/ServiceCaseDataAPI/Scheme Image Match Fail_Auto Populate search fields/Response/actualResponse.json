@@ -1,0 +1,19 @@
+[
+  {
+    "last_modified_timestamp": "2019-10-17 08:05:42.578596",
+    "document_directory_id": "21",
+    "created_timestamp": "2019-10-10 09:18:16.202006",
+    "document_id": "73891",
+    "created_by": "dims_system",
+    "document_received_date": "2019-10-10",
+    "target_directory_id": "11",
+    "original_document_directory_id": "18",
+    "document_name": "MerchantDocumentation.Fax.NA.20191010.091805.TIFF",
+    "document_type_id": "2",
+    "card_brand_code": "DI",
+    "case_number": "3927400003",
+    "original_document_name": "abc321.PNG",
+    "queue_id": "64",
+    "region_code": "NA"
+  }
+]

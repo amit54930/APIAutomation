@@ -1,0 +1,82 @@
+[
+  {
+    "user_id": "1",
+    "last_name": "Snow",
+    "first_name": "Jon",
+    "email": "gp_tech_support_admin@globalpay.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "2",
+    "last_name": "Winchester",
+    "first_name": "Sam",
+    "email": "naman.khabya5@globalpay.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "3",
+    "last_name": "Banner",
+    "first_name": "Bruce",
+    "email": "globalpay",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "4",
+    "last_name": "Harvey",
+    "first_name": "Steve",
+    "email": "steve.harvey@email.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "5",
+    "last_name": "Skywalker",
+    "first_name": "Luke",
+    "email": "luke.skywalker@email.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "6",
+    "last_name": "America",
+    "first_name": "Captain",
+    "email": "cap.america@email.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "7",
+    "last_name": "Wiliams",
+    "first_name": "John",
+    "email": "john@email.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "8",
+    "last_name": "T",
+    "first_name": "E",
+    "email": "ET@email.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "1000",
+    "last_name": "testLast",
+    "first_name": "testfirst",
+    "email": "qwe@gp.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  },
+  {
+    "user_id": "1023",
+    "last_name": "test",
+    "first_name": "test1",
+    "email": "test@test.com",
+    "user_role_key": "DISPUTE_SUPERVISOR",
+    "status": "active"
+  }
+]

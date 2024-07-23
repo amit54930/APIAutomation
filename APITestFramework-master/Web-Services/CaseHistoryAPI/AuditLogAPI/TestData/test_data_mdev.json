@@ -1,0 +1,53 @@
+{
+  "TestSuite": "Insert the logs",
+  "TestCase":{
+		"TC_01":
+		{
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 when valid case number is passed @Smoke @Sanity @Regression @CaseHistoryAPI @Smoke-Managed-Dev",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test":{
+				"caseNumber": 3930800001,
+  				"caseStageId": 7,
+  				"createdBy": "QA Test",
+  				"eventId": 38,
+  				"logDescription": "Document Linked to Case Number"
+		}
+	},
+
+	"TC_02":
+	{
+		"TestCaseId": "TC_02",
+		"TestCaseName": "TC_02 It should throw 400 when case number is passed as null @Regression @CaseHistoryAPI @Regression-Managed-Dev",
+		"template": 2,
+		"statusCode": 400,
+		"type": "POST",
+		"test":{
+			"caseNumber": null,
+			"caseStageId": null,
+			"createdBy": "aaa",
+			"eventId": null,
+			"logDescription": "aaaaa"
+	}
+	},
+
+	"TC_03":
+	{
+		"TestCaseId": "TC_03",
+		"TestCaseName": "TC_03 It should throw 500 when invalid case number is passed @Regression @CaseHistoryAPI @Regression-Managed-Dev",
+		"template": 2,
+		"statusCode": 500,
+		"type": "POST",
+		"test":{
+			"caseNumber": 9,
+  			"caseStageId": 6 ,
+  			"createdBy": "aaa",
+  			"eventId": 1,
+  			"logDescription": "aaaaa"
+
+	}
+	}
+}
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "stage_config_id": "26",
+    "card_brand_case_number": "1811094731",
+    "last_modified_timestamp": "2019-07-19 10:55:42.862564",
+    "latest_stage_ind": "1",
+    "created_timestamp": "2019-06-13 11:33:57.631624",
+    "last_modified_by": "System",
+    "dispute_source_id": "862",
+    "dispute_reason_code": "CD  ",
+    "created_by": "System",
+    "retreival_response_due_date": "2018-12-24",
+    "dispute_stage_id": "6",
+    "status_id": "1",
+    "support_document_ind": "0",
+    "case_stage_id": "18002",
+    "case_number": "3916400045",
+    "member_message_text": "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ",
+    "case_received_date": "2018-11-09",
+    "dispute_amount": "154.00",
+    "queue_id": "6"
+  }
+]

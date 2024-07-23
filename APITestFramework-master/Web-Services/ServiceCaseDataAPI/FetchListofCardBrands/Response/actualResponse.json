@@ -1,0 +1,18 @@
+[
+  {
+    "card_brand_code": "Amex",
+    "card_brand_name": "Amex"
+  },
+  {
+    "card_brand_code": "DI",
+    "card_brand_name": "Discover"
+  },
+  {
+    "card_brand_code": "MC",
+    "card_brand_name": "MasterCard"
+  },
+  {
+    "card_brand_code": "VI",
+    "card_brand_name": "Visa"
+  }
+]

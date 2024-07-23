@@ -1,0 +1,33 @@
+{
+  "TestSuite": "Fetch the assigned queues count to a user ",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch count of assigned queues to a user ,group or email id from dims db@Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "input":
+          {
+            "userId":"100"
+           
+}},
+"TC_02":
+{
+  "TestCaseId": "TC_02",
+  "TestCaseName": "TC_02 It should receive 401 and should not fetch count of un - assigned queues to a user ,group or email id from dims db@Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+  "template":2,
+  "statusCode": 401,
+  "type":"GET",
+  "input":
+  {
+    "userId":"150"
+   
+}
+
+           
+        }
+    }}
+ 

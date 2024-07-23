@@ -1,0 +1,148 @@
+{
+  "TestSuite": "Fetch merchant Data from datalake",
+  "TestCase": {
+    "TC_01": {
+      "TestCaseId": "TC_01",
+      "TestCaseName": "TC_01 It should receive 200 and should return merchant details from table when valid merchant number is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 1,
+      "statusCode": 200,
+      "type": "GET",
+      "input": {
+        "merchantNumber": "650000009105811",
+        "orderByProperties":"merchantNumber",
+        "direction": "ASC",
+        "size":"2",
+        "pageNumber":0
+      
+      }
+    },
+       "TC_02": {
+      "TestCaseId": "TC_02",
+      "TestCaseName": "TC_02 It should receive 200 and should return merchant details from table when valid merchant number and region is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 1,
+      "statusCode": 200,
+      "type": "GET",
+      "input": {
+        
+        "region": "65",
+        "merchantNumber": "650000009105811",
+        "orderByProperties":"merchantNumber",
+        "direction": "ASC",
+        "size":"2",
+        "pageNumber":0
+      }
+    },
+    "TC_04": {
+      "TestCaseId": "TC_04",
+      "TestCaseName": "TC_04 It should receive 200 and should return merchant details from table when valid merchant number and principal is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 1,
+      "statusCode": 200,
+      "type": "GET",
+      "input": {
+      
+        "principal": "001",
+        "merchantNumber": "650000009105811",
+        "orderByProperties":"merchantNumber",
+        "direction": "ASC",
+        "size":"2",
+        "pageNumber":0
+      }
+    },
+    "TC_05": {
+      "TestCaseId": "TC_05",
+      "TestCaseName": "TC_05 It should receive 200 and should return merchant details from table when valid merchant number and associate is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 1,
+      "statusCode": 200,
+      "type": "GET",
+      "input": {
+       
+        "associate": "001",
+        "merchantNumber": "650000009105811",
+        "orderByProperties":"merchantNumber",
+        "direction": "ASC",
+        "size":"2",
+        "pageNumber":0
+      }
+    },
+    "TC_06": {
+      "TestCaseId": "TC_06",
+      "TestCaseName": "TC_06 It should receive 200 and should return merchant details from table when valid merchant number and chain is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 1,
+      "statusCode": 200,
+      "type": "GET",
+      "input": {
+        "chain": "000",
+        "merchantNumber": "650000009105811",
+        "orderByProperties":"merchantNumber",
+        "direction": "ASC",
+        "size":"2",
+        "pageNumber":0
+      }
+    },
+    "TC_07": {
+      "TestCaseId": "TC_07",
+      "TestCaseName": "TC_07 It should receive 200 and should return merchant details from table when valid merchant number and corporate is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 1,
+      "statusCode": 200,
+      "type": "GET",
+      "input": {
+       "corporate": "055",
+        "merchantNumber": "650000009105811",
+        "orderByProperties":"merchantNumber",
+        "direction": "ASC",
+        "size":"2",
+        "pageNumber":0
+      }
+    },
+    "TC_08": {
+      "TestCaseId": "TC_08",
+      "TestCaseName": "TC_08 It should receive 200 and should return merchant details from table when valid associate,chain,corporate,merchant number,principal,region,size is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 1,
+      "statusCode": 200,
+      "type": "GET",
+      "input": {
+        "associate":"001",
+        "chain":"000",
+        "corporate":"055",
+        "merchantNumber":"650000009105811",
+        "principal":"001",
+        "region":"65",
+        "size":"2",
+        "orderByProperties":"merchantNumber",
+        "direction": "ASC"
+      }
+    },
+    "TC_09": {
+      "TestCaseId": "TC_09",
+      "TestCaseName": "TC_09 It should receive 404 and should not return merchant details from table when Invalid associate,chain,corporate,merchant number,principal,region,size is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 2,
+      "statusCode": 404,
+      "type": "GET",
+      "input": {
+        "associate":"965",
+        "chain":"954",
+        "corporate":"852",
+        "merchantNumber":"7563951",
+        "principal":"826",
+        "region":"35",
+        "size":"2"
+      }
+    },
+	"TC_10": {
+      "TestCaseId": "TC_10",
+      "TestCaseName": "TC_10 It should receive 400 and should not return merchant details from table when Invalid associate,chain,corporate,merchant number,principal,region,size is passed as an argument @Smoke @Regression @Sanity @ReferenceDataAPI ",
+      "template": 2,
+      "statusCode": 404,
+      "type": "GET",
+      "input": {
+        "associate":null,
+        "chain":null,
+        "corporate":null,
+        "merchantNumber":null,
+        "principal":null,
+        "region":null,
+        "size":null
+      }
+    }
+  }
+}

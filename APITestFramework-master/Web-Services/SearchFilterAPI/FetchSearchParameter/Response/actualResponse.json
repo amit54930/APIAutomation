@@ -1,0 +1,86 @@
+[
+  {
+    "element_sequence_number": "1",
+    "element_type_name": "STRING",
+    "element_category_name": "EXACT",
+    "search_type_element_id": "case_number",
+    "element_label_name": "Case Number"
+  },
+  {
+    "element_sequence_number": "2",
+    "element_type_name": "MULTISELECT",
+    "element_category_name": "EXACT",
+    "search_type_element_id": "case_type",
+    "element_label_name": "Case Type"
+  },
+  {
+    "element_sequence_number": "3",
+    "element_type_name": "MULTISELECT",
+    "element_category_name": "EXACT",
+    "search_type_element_id": "card_brand",
+    "element_label_name": "Card brand"
+  },
+  {
+    "element_sequence_number": "4",
+    "element_type_name": "MULTISELECT",
+    "element_category_name": "EXACT",
+    "search_type_element_id": "reason_code",
+    "element_label_name": "Reason Code"
+  },
+  {
+    "element_sequence_number": "5",
+    "element_type_name": "DATE",
+    "element_category_name": "FROM",
+    "search_type_element_id": "due_date_from",
+    "element_label_name": "Due Date"
+  },
+  {
+    "element_sequence_number": "5",
+    "element_type_name": "DATE",
+    "element_category_name": "TO",
+    "search_type_element_id": "due_date_to",
+    "element_label_name": "Due Date"
+  },
+  {
+    "element_sequence_number": "6",
+    "element_type_name": "CURRENCYRANGE",
+    "element_category_name": "FROM",
+    "search_type_element_id": "case_amt_from",
+    "element_label_name": "Amount Range"
+  },
+  {
+    "element_sequence_number": "6",
+    "element_type_name": "CURRENCYRANGE",
+    "element_category_name": "TO",
+    "search_type_element_id": "case_amt_to",
+    "element_label_name": "Amount Range"
+  },
+  {
+    "element_sequence_number": "7",
+    "element_type_name": "STRING",
+    "element_category_name": "EXACT",
+    "search_type_element_id": "merchant_number",
+    "element_label_name": "Merchant Number"
+  },
+  {
+    "element_sequence_number": "8",
+    "element_type_name": "STRING",
+    "element_category_name": "EXACT",
+    "search_type_element_id": "merchant_name",
+    "element_label_name": "Merchant Name"
+  },
+  {
+    "element_sequence_number": "9",
+    "element_type_name": "CC_NUMBER",
+    "element_category_name": "FROM",
+    "search_type_element_id": "first_six",
+    "element_label_name": "Account Number"
+  },
+  {
+    "element_sequence_number": "9",
+    "element_type_name": "CC_NUMBER",
+    "element_category_name": "TO",
+    "search_type_element_id": "last_four",
+    "element_label_name": "Account Number"
+  }
+]

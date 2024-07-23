@@ -1,0 +1,182 @@
+[
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-06-30",
+    "case_stage_id": "18153",
+    "gl_account_number": "1150",
+    "transaction_type": "00",
+    "resolved_to": "BANK"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-06-30",
+    "case_stage_id": "18153",
+    "gl_account_number": "1120",
+    "transaction_type": "00",
+    "resolved_to": "BANK"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1110",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1120",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1150",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1320",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1150",
+    "transaction_type": "00",
+    "resolved_to": "BANK"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1120",
+    "transaction_type": "00",
+    "resolved_to": "BANK"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1110",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1120",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1150",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1320",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1110",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1120",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1150",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "1320",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "DEBIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "5110",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  },
+  {
+    "gl_amount": "110.00",
+    "case_adjustment": "CREDIT",
+    "gl_status": "PENDING",
+    "resolved_on": "2019-07-01",
+    "case_stage_id": "18153",
+    "gl_account_number": "5115",
+    "transaction_type": "00",
+    "resolved_to": "SPLIT"
+  }
+]

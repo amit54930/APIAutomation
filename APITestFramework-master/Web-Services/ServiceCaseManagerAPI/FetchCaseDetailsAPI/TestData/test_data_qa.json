@@ -1,0 +1,30 @@
+{
+  "TestSuite": "Fetch all case details from DiMS database",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 response code and show all scheme related data in response as below when case number is provided as input @ServiceCaseManagerAPI @Smoke @Regression",
+          "template": 1,
+          "statusCode": 200,
+          "type": "GET",
+          "caseNumber":3916900005,
+          "cardBrandCode":"",
+          "disputeStageId":""
+
+        },
+
+        "TC_02":
+           {
+             "TestCaseId": "TC_02",
+             "TestCaseName": "TC_02 It should receive 404 response code when invalid case number is provided as input @Regression @ServiceCaseManagerAPI",
+             "template": 2,
+             "statusCode": 404,
+             "type": "GET",
+             "caseNumber":123456
+           }
+
+         
+             }
+    }

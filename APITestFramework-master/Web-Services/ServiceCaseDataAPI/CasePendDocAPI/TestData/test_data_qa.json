@@ -1,0 +1,45 @@
+{
+	"TestSuite": "Fetch CasePend image match data from DiMS database",
+	"TestCase": {
+		
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system returns those Case Number which have pending documents for Image from dims table for valid queueId with some orders(DESC) @Smoke @Regression @Sanity @ServiceCaseDataAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"test1": {
+
+				"orderByProperties":"case_number",
+				"pageNumber":0,
+				"propertyDirections":"DESC",
+				"queueId":36,
+				"size":2
+				},
+			"test":{
+
+					"orderByProperties":"caseNumber",
+					"pageNumber":0,
+					"propertyDirections":"DESC",
+					"queueId":36,
+					"size":2
+					}
+		
+		},
+		
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system does not returns those Case Number which have pending documents for Image from dims table for Invalid inputs without any order @Regression @ServiceCaseDataAPI ",
+			"statusCode": 400,
+			"template": 2,
+			"type": "GET",
+			"test":{
+					"orderByProperties":"",
+					"pageNumber":0,
+					"propertyDirections":"",
+					"queueId":360,
+					"size":2
+					}
+		}
+	}
+	}

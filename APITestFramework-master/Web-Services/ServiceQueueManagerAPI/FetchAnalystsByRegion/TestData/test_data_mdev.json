@@ -1,0 +1,15 @@
+ {
+  "TestSuite": "Fetch Analysts By Region",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch analysts based on region @Smoke @Sanity @Regression @ServiceQueueManagerAPI",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET"
+        }
+        
+    }
+ }

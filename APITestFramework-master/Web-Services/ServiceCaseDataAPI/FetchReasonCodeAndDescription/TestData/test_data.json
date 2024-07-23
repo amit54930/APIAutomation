@@ -1,0 +1,47 @@
+{
+  "TestSuite": "Fetch Reason Code And Description",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch list of all reason codes and their description for the given card brand @Smoke @Regression @Sanity @ServiceCaseDataAPI",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "t":{"cardBrandCode": "DI"} 
+        },
+
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 200 and fetch list of all reason codes and their description for the given card brands @Smoke @Regression @Sanity @ServiceCaseDataAPI",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "t2":{"cardBrandCode": "MC"},
+          "t3":{"cardBrandCode": "DI"}
+        },
+
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should throw 404 when invalid card brand code is passed @Regression @ServiceCaseDataAPI",
+          "template": 2,
+          "statusCode": 404,
+          "type":"GET",
+          "t":{"cardBrandCode": "MC"}
+        },
+
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should throw 404 when invalid card brand codes are passed @Regression @ServiceCaseDataAPI",
+          "template": 2,
+          "statusCode": 404,
+          "type":"GET",
+          "t2":{"cardBrandCode": "MC"},
+          "t3":{"cardBrandCode": "AM"}
+        }
+    }
+ }

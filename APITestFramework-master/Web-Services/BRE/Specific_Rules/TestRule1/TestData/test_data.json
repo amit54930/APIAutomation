@@ -1,0 +1,57 @@
+{
+  "TestSuite": "Specific BRE Rules",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 @Bre",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"BREInput":{
+				"lookup": "DimsStatelessSession",
+				 "commands": [ {
+					 "insert": {
+					   "object": {
+						 "com.globalpayments.dims.rule.common.model.CaseDataInput": {
+											   "acquirerName": "HPY",
+											   "salesDraftAttached": "true",
+											   "merchantDocumentsAttached": "true",
+											   "gracePeriodFlag": "false"
+						 }
+					   },
+											   "out-identifier": "fact0",
+											   "return-object":"false"
+					 }
+				   },
+				   {
+					 "fire-all-rules": {
+							   "out-identifier": "rulesFired"
+					 }
+				   },
+							   {
+					 "get-objects": {
+					   "out-identifier": "fact0"
+					 }
+				   }
+				 ]
+			   },
+			   "RuleResponseInput":{
+				
+					"cardBrandCode": "DI",
+					"caseNumber": 987654445,
+					"caseStageId": 299,
+					"disputeStageId": 3,
+					"internalSlaDueDate": "2019-05-06",
+					"merchantRespondDueDate": "2019-05-06",
+					"reasonCode": "AA",
+					"resolutionNotes": "Test",
+					"status": "forward to merchant",
+					"verbiageBreReturnCode": "AA-NA-Automatic-01",
+					"workflowBreReturnCode": "DI-RR-NCC-NMR/NMC-O-Automatic"
+				  
+			   }
+	}
+}
+}

@@ -1,0 +1,21 @@
+{
+	"TestSuite": "Deletes the user saved searches from the database",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and should delete the data from relevent table after passing valid input @Smoke @Sanity @Regression @SearchFilterAPI @Smoke-Managed-Dev ",
+			"template": 1,
+			"statusCode": 200,
+			"type": "DELETE",
+			"savedSearchId": 4
+		},
+		"TC_02": {
+			"TestCaseId": "TC_02",
+			"TestCaseName": "TC_02 It should throw 404 and should not delete the data from relevent table after passing invalid input @Regression @SearchFilterAPI @Regression-Managed-Dev ",
+			"template": 2,
+			"statusCode": 404,
+			"type": "DELETE",
+			"savedSearchId": 345456
+		}
+	}
+}

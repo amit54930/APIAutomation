@@ -1,0 +1,52 @@
+{
+  "TestSuite": "Insert Unmatched Case Details",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid values are passed as an argument  ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"POST",
+          "input":{
+            "acquirerBinIca": "976343",
+            "acquirerName": "US",
+            "acquirerReferenceNumber": "12",
+            "authCode": "12C",
+            "cardBrandCode": "DI",
+            "cardBrandRegionCode": "US",
+            "createdBy": "system",
+			      "maskedCardNumber": "123456XXXXXX7895",
+            "globalToken": "1232432",
+            "issuerBinIca": "4324324",
+            "merchantToken": "5435435",
+            "transactionAmount": 12345.82,
+			      "retrievalResponseDueDate": "2019-01-30",
+            "transactionDate": "2019-01-30"
+          }
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when invalid values are passed as an argument",
+          "template":2,
+          "statusCode": 404,
+		      "type":"POST",
+          "input":{
+            "acquirerBinIca": "876543",
+            "acquirerName": "US",
+            "acquirerReferenceNumber": "12",
+            "authCode":null ,
+            "cardBrandCode": null,
+            "cardBrandRegionCode": "US",
+            "createdBy": "string",
+            "globalToken": "1232432",
+            "issuerBinIca": "4324324",
+            "merchantToken": "5435435",
+            "transactionAmount": 12345.82,
+            "transactionDate": "2019-01-32"
+          }
+        }
+    }
+ }

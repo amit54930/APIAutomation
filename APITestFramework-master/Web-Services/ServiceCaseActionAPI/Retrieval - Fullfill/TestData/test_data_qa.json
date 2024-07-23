@@ -1,0 +1,189 @@
+{
+  "TestSuite": "It will get merchant case action from UI and store it in Dims database with required image operations for Retrieval - Fullfill",
+  
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and insert take action details in merchant_action_detail and dispute_system_event table when valid values are passed as input for Retrieval - Fullfill @Smoke @Sanity @Regression @ServiceCaseActionAPI ",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test":{
+				"actionCode": "FR",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3916400018,
+				  "caseStageId": 17971,
+				  "commentText": " QA testing team ",
+				  "merchantDocument": [
+					{
+					  "documentName": "string",
+					  "documentSize": 1.00,
+					  "originalDocumentName": "QALatestMerchant1.TIF",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_02":
+		{
+
+			"TestCaseId": "TC_02",
+			"TestCaseName": "TC_02 It should throw 500 and not insert the take action details when invalid actionCode value is passed as input for Retrieval - Fullfill @Regression @ServiceCaseActionAPI ",
+			"template": 2,
+			"statusCode": 500,
+			"type": "POST",
+			"test":{
+				"actionCode": "ALDF",
+				"cardBrandCode": "DI",
+				"caseNumber": 3916400006,
+				"caseStageId": 17959,
+				"commentText": "string",
+				"merchantDocument": [
+				  {
+					"documentName": "string",
+					"documentSize": 0,
+					"originalDocumentName": "string",
+					"totalNumberOfPages": 0
+				  }
+				],
+				"regionCode": "AP"
+			  }
+			},
+
+			"TC_03":
+		{
+
+			"TestCaseId": "TC_03",
+			"TestCaseName": "TC_03 It should throw 400 and not insert the take action details when invalid cardBrandCode value is passed as input for Retrieval - Fullfill @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "AL",
+				"cardBrandCode": "KL",
+				"caseNumber": 3916400006,
+				"caseStageId": 17959,
+				"commentText": "string",
+				"merchantDocument": [
+				  {
+					"documentName": "string",
+					"documentSize": 0,
+					"originalDocumentName": "string",
+					"totalNumberOfPages": 0
+				  }
+				],
+				"regionCode": "AP"
+			  }
+			},
+
+			"TC_04":
+		{
+
+			"TestCaseId": "TC_04",
+			"TestCaseName": "TC_04 It should throw 400 and not insert the take action details when invalid regionCode value is passed as input for Retrieval - Fullfill @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "AL",
+				"cardBrandCode": "DI",
+				"caseNumber": 3916400006,
+				"caseStageId": 17959,
+				"commentText": "string",
+				"merchantDocument": [
+				  {
+					"documentName": "string",
+					"documentSize": 0,
+					"originalDocumentName": "string",
+					"totalNumberOfPages": 0
+				  }
+				],
+				"regionCode": "AB"
+			  }
+			},
+
+			"TC_05":
+		{
+
+			"TestCaseId": "TC_05",
+			"TestCaseName": "TC_05 It should throw 400 and not insert the take action details when invalid caseStageId value is passed as input for Retrieval - Fullfill @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test": {
+				"actionCode": "AL",
+				"cardBrandCode": "DI",
+				"caseNumber": 3916400006,
+				"caseStageId": 17,
+				"commentText": "string",
+				"merchantDocument": [
+				  {
+					"documentName": "string",
+					"documentSize": 0,
+					"originalDocumentName": "string",
+					"totalNumberOfPages": 0
+				  }
+				],
+				"regionCode": "AP"
+			  }
+			},
+
+			"TC_06":
+		{
+
+			"TestCaseId": "TC_06",
+			"TestCaseName": "TC_06 It should throw 400 and not insert the take action details  when invalid key name is passed for Retrieval - Fullfill @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "AL",
+				"cardBrandCode": "DI",
+				"Number": 3916400006,
+				"caseStageId": 17959,
+				"commentText": "string",
+				"merchantDocument": [
+				  {
+					"documentName": "string",
+					"documentSize": 0,
+					"originalDocumentName": "string",
+					"totalNumberOfPages": 0
+				  }
+				],
+				"regionCode": "AP"
+			  }
+			},
+			
+
+			"TC_07":
+		{
+
+			"TestCaseId": "TC_07",
+			"TestCaseName": "TC_07 It should throw 400 and not insert the take action details  when invalid caseNumber is passed for Retrieval - Fullfill @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "FR",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 8754125,
+				  "caseStageId": 17971,
+				  "commentText": " QA testing team ",
+				  "merchantDocument": [
+					{
+					  "documentName": "MerchantDocumentation.Fax.US.20190622.043936.TIFF",
+					  "documentSize": 15.00,
+					  "originalDocumentName": "QALatestMerchant1.TIF",
+					  "totalNumberOfPages": 0
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			}
+	}
+
+}

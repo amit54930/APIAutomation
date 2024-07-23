@@ -1,0 +1,82 @@
+[
+  {
+    "gl_account_description": "Offset Ledger",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1100"
+  },
+  {
+    "gl_account_description": "Collections Suspense",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1105"
+  },
+  {
+    "gl_account_description": "Miscellaneous (Exception cases)",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1110"
+  },
+  {
+    "gl_account_description": "Bank GL",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1120"
+  },
+  {
+    "gl_account_description": "Rejects (MasterCard, VISA)",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1125"
+  },
+  {
+    "gl_account_description": "Management Use Special",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1135"
+  },
+  {
+    "gl_account_description": "Pending customer Service",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1150"
+  },
+  {
+    "gl_account_description": "C/B to Collections",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1260"
+  },
+  {
+    "gl_account_description": "Merchant GL",
+    "acquirer_code": "GPN",
+    "gl_account_number": "1320"
+  },
+  {
+    "gl_account_description": "Reserve Merchants",
+    "acquirer_code": "GPN",
+    "gl_account_number": "2110"
+  },
+  {
+    "gl_account_description": "Tax and Surcharge Amount",
+    "acquirer_code": "GPN",
+    "gl_account_number": "4049"
+  },
+  {
+    "gl_account_description": "Currency Variation Ledger",
+    "acquirer_code": "GPN",
+    "gl_account_number": "5035"
+  },
+  {
+    "gl_account_description": "Write off - Goodwill (non-sales)",
+    "acquirer_code": "GPN",
+    "gl_account_number": "5105"
+  },
+  {
+    "gl_account_description": "Write off - Operational Error",
+    "acquirer_code": "GPN",
+    "gl_account_number": "5110"
+  },
+  {
+    "gl_account_description": "Write off - NonOperational Error",
+    "acquirer_code": "GPN",
+    "gl_account_number": "5115"
+  },
+  {
+    "gl_account_description": "Write off - EMV losses",
+    "acquirer_code": "GPN",
+    "gl_account_number": "5170"
+  }
+]

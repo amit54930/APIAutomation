@@ -1,0 +1,25 @@
+{
+	"TestSuite": "Get Documents",
+	"TestCase": {
+		"TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid id passed as input and return document @Smoke @Sanity @Regression @ServiceMerchantDataAPI",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+          "id":"3924900005"
+        },
+        
+				"TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when invalid id passed as input and should not return document @Regression @ServiceMerchantDataAPI",
+          "template": 2,
+          "statusCode": 404,
+		  		"type": "GET",
+          "id":"12345"
+        }
+        
+		}
+	}

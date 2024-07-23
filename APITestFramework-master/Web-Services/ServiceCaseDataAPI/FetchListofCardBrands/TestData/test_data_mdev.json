@@ -1,0 +1,15 @@
+ {
+  "TestSuite": "Fetch card brand from DiMS table",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and list all card brand from dims db @Smoke @Sanity @Regression @ServiceCaseDataAPI @Smoke-Managed-Dev",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET"
+		     
+        }
+    }
+ }

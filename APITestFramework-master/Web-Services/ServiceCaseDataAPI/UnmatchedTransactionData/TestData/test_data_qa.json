@@ -1,0 +1,111 @@
+ {
+  "TestSuite": "Transaction Failed",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid acquirerReferenceNumber,globalToken is passed as an argument  @Smoke @Sanity @Regression @ServiceCaseDataAPI  ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+         "inputs":{
+           "acquirerReferenceNumber":"76200548313473140595007",
+           "globalToken":"7964K52735746486",
+           "pageNumber":0,
+           "size":1,
+           "direction": "ASC",
+				"orderByProperties":"transactionAmount"           
+         }
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 200 when valid acquirerReferenceNumber is passed as an argument  @Smoke @Sanity @Regression @ServiceCaseDataAPI  ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+         "inputs":{
+           "acquirerReferenceNumber":"76200548313473140595007",
+           "pageNumber":0,
+           "size":1           
+         }
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 when valid acquirerReferenceNumber,reasonCode is passed as an argument  @Sanity @Regression @ServiceCaseDataAPI  ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+         "inputs":{
+           "acquirerReferenceNumber":"76200548313473140595007",
+           "pageNumber":0,
+           "size":1,
+           "reasonCode":"CD"         
+         }
+        },
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should receive 200 when valid acquirerReferenceNumber,reasonCode,endAmount,baseAmount is passed as an argument @Sanity @Regression @ServiceCaseDataAPI  ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+         "inputs":{
+           "acquirerReferenceNumber":"76200548313473140595007",
+           "pageNumber":0,
+           "size":1,
+           "reasonCode":"CD",
+           "endAmount":1500,
+           "baseAmount":0      
+         }
+        },
+        "TC_05":
+        {
+          "TestCaseId": "TC_05",
+          "TestCaseName": "TC_05 It should receive 200 when valid acquirerReferenceNumber,reasonCode,endAmount,baseAmount,caseStage is passed as an argument @Sanity @Regression @ServiceCaseDataAPI  ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+         "inputs":{
+           "acquirerReferenceNumber":"76200548313473140595007",
+           "pageNumber":0,
+           "size":1,
+           "reasonCode":"CD",
+           "endAmount":1500,
+           "baseAmount":0 ,
+           "caseStage":"Arbitration"   
+         }
+        },    
+    "TC_06":
+        {
+          "TestCaseId": "TC_06",
+          "TestCaseName": "TC_06 It should receive 200 when valid acquirerReferenceNumber,reasonCode,caseStage is passed as an argument @Sanity @Regression @ServiceCaseDataAPI  ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+         "inputs":{
+           "acquirerReferenceNumber":"76200548313473140595007",
+           "pageNumber":0,
+           "size":1,
+           "reasonCode":"CD",          
+           "caseStage":"Arbitration"   
+         }
+        },
+        "TC_07":
+        {
+          "TestCaseId": "TC_07",
+          "TestCaseName": "TC_06 It should receive 200 when invalid value for acquirerReferenceNumber,reasonCode,caseStage is passed as an argument @Sanity @Regression @ServiceCaseDataAPI  ",
+          "template":2,
+          "statusCode": 404,
+		      "type":"GET",
+         "inputs":{
+           "acquirerReferenceNumber":"548313473140595007",
+           "pageNumber":0,
+           "size":25,
+           "reasonCode":"AW" 
+         }
+        }
+}
+ }

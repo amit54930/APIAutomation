@@ -1,0 +1,17 @@
+ {
+  "TestSuite": "Fetch the documents linked with the case",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch the merchant documents details for a case number @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "caseNumber":3919900005
+           
+          }
+           
+    }
+ }

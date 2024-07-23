@@ -1,0 +1,28 @@
+ {
+  "TestSuite": "MerchantCategoryLookupAPI",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid merchantNumber and valid merchantType is passed as an argument @Smoke @Sanity @ServiceMerchantCategoryAPI ",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "merchantNumber":"0000000011518002",
+          "merchantType":"stripoff"
+
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 400 when invalid merchantNumber and invalid merchantType is passed as an argument @Regression @ServiceMerchantCategoryAPI ",
+          "template": 2,
+          "statusCode": 400,
+          "type":"GET",
+          "merchantNumber":1234567890120967890,
+          "merchantType":"abcd"
+
+        }
+    }
+ }

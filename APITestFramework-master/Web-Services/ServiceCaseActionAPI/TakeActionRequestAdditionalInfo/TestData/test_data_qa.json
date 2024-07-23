@@ -1,0 +1,128 @@
+{
+  "TestSuite": "It will get case action from UI and store it in Dims database with required image operations for TakeAction-Request-Additional Info",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 404 and should not insert any details in table when invalid actionCode passed as input @Smoke @Sanity @Regression @ServiceCaseActionAPI  ",
+			"template": 2,
+			"statusCode": 404,
+			"type": "POST",
+			"caseNumber":3917000003,
+			"test":{
+				"actionCode": "RAI",
+			  
+				"merchantMessage": {
+				  "deadLineDate": "2019-01-02",
+				  "documentsForMerchant": [
+					{
+					   "base64EncodedImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAfDSURBVHhe7dzBriw1DIThe3n/dwYkWHhBlaoUZ7rn8H8bUCvt2EGWozktfv/5t18A/tMf//4TwH+gQQCDBgEMGgQwaBDAoEEAgwYBDBoEMGgQwKBBAIMGAQwaBDBoEMCgQQCDBgEMGgQwaBDAoEEAgwYBDBoEMGgQwKBBAIMGAQwaBDBoEMD42P9Z8ffv3//+254k9WTfGWeub4+mfbfNTbkRZ6v2JLdWm9sJJghg0CCA8cgV62TLdpSrNUkOJzHVu4rKp805keS2VctW/jfOIcEEAQwaBDAev2KdjPs29SSH9vmk8mnjJ7ZymNp8khxUTPXulMS5jQkCGDQIYPyYK1YygtVeyfqtNVOS/9a7W3tNKs7U7jUlOd/GBAEMGgQwfvyvWEn8ScVs49xwktvWWSVxJvXfq91LxbmNCQIYNAhg/MhvsZLn01xzQu2rJOeg4iTvTsn5tNr825ynrTgtJghg0CCA8cgVa8tMPblC8PwfTz3fMuPfxgQBDBoEMD52xXqbZPRvXRVUnOToT64uyb5JPm0OKs43YoIABg0CGF/xK1Yy1reo42j3vZFzkpvadyufNk6bT/L8k5gggEGDAMarvsU6GbXtOD7ZSznJYUpqTNzOX9nKcyufE0wQwKBBAONVv2IlqbTjW5l7ncRUcU6OVeXT7qXWtO8qKuak4reSnG9gggAGDQIYj3yLlYxvRaW7FfNklKt325iqFhVzUvFP6mpt7dXWeAMTBDBoEMB4/Iqltldr1NidtmKexEneTbTxpzbPJLekrhtrkndvYIIABg0CGI9/izWfJ9p31fqk7GT9SczESczkXeWk9qTGZP1J/luYIIBBgwDGq65YydidVOoqpnIy4pN32xqTNdObY6o187mSxLyNCQIYNAhgfPWvWFMSf+vdJOb0yTitNh+1V7teSeKoNTcwQQCDBgGMV33uPlNRI/XG8+nGu9NcM7XrJ/Xu1O47JXVNN85hSs5kCxMEMGgQwHjkV6xpaxwnZdwe3yqftq5WUteUnOfU5tmec3JuW2fVYoIABg0CGK+6Yk3J2N1ycgQn+bR1JWc1nazfyqfNYVL5qJg3MEEAgwYBjMevWEqSlhq7aq92jZLUcvtY2/Oc2tySc27PVr2rtOu3MEEAgwYBjMc/d5+2RrOKoyRxbqxRebZrpnb91OaT5Km0Nap9b2OCAAYNAhivumIpt8drEl9dAxIzptpLxU/qTXJrz609k6SWhIrT5r+FCQIYNAhgfMW3WC01ppWtHNS+bT4JlXNL5XMjZ6U9/63aE0wQwKBBAOPxX7GS8Z2k2MbfWnOirUtp81Trk3yUNo7K8ySHG5gggEGDAMbHrlhTMo7VmhvPp2SNcjvP+Xzaejeh4k9JDsnzSeV/GxMEMGgQwPiKPxQmKW7Fb/edkndP6lJ5Kif5Tyd5Km1dbS1bmCCAQYMAxlf8ofBEUl6Sg8q5fb5lq643S872NiYIYNAggPHIHwqn9lpykm4S88YoP4mZnE/7fErySfJP1nwjJghg0CCA8fivWFN7PWi1MU/y3Npr2oqv1ie1TG0+WzmrfG5gggAGDQIYX/Et1qTGbqItNRnrt9eoGk/WnOQ5qX0TbW5PYYIABg0CGK/6FSuhxrqKqfa9MdaTvRK3a0nWtzkntvZKatzCBAEMGgQwHv8VS5lpnVwJ2vWKymdK9mrXtHlOKo7KYUtSS/t8up3/xAQBDBoEML7uD4VTMo6nZP3tfFT8ab7brp+SWtqc2zVb7z6FCQIYNAhgvPYPhVujNhn3yfPpJGZrK86k6tqS5Nme2+2cFSYIYNAggPGxK9akRnA7dhO3y0uuAUktyfNJnYOKkzh5t6XqUpIzuYEJAhg0CGC86lesZKwn78417VVBvdvGvJHnSV1Tm1vi5N03Y4IABg0CGI/8ijUlV47kuXIS5/aa5LmS7DVt5TYleU5bNX4SEwQwaBDAeNUVK3F73G/FT3wyBxXzNpVzW/tTmCCAQYMAxuPfYiXbn4zprb2mG/tON2pRcaZkzYmTc5jaOCeYIIBBgwDGqz53n5K02jhzfVu2enerlimJOSU1JrWfrGnfVdqYtzFBAIMGAYxHPndXklTasduO/rkmyTmxFTPJX2nPSvnk+STPb2OCAAYNAhiPf4u1JRnNSjvKT64ByZqpjTmp3KZP5jmp9W2etzFBAIMGAYxX/YrVUqNZlXSSQ7JXG7+NmdSV5LO1RknyT/adVJzbmCCAQYMAxiNXrJMtkzhqfE/JuzeOpo2v1rc1Jvue1L5V16RqbHM7wQQBDBoEMB6/YqkxOqn1yfMp2WtK4tzOQVH7Kiof5ZO1TEldbS0nmCCAQYMAxo+8YilJnOmTaxKqxqSuNocbOat8ppO9bmCCAAYNAhj/qytWIjmONufppN7EJ99NzmqaMZPzaePfwAQBDBoEMH7Mt1ht/Ll+amOerNnKWVF7KUkOiTbPqT3D25gggEGDAMYjV6wtM3UVPylPje/keaLNQVFx2nfV+rb2pK5Ekv+0tW+CCQIYNAhgfOyKBXwjJghg0CCAQYMABg0CGDQIYNAggEGDAAYNAhg0CGDQIIBBgwAGDQIYNAhg0CCAQYMABg0CGDQIYNAggEGDAAYNAhg0CGDQIIBBgwAGDQIYNAhg0CCA9OvXX/lV7/vmf7RxAAAAAElFTkSuQmCC",
+					  "imageFormat": "png"
+					}
+				  ],
+				  "letterMessage": "request",
+				  "letterTemplateLanguageId": 3,
+				  "merchPrefLangLetterMessage": "abc",
+				  "merchantDocumentsProvided": true
+				},
+				"reviewComment": {
+				  "comment": {
+					"commentText": "request info",
+					"externalComment": true
+				  }
+				},
+				"userId": "RAI testing"
+			  }
+			},
+
+			"TC_02":
+		{
+			"TestCaseId": "TC_02",
+			"TestCaseName": "TC_02 It should throw 404 and should not insert any details in table when invalid value for field passed as input@Regression @ServiceCaseActionAPI ",
+			"template": 2,
+			"statusCode": 404,
+			"type": "POST",
+			"caseNumber":17000003,
+			"test":{
+				"actionCode": "WOG",
+				"financialAdjustment": {
+				  "ledgerInputList": [
+					{
+					  "acquirerCode": "GPN",
+					  "amount": 0,
+					  "internalNotes": "Test",
+					  "ledgerAccountNumber": "1150",
+					  "ledgerAdjustment": "CREDIT"
+					},
+					{
+					  "acquirerCode": "GPN",
+					  "amount": 110.00,
+					  "internalNotes": "Test",
+					  "ledgerAccountNumber": "1120",
+					  "ledgerAdjustment": "DEBIT"
+					}
+				  ]
+				},
+				"liabilityInfo": "testing liability",
+				"merchantMessage": {
+				  "deadLineDate": "",
+				  "documentsForMerchant": [
+					{
+						"base64EncodedImage": "data:image/png;base64,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",
+					  "imageFormat": "png"
+					}
+				  ],
+				  "letterMessage": "abc ",
+				  "letterTemplateLanguageId": 2,
+				  "merchantDocumentsProvided": true
+				},
+			   
+				"reviewComment": {
+				  "comment": {
+					"commentText": "wog",
+					"externalComment": true
+				  }
+				},
+				"userId": "wog testing",
+				"writeOffReason": "wog testing"
+			  }
+			},
+			"TC_03":
+		{
+
+			"TestCaseId": "TC_03",
+			"TestCaseName": "TC_03 It should receive 404 and should not insert any details in table when invalid actionCode passed as input(only mandatory fields) @Smoke @Sanity @Regression @ServiceCaseActionAPI  ",
+			"template": 2,
+			"statusCode": 404,
+			"type": "POST",
+			"caseNumber":3917000003,
+			"test":{
+				"actionCode": "RAI",
+			  
+				"merchantMessage": {
+				  "deadLineDate": "2019-01-02",
+				  "documentsForMerchant": [
+					{
+					   "base64EncodedImage": "",
+					  "imageFormat": ""
+					}
+				  ],
+				  "letterMessage": "request",
+				  "letterTemplateLanguageId": 3,
+				  "merchPrefLangLetterMessage": "abc",
+				  "merchantDocumentsProvided": false
+				},
+				"reviewComment": {
+				  "comment": {
+					"commentText": "request info",
+					"externalComment": true
+				  }
+				},
+				"userId": "RAI testing"
+			  }
+			}
+			
+	}
+
+}

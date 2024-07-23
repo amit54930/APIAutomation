@@ -1,0 +1,27 @@
+[
+  {
+    "transaction_date": "2019-07-09",
+    "chain": "000",
+    "acquirer_bin_ica": "650400",
+    "pos_entry_mode": "00",
+    "merchant_name": "WILSON LODGE            ",
+    "card_brand_respond_due_date": "2019-10-04",
+    "dispute_reason_code": "AW  ",
+    "merchant_number": "601101385489016",
+    "associate": "003",
+    "currency_code": "USD",
+    "principal": "001",
+    "corporate": "055",
+    "card_brand_code": "DI",
+    "bookmarked_by": "156",
+    "case_number": "3929000018",
+    "case_stage_id": "18197",
+    "case_received_date": "2019-08-20",
+    "region": "74",
+    "dispute_amount": "50.00",
+    "bookmarked_timestamp": "2019-10-22 11:32:13.076743",
+    "dispute_stage_name": "Chargeback",
+    "merchant_heirarchy_id": "58187",
+    "hierarchy_number": "05574001003000"
+  }
+]

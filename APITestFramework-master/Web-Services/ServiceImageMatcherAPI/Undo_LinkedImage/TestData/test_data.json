@@ -1,0 +1,41 @@
+{
+	"TestSuite": "Undo linking image to case operation",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01 It should receive 200 response code if merchant image is unlinked successfully on providing valid documentId as input @Smoke @Sanity @Regression @ServiceImageMatcherAPI",
+			"statusCode": 200,
+			"template": 1,
+			"type": "PUT",
+			"documentId":141310
+				
+		},
+
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02 It should receive 404 response code if already unlinked image id is provided as input. @Regression @ServiceImageMatcherAPI",
+			"statusCode": 404,
+			"template": 2,
+			"type": "PUT",
+			"documentId":141310
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03 It should receive 404 response code if invalid image id is provided as input. @Regression @ServiceImageMatcherAPI ",
+			"statusCode": 404,
+			"template": 2,
+			"type": "PUT",
+			"documentId":141310
+	},
+	"TC_04": {
+		"TestCaseId": "04",
+		"TestCaseName": "TC_04 if image is unlinked successfully and queue_id of document in case_document should be updated to 63 i.e. Archived Images @Regression @ServiceImageMatcherAPI",
+		"statusCode": 200,
+		"template": 1,
+		"type": "PUT",
+		"documentId":141310
+			
+	}
+
+}
+}

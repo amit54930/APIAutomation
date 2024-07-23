@@ -1,0 +1,54 @@
+{
+  "TestSuite": "Fetch And Link Merchant Details based on case number",
+  "TestCase":{
+		"TC_01":
+		{
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and should link merchant details based on the merchant matched caseNumber @Smoke @Sanity @Regression @ServiceCaseManagerAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"caseNumbers":["987655563"]
+		},
+
+		"TC_02":
+		{
+			"TestCaseId": "TC_02",
+			"TestCaseName": "TC_02 It should receive 200 and should link merchant details based on the merchant match failed caseNumber @Smoke @Sanity @Regression @ServiceCaseManagerAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"caseNumbers":[ "987654913"]
+		},
+
+		"TC_03":
+		{
+			"TestCaseId": "TC_03",
+			"TestCaseName": "TC_03 It should receive 200 and should link merchant details based on the merchant matched caseNumber @Smoke @Sanity @Regression @ServiceCaseManagerAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"caseNumbers":["987656454", "987656474"]
+		},
+
+		"TC_04":
+		{
+			"TestCaseId": "TC_04",
+			"TestCaseName": "TC_04 It should receive 200 and should link merchant details based on the merchant matched caseNumber @Smoke @Sanity @Regression @ServiceCaseManagerAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"caseNumbers":["abcde", "987656474"]
+		},
+
+		"TC_05":
+		{
+			"TestCaseId": "TC_05",
+			"TestCaseName": "TC_05 It should throw 400 and should not link merchant details @Regression @ServiceCaseManagerAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"caseNumbers":["abc", "test"]
+		}
+	}
+}

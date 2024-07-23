@@ -1,0 +1,33 @@
+[
+  {
+    "cardNumberSk": "2441275642",
+    "transactionTime": "13:56:00.000",
+    "mcc": "1520",
+    "terminalCapacityInd": "6",
+    "foreignAmount": "0",
+    "currencyExponent": "0",
+    "recordCode": "0",
+    "wwmasterTransactionSettledSk": "2f442505-c037-11e9-84b9-9dee87b70254",
+    "cardNumberRk": "601130XXXXXX1248",
+    "acqReferenceNumber": "76504009198320111141145",
+    "transactionCode": "06",
+    "etlbatchid": "20190717103148000",
+    "batchAmount": "0",
+    "globalToken": "5940K20854668458",
+    "motoEcInd": "1",
+    "authorizationAmount": "0",
+    "authorizationCode": "00993B",
+    "transactionIdentifier": "208323135622000",
+    "depositControlNumber": "T040000",
+    "transactionAmount": "96.96",
+    "cashBackAmount": "0",
+    "foreignDomesticInd": "D",
+    "cardholderIdMethod": "3",
+    "merchantToken": "5951K40306093618",
+    "originalTransactionReferenceNumber": "19100000128",
+    "transactionDate": "2019-07-09",
+    "merchantNumber": "601101331610707",
+    "posEntryMode": "01",
+    "currencyCode": "840"
+  }
+]

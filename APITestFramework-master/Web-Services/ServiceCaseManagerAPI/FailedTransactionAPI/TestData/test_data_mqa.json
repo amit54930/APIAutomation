@@ -1,0 +1,25 @@
+{
+  "TestSuite": "Fetch Multiple matched transactions from the DiMS database",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid FailedCaseId is passed as an argument",
+          "template":1,
+          "statusCode": 200,
+              "type":"GET",
+             "failedCaseId":1414
+        },
+
+         "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 for data not found when invalid FailedCaseId is passed as an argument",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "failedCaseId":76
+        }
+    }
+ }

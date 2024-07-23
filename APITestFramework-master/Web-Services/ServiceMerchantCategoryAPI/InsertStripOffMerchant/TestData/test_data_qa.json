@@ -1,0 +1,38 @@
+{
+  "TestSuite": "Insert Strip Off Merchant",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and should insert the data into exception_merchant table @Smoke @Sanity @Regression @ServiceMerchantCategoryAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test":{
+				"acquirerName": "HPY",
+				"comments": "Test",
+				"createdBy": "DIMS TEAM",
+				"merchantNumber": "0000000009958802",
+				"merchantType": "stripoff"
+			}
+	},
+
+	"TC_02":
+	{
+		"TestCaseId": "TC_02",
+		"TestCaseName": "TC_02 It should throw 400 and should return invalid merchant number @Regression @ServiceMerchantCategoryAPI",
+		"template": 2,
+		"statusCode": 400,
+		"type": "POST",
+		"test":{
+      "acquirerName": "HPY",
+      "comments": "Test",
+      "createdBy": "DIMS TEAM",
+			"merchantNumber": "2345",
+			"merchantType":"stripoff"
+    }
+	}
+	}
+
+}

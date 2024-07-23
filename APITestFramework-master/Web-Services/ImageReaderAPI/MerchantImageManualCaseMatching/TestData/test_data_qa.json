@@ -1,0 +1,24 @@
+{
+	"TestSuite": "Merchant Image Match Fail - select image for manual case matching",
+	"TestCase": {
+		"TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and perform OCR on case number when valid document name is passed as an argument",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+		  		"documentName": "MerchantDocumentation.Mail.US.20190517.140020.TIFF"
+        },
+        
+				"TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when invalid document name is passed as an argument",
+          "template": 2,
+          "statusCode": 404,
+		  		"type": "GET",
+		  		"documentName": "test1323.tiff"
+        }
+		}
+	}

@@ -1,0 +1,66 @@
+{
+	"TestSuite": "All Card Scheme - Search - Image Handling : Change format",
+	"TestCase": {
+		"TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid source and target file path is passed as input @Smoke @Sanity @Regression @ImageRedactionAPI",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+          "sourceFilePath": "bkt-gousenapb-dims-str06/unmatched/qanew5.png",
+          "targetFilePath":"bkt-gousenapb-dims-str06/unmatched/qanew9.jpg"
+        },
+        
+				"TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 400 when invalid source or target file path is passed as input @Regression @ImageRedactionAPI",
+          "template": 2,
+          "statusCode": 400,
+		  		"type": "GET",
+          "sourceFilePath": "bkt-gousenapb-dims-str06/unmatched/qanew5.png",
+          "targetFilePath":"bkt-gousenapb-dims-str06/unmatched/qanew"
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 when valid source and target file path is passed as input @Regression @ImageRedactionAPI",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+          "sourceFilePath": "bkt-gousenapb-dims-str06/unmatched/qanew9.jpg",
+          "targetFilePath":"bkt-gousenapb-dims-str06/unmatched/qanew10.bmp"
+        },
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should receive 200 when valid source and target file path is passed as input @Regression @ImageRedactionAPI",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+          "sourceFilePath": "bkt-gousenapb-dims-str06/unmatched/qanew10.bmp",
+          "targetFilePath":"bkt-gousenapb-dims-str06/unmatched/qanew11.tiff"
+        },
+        "TC_05":
+        {
+          "TestCaseId": "TC_05",
+          "TestCaseName": "TC_05 It should receive 200 when valid source and target file path is passed as input @Regression @ImageRedactionAPI",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+          "sourceFilePath": "bkt-gousenapb-dims-str06/unmatched/qanew10.bmp",
+          "targetFilePath":"bkt-gousenapb-dims-str06/unmatched/qanew12.pdf"
+        },
+        "TC_06":
+        {
+          "TestCaseId": "TC_06",
+          "TestCaseName": "TC_06 It should receive 200 when valid source and target file path is passed as input @Regression @ImageRedactionAPI",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+          "sourceFilePath": "bkt-gousenapb-dims-str06/unmatched/test3.jpeg",
+          "targetFilePath":"bkt-gousenapb-dims-str06/unmatched/qanew11.pdf"
+        }
+		}
+	}

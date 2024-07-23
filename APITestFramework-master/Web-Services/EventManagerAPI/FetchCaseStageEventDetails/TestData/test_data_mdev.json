@@ -1,0 +1,25 @@
+{
+  "TestSuite": "Fetch Case Stage Event Details",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch case history details @Smoke @Sanity @Regression @EventManagerAPI",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "caseNumber": "3930800001"
+        },
+
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 and not fetch case history details @Regression @EventManagerAPI",
+          "template": 2,
+          "statusCode": 404,
+          "type":"GET",
+          "caseNumber": "4001000123"
+        }
+    }
+ }

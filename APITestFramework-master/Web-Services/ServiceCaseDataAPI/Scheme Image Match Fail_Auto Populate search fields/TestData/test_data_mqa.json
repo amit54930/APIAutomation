@@ -1,0 +1,24 @@
+{
+	"TestSuite": "Fetch brand case number of brand image",
+	"TestCase": {
+		
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01 It should receive 200 response code and fetch the card brand case number from case_documents table on passing the valid case_stage_id for brand image @Smoke @Regression @Sanity @ServiceCaseDataAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"input": {"documentId":"73891"}		
+		},
+		
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02 It should receive 404 as response code and should display error message for data not found for invalid document id @Regression @ServiceCaseDataAPI ",
+			"statusCode": 404,
+			"template": 2,
+			"type": "GET",
+			"input": {"documentId":"001"}
+		
+		}
+	}
+	}

@@ -1,0 +1,20 @@
+ {
+  "TestSuite": "Delete Reference Transaction From Dims DB",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and delete Reference Transaction From Dims DB @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"DELETE",
+           "input":
+           {
+          "caseNumber":3917100001,
+          "referenceTransactionId":16
+           }
+          }
+
+    }
+ }

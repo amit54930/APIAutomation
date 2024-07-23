@@ -1,0 +1,599 @@
+{
+  "executionGroup": "@Smoke",
+  "TestPath": [
+    "./Web-Services/BarcodeManagerAPI/GenerateBarcodeDetails/TestScripts",
+    "./Web-Services/BarcodeManagerAPI/GenerateBarcodeFile/TestScripts",
+    "./Web-Services/BarcodeManagerAPI/ReadBarcodeDetails/TestScripts",
+    "./Web-Services/CaseHistoryAPI/AuditLogAPI/TestScripts",
+    "./Web-Services/EventManagerAPI/CreateEventsAuditLog/TestScripts",
+    "./Web-Services/EventManagerAPI/FetchEventsAuditLog/TestScripts",
+    "./Web-Services/EventManagerAPI/FetchCaseStageEventDetails/TestScripts",
+    "./Web-Services/EventManagerAPI/InsertEventLog/TestScripts",
+    "./Web-Services/ImageReaderAPI/MerchantImageReader/TestScripts",
+    "./Web-Services/ImageReaderAPI/imageReaderController/TestScripts",
+    "./Web-Services/ImageReaderAPI/MerchantImageManualCaseMatching/TestScripts",
+    "./Web-Services/ImageRedactionAPI/ImageChangeFormat/TestScripts",
+    "./Web-Services/ImageRedactionAPI/DLP_ImageScan/TestScripts",
+   
+    "./Web-Services/ReferenceDataAPI/GetAuthorization/TestScripts",
+    "./Web-Services/ReferenceDataAPI/GetMerchant/TestScripts",
+    "./Web-Services/ReferenceDataAPI/GetTransaction/TestScripts",
+    "./Web-Services/ReferenceDataAPI/GetAuthData/TestScripts",
+    "./Web-Services/ReferenceDataAPI/GetTranData/TestScripts",
+    "./Web-Services/ReferenceDataAPI/FetchMerchantInfo/TestScripts",
+    "./Web-Services/ReferenceDataAPI/GetMerchantData/TestScripts",
+
+    "./Web-Services/SearchFilterAPI/CreateSearchFilterAPI/TestScripts",
+    "./Web-Services/SearchFilterAPI/FetchSearchParameter/TestScripts",
+    "./Web-Services/searchFilterAPI/DisputeCaseSearch/TestScripts",
+    "./Web-Services/SearchFilterAPI/FetchSeacrhTypeIdWithCategoryType/TestScripts",
+    "./Web-Services/SearchFilterAPI/FetchSavedFilterUsingCategoryId/TestScripts",
+    "./Web-Services/SearchFilterAPI/DeleteUserSavedSearchFilter/TestScripts",
+    
+    "./Web-Services/ServiceCaseDataAPI/InsertAuthorization/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchTransactionCodes/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/DisputeRecordCountAPI/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/InsertMerchant/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/IdentifyCaseStage/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/InsertMerchantMatchFail/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/AssignStageSequence/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/InsertUnmatchedCaseDetails/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/InsertNewCaseDetails/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/CaseMatchFailQueueList/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/AddDisputeRecordIntoExceptionQueue/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/CreateNewInternalCaseNumber/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchListOfDisputeStatus/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchListOfDisputeStages/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchListofCardBrands/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/ManualCloseCase/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/CasePendDocAPI/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/Scheme Image Match Fail_Auto Populate search fields/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchLedgerValues/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchDocumentsLinkedWithCase/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/SplitImage_Base64encoding/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/InsertCaseNoteAPI/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/letterTemplateController/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchCasesForImages/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/PendCase/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/TransactionUnmatchedQueueAPI/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchMerchantMessage/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/AddAdditionalTransactions/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchColumnAPI/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchPurposeOfTransfer/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchListOfOperators/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/AssignCaseAPI/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/SaveUserSpecificActiveColumnPerPage/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchPagesAvailablePerAction/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/DeleteRefereneceTransactionFromDimsDB/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/UnmatchedTransactionData/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchDueDateAndRemainingDays/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchMultipleMAtchedTransactions/TestScripts",
+    "./Web-Services/ServiceCaseDataAPI/FetchReasonCodeAndDescription/TestScripts",
+
+
+    "./Web-Services/ServiceCaseManagerAPI/FetchandLinkMerchantDetails/TestScripts",
+    "./Web-Services/ServiceCaseManagerAPI/ManuallyEnterTransactionDetails/TestScripts",
+    "./Web-Services/ServiceCaseManagerAPI/AuthorizationSearch/TestScripts",
+    "./Web-Services/ServiceCaseManagerAPI/LinkManuallyMatchedTransaction/TestScripts",
+    "./Web-Services/ServiceCaseManagerAPI/FailedTransactionAPI/TestScripts",
+    "./Web-Services/ServiceCaseManagerAPI/FetchCaseDetailsAPI/TestScripts",
+    "./Web-Services/ServiceImageMatcherAPI/LinkCaseToSchemeAndMerchant/TestScripts",
+    "./Web-Services/ServiceImageMatcherAPI/Undo_LinkedImage/TestScripts",
+    "./Web-Services/ServiceImageMatcherAPI/ArchiveImage/TestScripts",
+    "./Web-Services/ServiceMerchantCategoryAPI/InsertStripOffMerchant/TestScripts",
+    "./Web-Services/ServiceMerchantCategoryAPI/GetStripOffMerchant/TestScripts",
+    "./Web-Services/ServiceMerchantCategoryAPI/DeleteStripOffMerchant/TestScripts",
+    "./Web-Services/ServiceMerchantCategoryAPI/MerchantCategorylookupAPI/TestScripts",
+
+    "./Web-Services/ServiceQueueManagerAPI/GetDefaultQueueCountByRegion/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/AssignSingleCaseToSingleAnalyst/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/AssignMultipleCaseToSingleAnalyst/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/AssignMultipleCaseToMultipleAnalyst/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/FetchAssignedCasesCount/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/FetchAnalystsByRegion/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/UnassignTheCase/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/FetchGeneralQueueCount/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/FetchAssignedQueueCount/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/FetchExceptionQueueCount/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/FetchMyQueueCount/TestScripts",
+    "./Web-Services/ServiceQueueManagerAPI/ListOfBookmarkCases/TestScripts",
+
+    "./Web-Services/ServiceCaseActionAPI/AcceptLiability-IncomingPre-arbitration/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/AcceptLiability-IncomingPre-compliance/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/Retrieval - Fullfill/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/Add a Case Note Fulfilling a Retrieval/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/Challenge-Pre-compliance/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/Challenging-Pre-arbitration/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/Chargeback-ChallengeCase/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/Chargeback-AcceptLiability/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/TakeActionWriteOffGoodWill/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/TakeActionRequestAdditionalInfo/TestScripts",
+    "./Web-Services/ServiceCaseActionAPI/TakeActionCloseCase/TestScripts",
+
+    "./Web-Services/ServiceMerchantDataAPI/GetDocument/TestScripts",
+    "./Web-Services/ServiceMerchantDataAPI/GetDocuments/TestScripts",
+     "./Web-Services/ServiceMerchantDataAPI/GetDocuments/TestScripts",
+     "./Web-Services/ServiceMerchantDataAPI/GetDispute/TestScripts",
+     "./Web-Services/ServiceMerchantDataAPI/GetDisputes/TestScripts",
+
+    "./Web-Services/ServiceAuthAPI/FetchAuthDataOfUser/TestScripts",
+    "./Web-Services/ServiceAuthAPI/LogoutsUsefromrCache/TestScripts",
+    "./Web-Services/ServiceAuthAPI/ValidateLoginAccessToken/TestScripts",
+
+    "./Web-Services/MerchantExportAPI/CaseExportControllerAPI/TestScripts",
+
+    "./Web-Services/ServiceEmailNotificationAPI/GeneratingAlertForNonReceiptOfFiles/TestScripts"
+  ],
+  "TestPath1": [],
+  "reference_root_url": "https://service-reference-data-dev-ncde.np-disputes.globalpay.com/api/v1",
+  "service_barcode_url": "https://service-barcode-manager-dev-cde.np-disputes.globalpay.com/api/v1",
+  "case_matcher_url": "https://service-case-matcher-dev-ncde.np-disputes.globalpay.com/api/v1",
+  "image_reader_url": "https://service-image-reader-dev-cde.np-disputes.globalpay.com/api/v1",
+  "casehistory_root_url": "https://service-case-history-dev-ncde.np-disputes.globalpay.com/api/v1",
+  "servicecasemanager_root_url": "https://service-case-manager-dev-ncde.np-disputes.globalpay.com/api/v1",
+  "servicecasedata_root_url": "https://service-case-data-dev-ncde.np-disputes.globalpay.com/api/v1",
+  "service_merchant_category_root_url": "https://service-merchant-category-dev-ncde.np-disputes.globalpay.com/api/v1",
+  "service_search_filter_root_url": "https://service-search-filter-dev-ncde.np-disputes.globalpay.com",
+  "service_image_redaction_root_url": "https://service-image-redaction-dev-cde.np-disputes.globalpay.com/api/v1",
+  "service_image_matcher_root_url": "https://service-image-matcher-dev-cde.np-disputes.globalpay.com/api/v1",
+  "event_manager_url": "https://service-event-manager-dev-ncde.np-disputes.globalpay.com/api/v1",
+  "service_queue_manager_url": "https://service-queue-manager-dev-ncde.np-disputes.globalpay.com/api/v1",
+  "service_auth_root_url":"https://service-auth-dev-cde.np-disputes.globalpay.com/api/v1",
+  "service_case_action_root_url":"https://service-case-action-dev-cde.np-disputes.globalpay.com/api/v1",
+  "service_merchant_data_url":"https://service-merchant-data-dev-cde.np-disputes.globalpay.com",
+  "service_email_notification_url":"https://service-email-notification-dev-cde.np-disputes.globalpay.com/api/v1",
+  "service_merchant_export_root_url":"https://service-merchant-export-dev-ncde.np-disputes.globalpay.com/api/v1",
+
+
+  "resultType": "json",
+  "test_data_root_path": "../TestData/test_data_mdev.json",
+  "expected_response_root_path": "../Response",
+  "test_query_root_path": "../TestData/Query.js",
+  "BigQueryConnectionURL": "",
+  "SQLConnectionURL": "",
+  "SQLuserName": "",
+  "SQLpassWord": "",
+  "SQLmysqlDriver": "com.mysql.jdbc.Driver",
+  "header": {
+    "accept": "application/json",
+    "charset": "UTF-8",
+    "Authorization": "system eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Njk0ODQ4NzUsImVtYWlsIjoiZ2xvYmFscGF5IiwiaXNzIjoiaHR0cHM6Ly9kaW1zLmdsb2JhbHBheS5jb20iLCJhdWQiOiIwZjY2OTg1ZC01M2UyLTQ0MzctYjE3NC00NDNlNjUzMjI5NTcifQ.qeoHb_VqlVDeZKQgvOsxwT9V0nzPD52wc2Ig4wAI8b8"
+ },
+  "CaseExportControllerAPI":{
+    "call_suffix_toFetch data": "/merchantexport/cases",
+    "method_toFetch data": "POST"
+  },
+  "BarcodeDetailsGenerateAPI": {
+    "call_suffix_toGenerateBarcodeDetails": "/barcodemanager/barcode",
+    "method_toGenerateBarcodeDetails": "GET"
+  },
+  "BarcodeFileGenerateAPI": {
+    "call_suffix_toGenerateBarcodeFile": "/barcodemanager/barcode/file",
+    "method_toGenerateBarcodeFile": "POST"
+  },
+  "BarcodeReadAPI": {
+    "call_suffix_toReadBarcode": "/barcodemanager/barcode/reader",
+    "method_toReadBarcode": "GET"
+  },
+  "AuditLogAPI": {
+    "call_suffix_toInsertAuditLogAPI": "/casehistory/log",
+    "method_toInsertAuditLog": "POST"
+  },
+  "CreateEventsAuditLog": {
+    "call_suffix_toCreateEventsAuditLog": "/eventmanager/event",
+    "methodType_toCreateEventsAuditLog": "POST"
+  },
+  "FetchEventsAuditLog": {
+    "call_suffix_toFetchEventsAuditLog": "/eventmanager/event/template/{eventTemplateName}/parameters",
+    "methodType_toFetchEventsAuditLog": "GET"
+  },
+  "FetchCaseStageEventDetails": {
+    "call_suffix_toFetchCaseStageEventDetails": "/eventmanager/event/details/{caseNumber}",
+    "methodType_toFetchCaseStageEventDetails": "GET"
+  },
+  "InsertEventLog": {
+    "call_suffix_toInsertEventLog": "/eventmanager/event/log",
+    "methodType_toInsertEventLog": "POST"
+  },
+  "MerchantImageReaderAPI": {
+    "call_suffix_toMerchantImageMatch": "/imagereader/image/{documentName}",
+    "method_toMerchantImageMatch": "GET"
+  },
+  "MerchantImageManualCaseMatching": {
+    "call_suffix_MerchantImageManualCaseMatching": "/imagereader/image/{documentName}",
+    "method_MerchantImageManualCaseMatching": "GET"
+  },
+  "ImageReaderControllerAPI": {
+    "call_suffix_toEncode": "/imagereader/case/{caseNumber}/image",
+    "methodType_toFetchDetails": "GET"
+  },
+  "DLP_scanForImagesAPI": {
+    "call_suffix_toRunDLPScanForImages": "/image/redact/pages",
+    "method_toFetchCardBrandCaseNumber": "POST"
+  },
+  "ImageChangeFormat": {
+    "call_suffix_ImageChangeFormat": "/image/format",
+    "method_ImageChangeFormat": "GET"
+  },
+  "ReferenceMerchantDataAPI": {
+    "call_suffix_toFetchMerchantData": "/referencedata/merchants/{merchantNumber}",
+    "method_toFetchMerchantData": "GET"
+  },
+  "GetMerchantDataAPI": {
+    "call_suffix_toFetchMerchantData": "/referencedata/merchantdetails",
+    "method_toFetchReportID": "GET"
+  },
+  "ReferenceAuthDataAPI": {
+    "call_suffix_toFetchAuthorizationData": "/referencedata/authorization",
+    "method_toFetchAuthData": "GET"
+  },
+  "ReferenceTransactionDataAPI": {
+    "call_suffix_toFetchTransactionData": "/referencedata/disputecase/transactions",
+    "method_toFetchTransactionData": "GET"
+  },
+  "GetAuthDataAPI": {
+    "call_suffix_toGetAuthData": "/referencedata/authdata",
+    "method_toGetAuthData": "GET"
+  },
+  "GetTranDataAPI": {
+    "call_suffix_toSearchTransaction": "/referencedata/transactions",
+    "methodType_toFetchDetails": "GET"
+  },
+
+  "FetchMerchantInfoAPI":{
+    "call_suffix_toFetchMerchantData": "/referencedata/disputecase/merchant",
+    "methodType_toFetchDetails": "GET"
+  },
+  
+  "DeleteUserSavedSearchesAPI": {
+    "call_suffix_toDeleteUserSavedSearches": "/api/v1/filters/{savedSearchId}",
+    "methodType_toFetchDetails": "DELETE"
+  },
+  "FetchSavedFilterUsingCategoryId": {
+    "call_suffix_toFetchSavedFilterUsingCategoryId": "/api/v1/filters/category/{categoryId}",
+    "method_toFetchSavedFilterUsingCategoryId": "GET"
+  },
+  "CreateSearchFilterAPI": {
+    "call_suffix_toInsertSearchFilterData": "/api/v1/filters/{filterTypeId}",
+    "method_toInsertSearchFilterData": "POST"
+  },
+  "FetchSearchParameterAPI": {
+    "call_suffix_tofetchparameter": "/api/v1/filters/{filterTypeId}",
+    "methodType_toFetchDetails": "GET"
+  },
+  "DisputeCaseSearchAPI": {
+    "call_suffix_tosearchDisputeCase": "/api/v1/filterParams/filter/search",
+    "methodType_toFetchDetails": "POST"
+  },
+  "FetchSeacrhTypeID": {
+    "call_suffix_toFetchSeacrhTypeIdData": "/api/v1/filters/category/{categoryType}/id",
+    "method_toFetchSeacrhTypeIDData": "GET"
+  },
+  "AddDisputeRecordIntoExceptionQueueAPI": {
+    "call_suffix_toAddDisputeRecordIntoExceptionQueue": "/disputecasedata/transactions",
+    "method_toAddDisputeRecordIntoExceptionQueue": "POST"
+  },
+  "AssignStageSequenceAPI": {
+    "call_suffix_toAssignStageSequence": "/disputecasedata/case/stage",
+    "method_toAssignStageSequence": "POST"
+  },
+  "CaseMatchFailQueueAPI": {
+    "call_Suffix_toCaseMatchFailQueue": "/disputecasedata/case/queues",
+    "methodType_toCaseMatchFailQueue": "GET"
+  },
+  "CasePendDocAPI": {
+    "call_suffix_toFetchCasePendDocData": "/disputecasedata/queue/{queueId}/case",
+    "method_toFetchCasePendDocData": "GET"
+  },
+  "InsertInternalNewCaseDetailsAPI": {
+    "call_suffix_toInsertNewInternalCaseNumber": "/disputecasedata/case",
+    "methodType_toFetchDetails": "POST"
+  },
+  "DisputeRecordCountAPI": {
+    "call_suffix_toFetchDisputeRecordCountData": "/disputecasedata/queue/recordcount",
+    "method_toDisputeRecordCountAPI": "GET"
+  },
+  "FetchCasesForImagesAPI": {
+    "call_suffix_toFetchCasesForImagesAPI": "/disputecasedata/cases",
+    "method_ImageChangeFormat": "GET"
+  },
+  "FetchDocumentsAPI": {
+    "call_suffix_toMatchedDocument": "/disputecasedata/documents/matched",
+    "method_toMatchedDocument": "GET"
+  },
+  "FetchLegderValuesAPI": {
+    "call_suffix_toLedgerValues": "/disputecasedata/ledgers",
+    "method_toLedgerValues": "GET"
+  },
+  "FetchListOfCardBrandAPI": {
+    "call_suffix_tofetchListOfCardBrand": "/disputecasedata/cardbrands",
+    "methodType_toFetchDetails": "GET"
+  },
+  "FetchListOfDisputeStagesAPI": {
+    "call_suffix_tofetchListOfDisputeStages": "/disputecasedata/dispute/stages",
+    "methodType_toFetchDetails": "GET"
+  },
+  "FetchListOfDisputeStatusAPI": {
+    "call_suffix_tofetchListOfDisputeStatus": "/disputecasedata/dispute/status",
+    "methodType_toFetchDetails": "GET"
+  },
+  "FetchMerchantMessage": {
+    "call_suffix_toFetchMerchantMessage": "/disputecasedata/merchant/message/language/{languageCode}/stage/{caseStageId}",
+    "methodType_toFetchMerchantMessage": "GET"
+  },
+  "FetchTransactionCodesAPI": {
+    "call_suffix_toFetchTransactionCodesData": "/disputecasedata/transaction/cardbrand/{cardBrandCode}/code",
+    "methodType_toFetchDetails": "GET"
+  },
+  "GlobalSearchAPI": {
+    "call_suffix_toGlobalSearch": "/disputecasedata/quick/cases",
+    "methodType_toGlobalSearch": "GET"
+  },
+  "IdentifyCaseStageAPI": {
+    "call_suffix_toIdentifyCaseStage": "/disputecasedata/case/stage",
+    "method_toIdentifyCaseStage": "GET"
+  },
+  "InserAuthDataAPI": {
+    "call_suffix_toInsertAuthorizationData": "/disputecasedata/authorization",
+    "method_toInsertAuthData": "POST"
+  },
+  "InsertCaseNoteAPI": {
+    "call_suffix_toAddNoteToCase": "/disputecasedata/case/note",
+    "methodType_toFetchDetails": "POST"
+  },
+  "InsertMerchantDataAPI": {
+    "call_suffix_toInsertMerchantData": "/disputecasedata/merchant/hierarchy",
+    "method_toInsertMerchantData": "POST"
+  },
+  "InsertMerchantMatchFailAPI": {
+    "call_suffix_toInsertMerchantData": "/disputecasedata/case/failqueue",
+    "method_toInsertMerchantData": "POST"
+  },
+  "InsertNewCaseDetailsAPI": {
+    "call_suffix_toInsertNewCaseDetails": "/disputecasedata/case",
+    "methodType_toInsertDetails": "POST"
+  },
+  "InsertunmatchedCaseDetailsAPI": {
+    "call_suffix_toInsertunmatchedCaseDetails": "/disputecasedata/case/failqueue",
+    "method_toInsertunmatchedCaseDetails": "POST"
+  },
+  "LetterTemplateControllerAPI": {
+    "call_suffix_toFetchLetterTemplate": "/disputecasedata/letter/{languageCode}",
+    "methodType_toFetchDetails": "GET"
+  },
+  "ManualCloseCaseAPI": {
+    "call_Suffix_toCloseCase": "/disputecasedata/case/{caseNumber}",
+    "method_toCloseCase": "PUT"
+  },
+  "PendUnpendCaseAPI": {
+    "call_suffix_topendCase": "/disputecasedata/case/stage/pend",
+    "method_pendCase": "PUT"
+  },
+  "FetchCardBrandCaseNumberAutoPopulate": {
+    "call_suffix_toFetchCardBrandCaseNumber": "/disputecasedata/case/id/{documentId}/document",
+    "method_toFetchCardBrandCaseNumber": "GET"
+  },
+  "SplitImage_Base64encodingAPI": {
+    "call_suffix_toSplitImage_Base64encodingAPI": "/disputecasedata/documents",
+    "method_toMatchedDocument": "GET"
+  },
+  "TransactionUnmatchedQueueAPI": {
+    "call_suffix_toFetchTransactionUnmatchedQueueAPI": "/disputecasedata/case/queues",
+    "method_ImageChangeFormat": "GET"
+  },
+  "TransactionMatchFailAPI": {
+    "call_Suffix_toFetchTransactionMatchFail": "/disputecasedata/case/queues",
+    "methodType_toFetchTransactionMatchFail": "GET"
+  },
+  "FetchListOfRegionAPI": {
+    "call_suffix_tofetchListOfRegion": "/disputecasedata/regions",
+    "methodType_toFetchDetails": "GET"
+  },
+  "FetchColumnAPI": {
+    "call_suffix_toFetchColumnData": "/disputecasedata/user/columns/{pageId}",
+    "method_toFetchReportID": "GET"
+  },
+  "FetchListOfOperators": {
+    "call_suffix_toFetchListOfOperators": "/disputecasedata/fetch/users",
+    "method_toFetchListOfOperators": "GET"
+  },
+  "FetchPurposeOfTransfer": {
+    "call_suffix_toFetchPurposeOfTransfer": "/disputecasedata/transfer/purposes",
+    "method_toFetchPurposeOfTransfer": "GET"
+  },
+  "AssignCaseAPI": {
+    "call_suffix_toAssignCaseAPI": "/disputecasedata/transfer/assign",
+    "method_toAssignCaseAPI": "POST"
+  },
+  "AddAdditionalTransactions": {
+    "call_suffix_toAddAdditionalTransactions": "/disputecasedata/case/reference/transaction",
+    "methodType_toAddAdditionalTransactions": "POST"
+  },
+  "AuthorizationSearchAPI": {
+    "call_suffix_toAuthorizationSearch": "/casemanager/authorization",
+    "method_toAuthorizationSearch": "GET"
+  },
+  "FetchCaseDetailAPI": {
+    "call_suffix_toFetchCaseDetail": "/casemanager/case/{caseNumber}",
+    "method_toFetchCaseDetail": "GET"
+  },
+  "FetchAndLinkMerchantDetailsAPI": {
+    "call_suffix_toFetchAndLinkMerchantDetails": "/casemanager/merchant",
+    "method_toFetchAndLinkMerchantDetails": "POST"
+  },
+  "LinkManuallyMatchedTransactionAPI": {
+    "call_suffix_toLinkManuallyMatchedTransaction": "/casematcher/case/manual",
+    "method_toLinkManuallyMatchedTransaction": "POST"
+  },
+  "ManuallyEnterTransactionDetailsAPI": {
+    "call_suffix_toManuallyEnterTransactionDetails": "/casemanager/case/manual/transaction",
+    "method_toManuallyEnterTransactionDetails": "POST"
+  },
+  "failedTransactionsAPI": {
+    "call_suffix_toGetFailedTransactions": "/casemanager/failedcase/{failedCaseId}/transactions",
+    "methodType_toGetFailedTransaction": "GET"
+  },
+  "ArchiveImageAPI": {
+    "call_suffix_toArchiveImage": "/match/image/archive",
+    "methodType_toArchiveImage": "POST"
+  },
+  "LinkCaseToSchemeAndMerchantAPI": {
+    "call_suffix_toLinkCaseToSchemeAndMerchant": "/linker/document/{documentId}/case/{caseNumber}/stage/{stageId}",
+    "methodType_toLinkCaseToSchemeAndMerchant": "POST"
+  },
+  "Undo_LinkedImageAPI": {
+    "call_suffix_toUndoLinkedImage": "/linker/document/{documentId}",
+    "method_toUndoLinkedImage": "PUT"
+  },
+  "InsertStripOffMerchantAPI": {
+    "call_suffix_toInsertStripOffMerchant": "/merchantcategory/stripoff",
+    "method_toInsertStripOffMerchant": "POST"
+  },
+  "GetStripOffMerchantAPI": {
+    "call_suffix_toGetStripOffMerchant": "/merchantcategory/stripoff",
+    "method_toGetStripOffMerchant": "GET"
+  },
+  "DeleteStripOffMerchantAPI": {
+    "call_suffix_toDeleteStripOffMerchant": "/merchantcategory/stripoff",
+    "method_toDeleteStripOffMerchant": "DELETE"
+  },
+  "MerchantCategoryLookupAPI": {
+    "call_Suffix_tofetchmerchantnumber": "/merchantcategory/merchantnumber/{merchantNumber}/merchanttype/{merchantType}",
+    "methodType_toMerchantLookup": "GET"
+  },
+  "GetDefaultQueuesCountByRegion": {
+    "call_Suffix_toGetDefaultQueuesCountByRegion": "/queuemanager/queues/default/region/{regionCode}/cases/count",
+    "methodType_toGetDefaultQueuesCountByRegion": "GET"
+  },
+  "AssignSingleCaseToSingleAnalyst": {
+    "call_Suffix_toAssignSingleCaseToSingleAnalyst": "/queuemanager/case/assign",
+    "methodType_toAssignSingleCaseToSingleAnalyst": "POST"
+  },
+  "AssignMultipleCaseToSingleAnalyst": {
+    "call_Suffix_toAssignMultipleCaseToSingleAnalyst": "/queuemanager/case/assign/bulk",
+    "methodType_toAssignMultipleCaseToSingleAnalyst": "POST"
+  },
+  "AssignMultipleCaseToMultipleAnalyst": {
+    "call_Suffix_toAssignMultipleCaseToMultipleAnalyst": "/queuemanager/case/assign/region",
+    "methodType_toAssignMultipleCaseToMultipleAnalyst": "POST"
+  },
+  "FetchAssignedCasesCount": {
+    "call_Suffix_toFetchAssignedCasesCount": "/queuemanager/users/cases/assigned/groups/count",
+    "methodType_toFetchAssignedCasesCount": "GET"
+  },
+  "FetchAnalystsByRegion": {
+    "call_Suffix_toFetchAnalystsByRegion": "/queuemanager/users/groups/list",
+    "methodType_toFetchAnalystsByRegion": "GET"
+  },
+  "UnassignACaseFromAuser": {
+    "call_suffix_toaCase": "/queuemanager/case/unassign",
+    "method_toaCase": "POST"
+  },
+
+  "merchantActionControllerAPI":{
+    "call_suffix_toRecordMerchantAction": "/cases/merchant/record/action",
+    "method_toRecordMerchantAction": "POST"
+  },
+  "takeActionAPI":{
+    "call_suffix_fortakeAction": "/cases/{caseNumber}/record/action",
+    "method_toTakeAction": "POST"
+  },
+
+  "saveActiveColumnPerPage": {
+    "call_suffix_toActiveColumn": "/disputecasedata/user/columns/{pageId}",
+    "method_toActionColumn": "POST"
+  },
+
+  "fetchGeneralQueueCount": {
+    "call_suffix_toGeneralQueueCount": "/queuemanager/queues/general/cases/count",
+    "method_toActions": "GET"
+  },
+
+  "fetchPagesPerAction": {
+    "call_suffix_toPages": "disputecasedata/actions/pages/{takeActionCode}/{disputeStageId}",
+    "method_toPages": "GET"
+  },
+  "fetchAssignedQueueount": {
+    "call_suffix_toAssignedQueueCount": "/queuemanager/users/cases/count",
+    "method_toActions": "GET"
+  },
+  "DeleteRefereneceTransactionFromDimsDB": {
+    "call_suffix_toDeleteReferenceTransactionFromDimsDb": "/api/v1/disputecasedata/case/reference/transaction/{referenceTransactionId}/{caseNumber}",
+    "method_toDeleteReferenceTransactionFromDimsDb": "DELETE"
+  },
+
+  "fetchExceptionQueueCount": {
+    "call_suffix_toFetchExceptionQueueCount": "/queuemanager/queues/exception/cases/count",
+    "method_toActions": "GET"
+  },
+
+  "fetchMyQueueCount":{
+    "call_suffix_toGetMyQueueCount": "/queuemanager/queues/myqueues/cases/count",
+    "method_toActions": "GET"
+  },
+
+  "fetchAuthorizationDataofUser":{
+    "call_suffix_toFetchAuthDataofUser": "/auth/user/data/authorization",
+    "method_toActions": "GET"
+  },
+
+  "LogoutsUserfromCache":{
+    "call_suffix_toLogoutsUserfromCache": "/auth/user/logout",
+    "method_toActions": "GET"
+  },
+  "ValidateLoginAccessToken":{
+    "call_suffix_toValidateLoginAccessToken": "/auth/users/token/validate",
+    "method_toActions": "GET"
+  },
+
+  "UnmatchedTransactionDataAPI":{
+    "call_suffix_togetUnmatchedTransactions": "/disputecasedata/case/transfailed",
+    "method_togetUnmatchedTransactions": "GET"
+   },
+
+   "fetchDueDateAndRemainingDays": {
+    "call_suffix_toDueDateAndRemainingDays": "disputecasedata/case/queues",
+    "method_toDueDateAndRemainingDays": "GET"
+  },
+
+  "fetchMultipleMAtchedTransactions": {
+    "call_suffix_toMultipleMatchedTransactions": "api/v1/disputecasedata/failedcase/{caseNumber}/transactions",
+    "method_toMultipleMatchedTransactions": "GET"
+  },
+  "fetchReasonCodeAndDescription": {
+    "call_suffix_toFetchReasonCodeAndDescription": "/disputecasedata/reasoncodes",
+    "method_toFetchReasonCodeAndDescription": "GET"
+  },
+  
+  "getDocument":{
+    "call_suffix_toGetDocument": "/unifiedcommerce/disputes/{id}/documents/{doc_id}",
+    "method_toGetDocument": "GET"
+  },
+  
+  "getDispute":{
+    "call_suffix_togetDispute": "/unifiedcommerce/disputes/{id}",
+    "method_togetDispute": "GET"
+  },
+
+
+  
+  "getDisputes":{
+    "call_suffix_togetDisputes": "/unifiedcommerce/disputes",
+    "method_togetDisputes": "GET"
+  },
+
+
+  "getDocuments":{
+    "call_suffix_toGetDocuments": "/unifiedcommerce/disputes/{id}/documents",
+    "method_toGetDocuments": "GET"
+  },
+  "ListOfBookMarkCases":{
+    "call_suffix_toGetListOfBookMarkCases": "/queuemanager/users/bookmarks/cases",
+    "method_toActions": "GET"
+  },
+
+  "generatingAlertForNonReceiptOfFiles":{
+    "call_suffix_forGeneratingAlertForNonReceiptOfFiles": "/emailnotification/notify",
+    "method_forGeneratingAlertForNonReceiptOfFiles": "POST"
+  }
+}

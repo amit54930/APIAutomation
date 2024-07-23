@@ -1,0 +1,44 @@
+ {
+  "TestSuite": "This controller will fetch data based on filterId and export it to a given file type",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid values are passed as an argument [fieldId=case_number] @Sanity @MerchantExportAPI ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"POST",
+		     "input":{
+          "fileType": "csv",
+             "isAllColumns": false,
+             "pageId": "merchant_work_queue",
+             "searchFilterInput":{
+               "filterTypeId": 18,
+                 "searchFilterInputElements": {
+                 
+                 "fieldId": "case_number",
+                 "fieldValues1": "3915600002"
+                 
+                },
+            
+             "sortingElement": 
+               {
+                 "fieldId": "case_number",
+                 "orderByProperty": "ASC"
+               }
+             
+           }
+       }
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when invalid values are passed as an argument @Regression @MerchantExportAPI ",
+          "template":2,
+          "statusCode": 404,
+		      "type":"POST",
+		     "input":{}
+    }
+  }
+ }

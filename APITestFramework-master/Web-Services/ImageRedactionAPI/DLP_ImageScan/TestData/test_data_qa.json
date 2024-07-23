@@ -1,0 +1,34 @@
+{
+	"TestSuite": "Run DLP scan for all case images going to issuer/scheme",
+	"TestCase": {
+		"TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 This should receive 200 and redact the PAN data from image if base64 of image is provided as input @Smoke @Sanity @Regression @ImageRedactionAPI",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "POST",
+          "images":{
+            "imagePages": [
+              "iVBORw0KGgoAAAANSUhEUgAAAT0AAAC5CAYAAABazejnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOxAAADsQBlSsOGwAABI1JREFUeF7t2m1S4loUQFHHxYAcj6NxMg6Gx0diJ3BB00o19fZaVfljLnhjHXcQfNkDhIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6C++vL/uXl/Wxe/uYzv5xve51/z6dG/p42+++s+5oy9oLW/b1DGtHXMMv7+v99XP965aL+B8TvaM5NLu3/XXilt73r1fD9rF/2x2/ttsP+nh46t3n0H01pFvWrm3Z1zOsHXENv7+v+XHnQ/TORG8eni+Dd1h5itJgyOZoXkzVfGfevb1PA7oc2rUtay9t2dczrB1xDZNf3Nf5cYc5ml7tfbH9DNH79kDci+N8112G6nyXPT/v6PzSlrWXtuzrGdaOPOp7PWrtyKO+15a1C1MQT2/PiN5KPnrnV1iDu+ilL+6q95/nznBe2bL2YMu+nmHtiGtY+Y19nb4+h1L0VkTvNDSHwCze8J2P1YcYP/qlEL3bP5sD17Dy431dRk70VuLRmwNzOC7+fDi/H7IYtmn4Rp/mHt3/pXh89L61r2dYO+IaVn62r2l+lvMseiuidzMwF+em4fu7VwKPj94/fYXxo5/NgWtY+cm+hh96iN6KP29PQzMOzPbhuxWqfx296bmeYe2Ia1j5+31N/6JyuVb0VkTvNDQXd8bJ+tw0UPc+RRueO3pg9Dbt6xnWjriGP36wdorbV0c9fvnozYNy/Z7J9bDdDOR0N771vsvncD4ketv29QxrR1zD5AH7OjzB4fFiNxO9z8ish2o4aNOQre+69+7Es8dGb9O+nmHtiGs4eNC+RG9F9CbnyC2PW9GZhm15DKdpsG55rB6zZe0t393X0TOsHXEND9mX6K2IHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekCK6AEpogekiB6QInpAiugBKaIHpIgekCJ6QIroASmiB6SIHpAiekDIfv8fIImQkkxWLlYAAAAASUVORK5CYII="
+            ]
+          }
+        },
+        
+				"TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 This should receive 500 and display error message if invalid image is provided as input @Regression @ImageRedactionAPI",
+          "template": 2,
+          "statusCode": 500,
+          "type": "POST",
+          "images":{
+            "imagePages": [
+              "fswgfsfg"
+            ]
+          }
+          
+        }
+      }
+    }
+

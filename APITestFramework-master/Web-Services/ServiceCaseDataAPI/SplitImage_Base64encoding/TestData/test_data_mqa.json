@@ -1,0 +1,50 @@
+{
+  "TestSuite": "Split Image And Returns Contents Encoded In Base64",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 on successfully spliting the image and returning the contents encoded in Base64 @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "documentName":"Mail.DI.3922400023.27072.20190813.DP.20190816.20190816.163222.TIFF",
+            "fileDirPath":"merchant-image-files/matched"
+           }
+          }
+        ,
+          "TC_02":
+          {
+            "TestCaseId": "TC_02",
+            "TestCaseName": "TC_02 It should receive 404 on passing invalid document name @Regression @ServiceCaseDataAPI ",
+            "template":1,
+            "statusCode": 404,
+            "type":"GET",
+             "input":
+             {
+             "documentName":"Mail.DI.987656471.1237219.2019-05-13.01  .20190514.2019-05-13.TIFF",
+              "fileDirPath":"merchant-image-files/matched"
+             }
+            },
+            "TC_03":
+          {
+            "TestCaseId": "TC_03",
+            "TestCaseName": "TC_03 It should receive 404 on passing invalid fileDirPath @Regression @ServiceCaseDataAPI ",
+            "template":1,
+            "statusCode": 404,
+            "type":"GET",
+             "input":
+             {
+             "documentName":"Mail.DI.987656471.1237219.2019-05-13.01  .20190514.2019-05-13.TIFF",
+              "fileDirPath":"merchant-image-files"
+             }
+            
+            }
+         
+    }
+  
+  }
+ 

@@ -1,0 +1,65 @@
+{
+  "TestSuite": "Assign Single Case To Single Analyst",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 when valid single case is assigned to single analyst @Smoke @Sanity @Regression @ServiceQueueManagerAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"caseAssignmentDataRequestList":[{
+				"caseStageID": "17970",
+				"userID": "1"
+			  }]
+	},
+
+	"TC_02":
+	{
+		"TestCaseId": "TC_02",
+		"TestCaseName": "TC_02 It should receive 200 when valid single cases are assigned to single analysts @Smoke @Sanity @Regression @ServiceQueueManagerAPI",
+		"template": 1,
+		"statusCode": 200,
+		"type": "POST",
+		"caseAssignmentDataRequestList":[
+			{
+			  "caseStageID": "17955",
+			  "userID": "2"
+			},
+		  {
+			  "caseStageID": "17966",
+			  "userID": "100"
+			},
+		  {
+			  "caseStageID": "17980",
+			  "userID": "6"
+			},
+		  {
+			  "caseStageID": "17986",
+			  "userID": "6"
+			},
+		  {
+			  "caseStageID": "17988",
+			  "userID": "6"
+			},
+		  {
+			  "caseStageID": "17990",
+			  "userID": "6"
+			},
+		  {
+			  "caseStageID": "17991",
+			  "userID": "6"
+			},
+		  {
+			  "caseStageID": "17992",
+			  "userID": "6"
+			},
+		  {
+			  "caseStageID": "17993",
+			  "userID": "6"
+			}
+		  ]
+	}
+}
+}

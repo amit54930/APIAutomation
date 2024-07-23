@@ -1,0 +1,25 @@
+ {
+  "TestSuite": "Fetch dispute details by case number",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch dispute details when valid id passed as input @Smoke @Sanity @Regression @ServiceMerchantDataAPI ",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "id":764354563
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 404 and should not fetch dispute details when invalid id passed as input @Smoke @Sanity @Regression @ServiceMerchantDataAPI ",
+          "template": 2,
+          "statusCode": 404,
+          "type":"GET",
+          "id":764354563
+        }
+        
+    }
+ }

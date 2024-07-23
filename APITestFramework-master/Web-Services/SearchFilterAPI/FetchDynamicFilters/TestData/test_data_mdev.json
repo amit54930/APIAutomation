@@ -1,0 +1,54 @@
+{
+	"TestSuite": "Return search parameters for a filter type",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system should receive 200 status code when valid pageId  ap_66 is given as input @Smoke @Regression @Sanity @SearchFilterAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"pageId":"ap_66"
+		},
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system should throw 404 status code when Invalid  pageId is given as input @Regression @SearchFilterAPI",
+			"statusCode": 404,
+			"template": 2,
+			"type": "GET",
+			"pageId":"abc"
+
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03_Verify that system should receive 200 status code when valid pageId-ap_68  is given as input @Smoke @Regression @Sanity @SearchFilterAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"pageId":"ap_68"
+		},
+		"TC_04": {
+			"TestCaseId": "04",
+			"TestCaseName": "TC_04_Verify that system should receive 200 status code when valid pageId -uk_68 is given as input @Smoke @Regression @Sanity @SearchFilterAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"pageId":"uk_68"
+		},
+		"TC_05": {
+			"TestCaseId": "05",
+			"TestCaseName": "TC_05_Verify that system should receive 200 status code when valid pageId -uk_66 is given as input @Smoke @Regression @Sanity @SearchFilterAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"pageId":"uk_66"
+		},
+		"TC_06": {
+			"TestCaseId": "06",
+			"TestCaseName": "TC_06_Verify that system should receive 200 status code when valid pageId -uk_67 is given as input @Smoke @Regression @Sanity @SearchFilterAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"pageId":"uk_67"
+		}
+	}
+}

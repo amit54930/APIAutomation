@@ -1,0 +1,20 @@
+{
+  "TestSuite": "Assign Multiple Case To Multiple Analyst",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 when multiple cases are assigned to multiple analysts of a single region @Smoke @Sanity @Regression @ServiceQueueManagerAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"caseAssignmentRegionDataRequest": {
+				"caseStageID": [
+					"17955","17956","17959"
+				],
+				"userGroupID": "3"
+			}
+	}
+}
+}

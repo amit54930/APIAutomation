@@ -1,0 +1,27 @@
+[
+  {
+    "authSource": "1",
+    "cardNumberSk": "2437014694",
+    "referenceAuthorizationId": "39c5f30b-a868-11e9-9956-0780a28140c0",
+    "authTime": "23:12:00.000",
+    "terminalId": "08815201",
+    "associate": "001",
+    "principal": "002",
+    "authDate": "2019-02-17",
+    "merchantToken": "5973K70194968477",
+    "chain": "000",
+    "authCode": "107243",
+    "cardNumberRk": "6SFFD5XXXXXX1078",
+    "hierarchy": "01919002001000",
+    "authAmount": "514",
+    "globalToken": "5978K65958328247",
+    "merchantNumber": "19000197752",
+    "etlBatchId": "20190522110788000",
+    "corporate": "019",
+    "tranCode": "0005",
+    "region": "19",
+    "currencyCode": "446",
+    "authVendor": "CUP",
+    "issuerResponseCode": "01"
+  }
+]

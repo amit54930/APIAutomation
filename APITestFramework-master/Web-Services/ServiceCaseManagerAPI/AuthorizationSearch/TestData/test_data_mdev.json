@@ -1,0 +1,60 @@
+{
+  "TestSuite": "Authorization Search",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and should return authorization details with authcode, PAN and Merchant number @Smoke @Regression @Sanity @ServiceCaseManagerAPI",
+          "template": 1,
+          "statusCode": 200,
+          "type": "GET",
+          "test":{
+		      "authCode": "107243",
+          "cardNumber":"5978K65958328247",
+          "merchantNumber":"19000197752"
+         }
+        },
+
+        "TC_02":
+           {
+             "TestCaseId": "TC_02",
+             "TestCaseName": "TC_02 It should receive 200 and should return authorization details with PAN and merchantNumber @Smoke @Regression @Sanity @ServiceCaseManagerAPI",
+             "template": 1,
+             "statusCode": 200,
+             "type": "GET",
+   		      "test":{
+               
+             "cardNumber":"5978K65958328247",
+             "merchantNumber":"19000197752"
+            }
+           },
+
+         "TC_03":
+           {
+             "TestCaseId": "TC_03",
+             "TestCaseName": "TC_03 It should throw 404 and should return Data not found @Regression @ServiceCaseManagerAPI",
+             "template": 2,
+             "statusCode": 404,
+             "type": "GET",
+             "test":{
+   		      "authCode": "313005",
+             "cardNumber": "3380K42241758024",
+             "merchantNumber":"123"
+             }
+           },
+
+           "TC_04":
+             {
+               "TestCaseId": "TC_04",
+               "TestCaseName": "TC_04 It should throw 404 and should return Data not found @Regression @ServiceCaseManagerAPI",
+               "template": 2,
+               "statusCode": 404,
+               "type": "GET",
+               "test":{
+               "cardNumber": "3380K42241758024",
+               "merchantNumber":"123"
+               }
+             }
+    }
+}

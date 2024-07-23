@@ -1,0 +1,25 @@
+{
+  "TestSuite": "Get Strip Off Merchant",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and should return strip off merchant details when valid merchant number is passed as an argument @Smoke @Regression @Sanity @ServiceMerchantCategoryAPI ",
+          "template": 1,
+          "statusCode": 200,
+		      "type": "GET",
+		      "merchantNumber": "81825900"
+        },
+
+        "TC_02":
+           {
+             "TestCaseId": "TC_02",
+             "TestCaseName": "TC_02 It should throw 404 and should return data not found when invalid merchant number is passed as an argument @Regression @ServiceMerchantCategoryAPI",
+             "template": 2,
+             "statusCode": 404,
+             "type": "GET",
+             "merchantNumber": "21321"
+           }
+    }
+}

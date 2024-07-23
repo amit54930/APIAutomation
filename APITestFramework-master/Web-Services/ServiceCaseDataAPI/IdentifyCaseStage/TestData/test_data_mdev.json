@@ -1,0 +1,50 @@
+{
+  "TestSuite": "Identify Case Stage",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid values i.e actionCode,cardSchemeCode,functionCode,messageType are passed as an argument @Smoke @Regression @Sanity @ServiceCaseDataAPI @Smoke-Managed-Dev ",
+          "template": 1,
+          "statusCode": 200,
+          "type": "GET",
+          "test":{
+		      "actionCode": "4801",
+          "cardSchemeCode": "DI",
+          "functionCode": "490",
+          "messageType": "2440"
+          }
+        },
+
+        "TC_02":
+           {
+             "TestCaseId": "TC_02",
+             "TestCaseName": "TC_02 It should throw 404 when invalid value i.e cardSchemeCode are passed as an argument @Regression @ServiceCaseDataAPI @Regression-Managed-Dev",
+             "template": 2,
+             "statusCode": 404,
+             "type": "GET",
+             "test":{
+   		      "actionCode": "4801",
+             "cardSchemeCode": "DISCOVER",
+             "functionCode": "490",
+             "messageType": "2440"
+             }
+           },
+
+           "TC_03":
+              {
+                "TestCaseId": "TC_03",
+                "TestCaseName": "TC_03 It should throw 400 when empty/null values are passed as an argument @Regression @ServiceCaseDataAPI @Regression-Managed-Dev",
+                "template": 2,
+                "statusCode": 400,
+                "type": "GET",
+                "test":{
+      		      "actionCode": "",
+                "cardSchemeCode": "",
+                "functionCode": "",
+                "messageType": ""
+                }
+              }
+    }
+}

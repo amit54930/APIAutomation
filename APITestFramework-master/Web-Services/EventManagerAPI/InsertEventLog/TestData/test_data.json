@@ -1,0 +1,82 @@
+{
+	"TestSuite": "Insert Event Log Details",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01 It should receive 200 response code if events log is successfully inserted in database with logic 1 @Smoke @Regression @Sanity @EventManagerAPI @saloni",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"caseStageId": 17950,
+				"eventTemplateName": "NEW_CASE",
+				 "externalEventIndicator": 0,
+				"eventTemplateParams": {"CaseNumber":"3916400009", 
+				"EventTimeStamp":"2019-06-12 10:41:39.680907", 
+				"Stage":"Chargeback", 
+				"Status":"Status_12",
+				"TransactionId":"12",
+				"MerchantName":"BITWISE",
+				"MerchantNumber":"2354",
+				"Documents":"abc.png",
+				"TransactionAmount":"122.00",
+				"CurrencyCode":"840"
+				},
+				"generatedByUser": "SYSTEM"
+			}
+				
+		},
+
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02 It should receive 200 response code if events log is successfully inserted in database with logic 2 @Smoke @Sanity @Regression @EventManagerAPI @saloni",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"caseStageId": 17950,
+				"eventTemplateName": "DE-TOKENIZATION",
+				 "externalEventIndicator": 1,
+				"eventTemplateParams": {
+			"Globaltoken":"2132132AQ23ljkl",
+			"Stage":"Chargeback" 
+				},
+				"generatedByUser": "System"
+			}
+		},
+
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03 It should receive 200 response code if events log is successfully inserted in database with logic 2 @Smoke @Sanity @Regression @EventManagerAPI @saloni",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"caseStageId": 17950,
+				"eventTemplateName": "CASE_STATUS_PEND",
+				 "externalEventIndicator": 0,
+				"eventTemplateParams": {"CaseNumber":"3916400009", 
+				"EventTimeStamp":"2019-06-12 10:41:39.680907",
+			"PendUntilDate":"2018-12-06"
+				},
+				"generatedByUser": "SYSTEM"
+			}
+		},
+
+		"TC_04": {
+			"TestCaseId": "04",
+			"TestCaseName": "TC_04 It should receive 400 response code on providing invalid input and events log is not inserted in database @Regression @EventManagerAPI @saloni",
+			"statusCode": 400,
+			"template": 2,
+			"type": "POST",
+			"test":{
+				"caseStageId": 17950,
+				"eventTemplateName": "CASE_CLOSE",
+				 "externalEventIndicator": 0,
+				"eventTemplateParams": {"CaseNumber":"3916400009"
+				},
+				"generatedByUser": "System"
+			}
+		}
+}
+}

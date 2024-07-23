@@ -1,0 +1,22 @@
+[
+  {
+    "region_name": "Asia Pacific",
+    "region_code": "AP"
+  },
+  {
+    "region_name": "Canada",
+    "region_code": "CA"
+  },
+  {
+    "region_name": "North America",
+    "region_code": "NA"
+  },
+  {
+    "region_name": "Europe",
+    "region_code": "UK"
+  },
+  {
+    "region_name": "United States",
+    "region_code": "US"
+  }
+]

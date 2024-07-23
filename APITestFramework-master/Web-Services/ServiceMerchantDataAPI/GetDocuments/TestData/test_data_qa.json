@@ -1,0 +1,25 @@
+{
+	"TestSuite": "Get Documents",
+	"TestCase": {
+		"TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and return base64 of all the images linked to given case number @Smoke @Sanity @Regression @ServiceMerchantDataAPI",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+          "id":"3924900005"
+        },
+        
+				"TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when in valid case_number (id) passed as argument @Regression @ServiceMerchantDataAPI",
+          "template": 2,
+          "statusCode": 404,
+		  		"type": "GET",
+          "id":"12345"
+        }
+        
+		}
+	}

@@ -1,0 +1,18 @@
+{
+    "documentId": null,
+    "caseNumber": null,
+    "regionCode": "",
+    "documentType": "",
+    "documentName": "",
+    "originalDocumentName": "",
+    "documentReceivedDate": "",
+    "acquirerReferenceNumber": "",
+    "unmatchedPendingDays": null,
+    "redactedDocumentName": "",
+    "maskedCardNumber": "",
+    "merchantName": "",
+    "merchantNumber": "",
+    "retreivalResponseDueDate": "",
+    "documentDirectoryPath": "",
+    "createdTimeStamp": ""
+  }

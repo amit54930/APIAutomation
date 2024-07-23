@@ -1,0 +1,49 @@
+{
+  "TestSuite": "Get analysts details and assigned cases count",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch analyst details and count of assigned cases based on userGroupId and userId @Smoke @Sanity @Regression @ServiceQueueManagerAPI ",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{"userGroupId": 1,
+          "userId": 1}
+        },
+
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 200 and fetch analyst details and count of assigned cases based on userGroupId @Smoke @Sanity @Regression @ServiceQueueManagerAPI ",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{"userGroupId": 3}
+        },
+
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 and fetch analyst details and count of assigned cases based on userId @Smoke @Sanity @Regression @ServiceQueueManagerAPI",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{"userId": 5}
+
+        },
+
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should throw 404 and not fetch analyst details and count of assigned cases when invalid userGroupId or userId is passed @Smoke @Sanity @Regression @ServiceQueueManagerAPI ",
+          "template": 2,
+          "statusCode": 404,
+          "type":"GET",
+          "inputs":{"userGroupId": 7,
+          "userId": 1}
+        }
+        
+    }
+ }

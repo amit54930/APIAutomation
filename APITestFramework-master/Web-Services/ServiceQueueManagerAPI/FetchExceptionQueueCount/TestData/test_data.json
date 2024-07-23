@@ -1,0 +1,23 @@
+{
+  "TestSuite": "Get all exception queues names and count",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and should return all exception queues and count @Smoke @Regression @Sanity @ServiceQueueManagerAPI",
+          "template": 1,
+          "statusCode": 200,
+		      "type": "GET"
+        },
+
+        "TC_02":
+           {
+             "TestCaseId": "TC_02",
+             "TestCaseName": "TC_02 It should throw 404 when invalid region code is provided as input.@Regression @ServiceQueueManagerAPI",
+             "template": 2,
+             "statusCode": 400,
+             "type": "GET"
+           }
+    }
+}

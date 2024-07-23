@@ -1,0 +1,79 @@
+{
+  "TestSuite": "Insert Merchant Match Fail Details",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and should insert unmatched case details for transaction and merchant match fail in dims database",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test":{
+				"acquirerBinIca": "620054",
+ 				 "acquirerName": "GPN",
+				  "acquirerReferenceNumber": "76200544215473140591459",
+				  "authCode": "12",
+				  "cardBrandCode": "DI",
+				  "cardBrandRegionCode": "US",
+				  "createdBy": "test",  
+				  "globalToken": "8600K41256892241",
+				  "issuerBinIca": "620054",
+				  "maskedCardNumber": "123456XXXXXX7895",
+				  "merchantName": "ab",
+				  "merchantNumber": "10206766894",
+				  "merchantToken": "8600K41256892241",
+				  "retrievalResponseDueDate": "2018-05-12",
+				  "transactionAmount": 110.0,
+				  "transactionDate": "2019-02-13"
+		        }
+	},
+
+	"TC_02":
+	{
+		"TestCaseId": "TC_02",
+		"TestCaseName": "TC_02 It should throw 400 and should not insert the details in database  @Regression @ServiceCaseDataAPI ",
+		"template": 2,
+		"statusCode": 400,
+		"type": "POST",
+		"test":{
+		"acquirerBinIca": "abc",
+  		"acquirerName": "qqqq",
+  		"acquirerReferenceNumber": "ghi",
+  		"authCode": "qw",
+ 		"cardBrandCode": "DI",
+  		"cardBrandRegionCode": "AP",
+  		"createdBy": "stu",
+  		"globalToken": "342vwx",
+  		"issuerBinIca": "y342za",
+  		"merchantToken": "b3423cd",
+  		"transactionAmount": 100.00,
+  		"transactionDate": "2018-08-08"
+	}
+	},
+
+	"TC_03":
+	{
+		"TestCaseId": "TC_03",
+		"TestCaseName": "TC_03 It should throw 400  @Regression @CaseDataAPI ",
+		"template": 2,
+		"statusCode": 400,
+		"type": "POST",
+		"test":{
+			"acquirerBinIca": "abc",
+			"acquirerName": "qq",
+			"acquirerReferenceNumber": "ghi",
+			"authCode": "qw",
+			"cardBrandCode": "AX",
+			"cardBrandRegionCode": "CA",
+			"createdBy": "stu",
+			"globalToken": "342vwx",
+			"issuerBinIca": "y342za",
+			"merchantToken": "b3423cd",
+			"transactionAmount": 100.00,
+			"transactionDate": "2018-08-08"
+
+	}
+	}
+}
+}

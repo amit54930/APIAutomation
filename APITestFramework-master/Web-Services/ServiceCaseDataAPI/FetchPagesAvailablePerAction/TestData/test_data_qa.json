@@ -1,0 +1,356 @@
+{
+  "TestSuite": "Fetch action pages available as per dispute stage and action",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and Fetch action pages available for disputeStageId as 1 and the action code NRD @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"1",
+            "takeActionCode":"NRD"
+           }
+        
+        },
+        
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 200 and Fetch action pages available for disputeStageId as 1 and the action code RTI @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"1",
+            "takeActionCode":"RTI"
+           }
+        
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 and Fetch action pages available for disputeStageId as  1 and the action code RAI @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"1",
+            "takeActionCode":"RAI"
+           }
+        
+        },
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should receive 404 and failed to Fetch action pages available for disputeStageId as 1 and the action code WOG @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"1",
+            "takeActionCode":"WOG"
+           }
+        
+        },
+        "TC_05":
+        {
+          "TestCaseId": "TC_05",
+          "TestCaseName": "TC_05 It should receive 404 and failed to Fetch action pages available for disputeStageId as 1 and the action code PC @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"1",
+            "takeActionCode":"PC"
+           }
+        
+        },
+        "TC_06":
+        {
+          "TestCaseId": "TC_06",
+          "TestCaseName": "TC_06 It should receive 200 and Fetch action pages available for disputeStageId as 2 and the action code NRD @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"2",
+            "takeActionCode":"NRD"
+           }
+        
+        },
+        "TC_07":
+        {
+          "TestCaseId": "TC_07",
+          "TestCaseName": "TC_07 It should receive 200 and Fetch action pages available for disputeStageId as 2 and the action code RTI @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"2",
+            "takeActionCode":"RTI"
+           }
+        
+        },
+        "TC_08":
+        {
+          "TestCaseId": "TC_08",
+          "TestCaseName": "TC_08 It should receive 200 and Fetch action pages available for disputeStageId as 2 and the action code RAI @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"2",
+            "takeActionCode":"RAI"
+           }
+        
+        },
+        "TC_09":
+        {
+          "TestCaseId": "TC_09",
+          "TestCaseName": "TC_09 It should receive 200 and Fetch action pages available for disputeStageId as 2 and the action code WOG @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"2",
+            "takeActionCode":"WOG"
+           }
+        
+        },
+        "TC_10":
+        {
+          "TestCaseId": "TC_10",
+          "TestCaseName": "TC_10 It should receive 200 and Fetch action pages available for disputeStageId as 2 and the action code CC @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"2",
+            "takeActionCode":"CC"
+           }
+        
+        },
+        "TC_11":
+        {
+          "TestCaseId": "TC_11",
+          "TestCaseName": "TC_11 It should receive 200 and Fetch action pages available for disputeStageId as 2 and the action code PC @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"2",
+            "takeActionCode":"PC"
+           }
+        
+        },
+        "TC_12":
+        {
+          "TestCaseId": "TC_12",
+          "TestCaseName": "TC_12 It should receive 200 and Fetch action pages available for disputeStageId as 5 and the action code NRD @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"5",
+            "takeActionCode":"NRD"
+           }
+        
+        },
+        "TC_13":
+        {
+          "TestCaseId": "TC_13",
+          "TestCaseName": "TC_13 It should receive 404 and failed to Fetch action pages available for disputeStageId as 5 and the action code CC @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"5",
+            "takeActionCode":"CC"
+           }
+        
+        },
+        "TC_14":
+        {
+          "TestCaseId": "TC_14",
+          "TestCaseName": "TC_14 It should receive 200 and Fetch action pages available for disputeStageId as 5 and the action code PC @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"5",
+            "takeActionCode":"PC"
+           }
+        
+        },
+        "TC_15":
+        {
+          "TestCaseId": "TC_15",
+          "TestCaseName": "TC_15 It should receive 200 and Fetch action pages available for disputeStageId as 5 and the action code WOG @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"5",
+            "takeActionCode":"WOG"
+           }
+        
+        },
+        "TC_16":
+        {
+          "TestCaseId": "TC_16",
+          "TestCaseName": "TC_16 It should receive 200 and Fetch action pages available for disputeStageId as 5 and the action code RTI @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"5",
+            "takeActionCode":"RTI"
+           }
+        
+        },
+
+        "TC_17":
+        {
+          "TestCaseId": "TC_17",
+          "TestCaseName": "TC_17 It should receive 200 and Fetch action pages available for disputeStageId as 5 and the action code RAI @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"5",
+            "takeActionCode":"RAI"
+           }
+        
+        },
+        "TC_18":
+        {
+          "TestCaseId": "TC_18",
+          "TestCaseName": "TC_18 It should receive 404 and failed to Fetch action pages available for disputeStageId as 8 and the action code RTI @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"8",
+            "takeActionCode":"RTI"
+           }
+        
+        },
+        "TC_19":
+        {
+          "TestCaseId": "TC_19",
+          "TestCaseName": "TC_19 It should receive 200 and fail to  Fetch action pages available for disputeStageId as 8 and the action code RAI @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"8",
+            "takeActionCode":"RAI"
+           }
+        
+        },
+        "TC_20":
+        {
+          "TestCaseId": "TC_20",
+          "TestCaseName": "TC_20 It should receive 200 and Fetch action pages available for disputeStageId as 8 and the action code NRD @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"8",
+            "takeActionCode":"NRD"
+           }
+        
+        },
+        "TC_21":
+        {
+          "TestCaseId": "TC_21",
+          "TestCaseName": "TC_21 It should receive 200 and Fetch action pages available for disputeStageId as 8 and the action code WOG @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"8",
+            "takeActionCode":"WOG"
+           }
+        
+        },
+       
+        "TC_22":
+        {
+          "TestCaseId": "TC_22",
+          "TestCaseName": "TC_22 It should receive 200 and Fetch action pages available for disputeStageId as 8 and the action code CC @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"8",
+            "takeActionCode":"CC"
+           }
+        
+        },
+        "TC_23":
+        {
+          "TestCaseId": "TC_23",
+          "TestCaseName": "TC_23 It should receive 200 and Fetch action pages available for disputeStageId as 8 and the action code PC and action @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":"8",
+            "takeActionCode":"PC"
+           }
+        
+        },
+		"TC_24":
+        {
+          "TestCaseId": "TC_24",
+          "TestCaseName": "TC_24 It should receive 404 and failed to Fetch action pages available for disputeStageId as 8 and the action code PC and action @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+           "input":
+           {
+           "disputeStageId":4569,
+            "takeActionCode":"PC"
+           }
+        
+        }
+
+
+
+
+
+
+
+
+        
+        
+        
+    }
+ }

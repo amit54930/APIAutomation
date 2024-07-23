@@ -1,0 +1,391 @@
+{
+  "TestSuite": "Dispute Search from DiMS table.",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid search(case_status) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_status",
+            "value1":"closed",
+            "filter2":"case_number",
+            "value2":"ASC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+          
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_status",
+              "fieldValues1": [
+                "closed"
+                      ],
+              "fieldvalue2": null
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "ASC"
+            }
+          ]
+        }
+
+    
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should 404 when invalid multiple search and sorting element is passed as an argument @Regression @SearchFilterAPI ",
+          "template":2,
+          "statusCode": 404,
+          "type":"POST",
+          "test":{
+            "filter1":"case_status",
+            "value1":"ABCD",
+            "filter2":"case_number",
+            "value2":"987654321",
+            "filter3":"case_merch_number",
+            "value3":"DESC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+          "searchFilterInputElements": [
+            {
+              "fieldId": "case_status",
+              "fieldValues1": [
+                "ABCD"
+              ],
+              "fieldvalue2": "string"
+            },
+        {
+              "fieldId": "case_number",
+              "fieldValues1": [
+                "987654321"
+              ],
+              "fieldvalue2": "string"
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_merch_number",
+              "orderByProperty": "DESC"
+            }
+          ]
+        }
+
+          
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 when valid search(case_number) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_number",
+            "value1":"3921600003",
+            "filter2":"case_number",
+            "value2":"ASC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+          
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_number",
+              "fieldValues1": [
+                "3921600003"
+                      ],
+              "fieldvalue2": null
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "ASC"
+            }
+          ]
+        }
+
+    
+        },
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should receive 200 when valid search(case_zone) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_zone",
+            "value1":"AP",
+            "filter2":"case_number",
+            "value2":"ASC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_zone",
+              "fieldValues1": [
+                "AP"
+                      ]
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "ASC"
+            }
+          ]
+ }
+        },
+        "TC_05":
+        {
+          "TestCaseId": "TC_05",
+          "TestCaseName": "TC_05 It should receive 200 when valid search(case_arn) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_arn",
+            "value1":"74830508365195285088308",
+            "filter2":"case_number",
+            "value2":"ASC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_arn",
+              "fieldValues1": [
+                "74830508365195285088308"
+                      ]
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "ASC"
+            }
+          ]
+ }
+        },
+        "TC_06":
+        {
+          "TestCaseId": "TC_06",
+          "TestCaseName": "TC_06 It should receive 200 when valid search(case_trans_code) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_trans_code",
+            "value1":"05",
+            "filter2":"case_number",
+            "value2":"ASC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_trans_code",
+              "fieldValues1": [
+                "05"
+                      ]
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "ASC"
+            }
+          ]
+ }
+        },
+        "TC_07":
+        {
+          "TestCaseId": "TC_07",
+          "TestCaseName": "TC_07 It should receive 200 when valid search(case_card_brand) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_card_brand",
+            "value1":"DI",
+            "filter2":"case_number",
+            "value2":"ASC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_card_brand",
+              "fieldValues1": [
+                "DI"
+                      ]
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "ASC"
+            }
+          ]
+ }
+        },
+        "TC_08":
+        {
+          "TestCaseId": "TC_08",
+          "TestCaseName": "TC_08 It should receive 200 when valid search(case_acquirer_bin) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI  ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_acquirer_bin",
+            "value1":"340055",
+            "filter2":"case_number",
+            "value2":"DESC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_acquirer_bin",
+              "fieldValues1": [
+                "340055"
+                      ]
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "DESC"
+            }
+          ]
+ }
+        },
+        "TC_09":
+        {
+          "TestCaseId": "TC_09",
+          "TestCaseName": "TC_09 It should receive 200 when valid search(case_issuer_bin) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI  ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_issuer_bin",
+            "value1":"712545",
+            "filter2":"case_number",
+            "value2":"DESC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_issuer_bin",
+              "fieldValues1": [
+                "712545"
+                      ]
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "DESC"
+            }
+          ]
+ }
+        },
+        "TC_10":
+        {
+          "TestCaseId": "TC_10",
+          "TestCaseName": "TC_10 It should receive 200 when valid search(case_merch_number) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI  ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_merch_number",
+            "value1":"76850905704",
+            "filter2":"case_number",
+            "value2":"DESC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_merch_number",
+              "fieldValues1": [
+                "76850905704"
+                      ]
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "DESC"
+            }
+          ]
+ }
+        },
+        "TC_11":
+        {
+          "TestCaseId": "TC_11",
+          "TestCaseName": "TC_11 It should receive 200 when valid search(case_trans_amount) and sorting element is passed as an argument @Smoke @Sanity @Regression @SearchFilterAPI  ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "test":{
+            "filter1":"case_trans_amount",
+            "value1":"25600.00",
+            "filter2":"case_number",
+            "value2":"DESC"
+          }, 
+         "input" :{
+          "filterTypeId": 4,
+          "pageNumber": 0,
+              "searchFilterInputElements": [
+              {
+              "fieldId": "case_trans_amount",
+              "fieldValues1": [
+                "25600.00"
+                      ]
+                      
+            }
+          ],
+          "size": 25,
+          "sortingElement": [
+            {
+              "fieldId": "case_number",
+              "orderByProperty": "DESC"
+            }
+          ]
+ }
+        }
+    }
+ }
+ 

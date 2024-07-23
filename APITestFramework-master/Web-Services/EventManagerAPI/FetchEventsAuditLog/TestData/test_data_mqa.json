@@ -1,0 +1,35 @@
+ {
+  "TestSuite": "Fetch Security and Events Audit Log",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch event parameter names when valid eventTemplateName is passed with logic 1 @Smoke @Regression @Sanity @EventManagerAPI @Smoke-Managed-QA ",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "eventTemplateName": "CRTE_DISP_SUPPORT_USER"
+        },
+
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 200 and fetch event parameter names when valid eventTemplateName is passed with logic 2 @Smoke @Regression @Sanity @EventManagerAPI @Smoke-Managed-QA",
+          "template": 1,
+          "statusCode": 200,
+          "type":"GET",
+          "eventTemplateName": "DELETED_LETTER_TEMPLATE"
+        },
+
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should throw 404 when invalid eventTemplateName is passed @Regression @EventManagerAPI @Regression-Managed-QA",
+          "template": 2,
+          "statusCode": 404,
+          "type":"GET",
+          "eventTemplateName": "LOGIN"
+        }
+    }
+ }

@@ -1,0 +1,45 @@
+{
+  "TestSuite": "Save user specific active columns for given page",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and save user specific active columns for given page  @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+           "input":
+            {  "columns": [
+                  {
+                    "columnId": "acquirer_bin_ica",
+                    "displayOrder": 2
+                  }
+                ],
+            "userName": "QA"
+                            },
+          "pageId":"tran_unmatched"
+        
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 400 and should not save any column data on passing any invalid input  @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":2,
+          "statusCode": 400,
+          "type":"POST",
+           "input":
+            {  "columns": [
+                  {
+                    "columnId": "xyz",
+                    "displayOrder": 2
+                  }
+                ],
+            "userName": "QA"
+                            },
+          "pageId":"tran_unmatched"
+        
+        }
+    
+    }
+ }

@@ -1,0 +1,22 @@
+[
+  {
+    "transfer_reason_code": "CFR",
+    "transfer_reason_description": "Case Filing Request"
+  },
+  {
+    "transfer_reason_code": "GFR",
+    "transfer_reason_description": "Good Faith Request"
+  },
+  {
+    "transfer_reason_code": "REC",
+    "transfer_reason_description": "Re-Assign Case"
+  },
+  {
+    "transfer_reason_code": "SA",
+    "transfer_reason_description": "Supervisor Assistance"
+  },
+  {
+    "transfer_reason_code": "WOR",
+    "transfer_reason_description": "Write-off Review"
+  }
+]

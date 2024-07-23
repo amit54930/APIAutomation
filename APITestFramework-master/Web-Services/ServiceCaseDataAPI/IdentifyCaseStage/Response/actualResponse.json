@@ -1,0 +1,13 @@
+[
+  {
+    "stage_config_id": "1",
+    "action_description": "Ticket Retrieval Request sent",
+    "function_code": "490",
+    "stage_id": "1",
+    "action_code": "4801",
+    "message_type": "2440",
+    "card_brand_name": "Discover",
+    "dispute_stage_name": "Retrieval Request",
+    "function_description": "Ticket Retrieval Request"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "user_id": "5",
+    "last_name": "Skywalker",
+    "user_group_name": "AP Region",
+    "first_name": "Luke",
+    "user_group_id": "1",
+    "email": "luke.skywalker@email.com",
+    "assignedCasesCount": "2"
+  },
+  {
+    "user_id": "5",
+    "last_name": "Skywalker",
+    "user_group_name": "US Region",
+    "first_name": "Luke",
+    "user_group_id": "3",
+    "email": "luke.skywalker@email.com",
+    "assignedCasesCount": "2"
+  }
+]

@@ -1,0 +1,28 @@
+ {
+  "TestSuite": "Fetch Merchant Message",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch messages in English and French when valid caseStageId and languageCode is passed as an argument @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+         "caseStageId": 17950,
+         "languageCode": "FR"
+          
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when invalid caseStageId is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+		      "type":"GET",
+          "caseStageId": 296,
+          "languageCode": "FR"
+        
+        }
+    }
+ }

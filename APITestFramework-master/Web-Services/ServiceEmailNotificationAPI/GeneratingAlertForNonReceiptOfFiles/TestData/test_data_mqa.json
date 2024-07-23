@@ -1,0 +1,31 @@
+{
+	"TestSuite": "Generating alert in case of non-receipt of files",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01 It should receive 200 when valid errorCode(1010) for if expected card brand file is not received within defined SLA time is passed as input and send an email to the concerned email id @Smoke @Regression @Sanity @ServiceEmailNotificationAPI",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"errorCode": "1010",
+				"sendEmailAction": "SGA",
+			   "sourceName": "VISAIN.EDS.2019110602434"
+			 }
+				
+		},
+
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02 It should throw 404 when invalid errorCode is passed and not send any email @Regression @ServiceEmailNotificationAPI",
+			"statusCode": 404,
+			"template": 2,
+			"type": "POST",
+			"test": {
+				"errorCode": "123",
+				"sendEmailAction": "SGA",
+			   "sourceName": "test.png"
+			 }
+		}
+}
+}

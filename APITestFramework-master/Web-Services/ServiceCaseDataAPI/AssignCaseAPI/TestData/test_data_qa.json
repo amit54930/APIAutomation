@@ -1,0 +1,34 @@
+ {
+  "TestSuite": "Assign case to an Analyst ",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and assign a case to analyst and entry should go in  case_assignment_detail table when valid input is passed as an argument @Smokee @Sanity @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+          "input":{
+            "assignedTo": "03",
+            "caseStageId": 18795,
+            "disputeComments": "TestingTeam",
+            "transferReasonCode": "SA"
+          }
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 400 and when null input is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 400,
+          "type":"POST",
+            "input":{
+              "assignedTo": null,
+              "caseStageId": 18800,
+              "disputeComments": "TestingTeam",
+              "transferReasonCode": "SA"
+          }
+        }
+    }
+ }

@@ -1,0 +1,11 @@
+{
+  "name": "apiscripts",
+  "version": "1.0.0",
+  "description": "It will execute all APIS",
+  "main": "Runner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bitwise inc",
+  "license": "ISC"
+}

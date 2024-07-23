@@ -1,0 +1,52 @@
+{
+	"TestSuite": "Update the case stage as close manually and the additional comments in DiMS database",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system returns 200 and close the case when we pass valid case number  @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+			"statusCode": 200,
+			"template": 1,
+			"type": "PUT",
+			"input":
+			{
+				"caseNumber":3917000005,
+				"comment":{
+					"commentText": "Case Closed",
+					"externalComment": true,
+					"userId": "Analyst"
+						}
+				  
+			}},
+			"TC_02": {
+				"TestCaseId": "02",
+				"TestCaseName": "TC_02_Verify that system returns 404 and does not perform any action like close  when we pass invalid case number  @Regression @ServiceCaseDataAPI",
+				"statusCode": 404,
+				"template": 2,
+				"type": "PUT",
+				"input":
+				{
+					"caseNumber":45678966,
+					"comment":{
+						"commentText": "Case Closed",
+						"externalComment": true,
+						"userId": "Analyst"
+							}
+					  
+				}},
+				"TC_03": {
+					"TestCaseId": "03",
+					"TestCaseName": "TC_03_Verify that system returns 400 and does not perform any action when we pass no comment  @Smoke @Sanity ",
+					"statusCode": 400,
+					"template": 2,
+					"type": "PUT",
+					"input":
+					{
+						"caseNumber":45678966,
+						"comment":{
+							
+								}
+						  
+					}		
+	}
+}
+	}

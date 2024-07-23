@@ -1,0 +1,22 @@
+[
+  {
+    "take_action_code": "RTI",
+    "page_description": "Questionnaire"
+  },
+  {
+    "take_action_code": "RTI",
+    "page_description": "Send Documents to Issuer"
+  },
+  {
+    "take_action_code": "RTI",
+    "page_description": "Merchant Message"
+  },
+  {
+    "take_action_code": "RTI",
+    "page_description": "Send Documents to Merchant"
+  },
+  {
+    "take_action_code": "RTI",
+    "page_description": "Review Action"
+  }
+]

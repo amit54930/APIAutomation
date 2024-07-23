@@ -1,0 +1,10 @@
+[
+  {
+    "event_parameters_id": "1",
+    "event_parameter_name": "GeneratedByUser"
+  },
+  {
+    "event_parameters_id": "3",
+    "event_parameter_name": "EventTimeStamp"
+  }
+]

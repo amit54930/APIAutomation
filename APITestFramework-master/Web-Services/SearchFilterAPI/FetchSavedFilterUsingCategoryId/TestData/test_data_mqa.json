@@ -1,0 +1,25 @@
+{
+  "TestSuite": "Search Saved Filters With Category Id",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid categoryId is passed @SearchFilterAPI @Smoke @Sanity @Regression @Smoke-Managed-Dev @223",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "categoryId":1
+        },
+
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when invalid categoryId is passed @SearchFilterAPI @Regression @Regression-Managed-Dev ",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "categoryId":10
+        }
+    }
+ }

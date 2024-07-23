@@ -1,0 +1,12 @@
+{
+	"TestSuite": "Fetch list Of Operators",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system returns user details from user table @Smoke @Regression @Sanity @ServiceCaseDataAPI",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET"
+		}
+	}
+}

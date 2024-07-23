@@ -1,0 +1,34 @@
+{
+	"TestSuite": "Merchant Image Information Extraction for Matching Fail Images",
+	"TestCase": {
+		"TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid document name is passed as an argument @Smoke @Sanity @Regression @ImageReaderAPI ",
+          "template": 1,
+          "statusCode": 200,
+		  		"type": "GET",
+		  		"documentName": "MerchantDocumentation.Mail.US.20190517.140020.TIFF"
+				},
+
+				"TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 400 when null is passed as an argument @Regression @ImageReaderAPI",
+          "template": 2,
+          "statusCode": 400,
+		  		"type": "GET",
+		  		"documentName": null
+				},
+
+				"TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should throw 404 when invalid document name is passed as an argument @Regression @ImageReaderAPI",
+          "template": 2,
+          "statusCode": 404,
+		  		"type": "GET",
+		  		"documentName": "xyz.png"
+        }
+		}
+	}

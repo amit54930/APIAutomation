@@ -1,0 +1,70 @@
+{
+  "TestSuite": "Assign stage sequence to case details",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and should insert case stage details in 'dims.case_stage_detail' table @test @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test":{
+			"cardBrandCaseNumber": "1",
+			"cardBrandMerchantNumber": "1",
+			"caseNumber": 40,
+			"caseReceivedDate": "2018-12-12",
+			"caseStageId": 0,
+			"caseStageName": "1",
+			"createdBy": "1",
+			"disputeAmount": 0,
+			"disputeCurrencyCode": "1",
+			"disputeReasonCode": "1",
+			"disputeSourceId": 0,
+			"disputeStageId": 1,
+			"duplicateInd": "1",
+			"lastModifiedBy": "1",
+			"matchedFailCaseId": 42,
+			"merchantStripOffInd": "1",
+			"nextInSequence": 0,
+			"queueId": 6,
+			"retreivalResponseDueDate": "2018-12-12",
+			"stageConfigId": 0,
+			"statusId": 1,
+			"supportDocumentInd": "1"
+		}
+	},
+
+	"TC_02":
+	{
+		"TestCaseId": "TC_02",
+		"TestCaseName": "TC_02 It should throw 400 and should return invalid input @Regression @ServiceCaseDataAPI ",
+		"template": 2,
+		"statusCode": 400,
+		"type": "POST",
+		"test":{
+		"cardBrandCaseNumber": "9999999",
+		"cardBrandMerchantNumber": "11",
+		"caseNumber": 242,
+		"caseReceivedDate": "2019-01-01",
+		"caseStageId": 1,
+		"caseStageName": "test",
+		"createdBy": "test",
+		"disputeAmount": 500,
+		"disputeCurrencyCode": "test",
+		"disputeReasonCode": "1",
+		"disputeSourceId": 1,
+		"disputeStageId": 0,
+		"duplicateInd": "1",
+		"lastModifiedBy": "string",
+		"merchantStripOffInd": "1",
+		"nextInSequence": 0,
+		"queueId": 0,
+		"retreivalResponseDueDate": "2019-01-20",
+		"stageConfigId": 0,
+		"statusId": 0,
+		"supportDocumentInd": "1"
+		}
+	}
+	}
+}

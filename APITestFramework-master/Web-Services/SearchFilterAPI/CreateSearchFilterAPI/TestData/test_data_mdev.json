@@ -1,0 +1,59 @@
+{
+	"TestSuite": "Create search filters into DiMS database",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system insert the data in saved_search and saved_search_parameter table of dims when valid data is inserted @Smoke @Regression @Sanity @SearchFilterAPI @Smoke-Managed-Dev ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"filter":{
+				"filterElements": [
+				  {
+					"elementId": "case_trans_amount",
+					"elementValue": "2100"
+				  }
+				],
+				"filterName": "testing sys",
+				"userId": "Testing Team"
+				},
+				"filterTypeId":1
+			  }
+		
+		},
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system should throw 400 status code after inserting null values to the saved_search and saved_search_parameter of dims table @Regression @SearchFilterAPI  ",
+			"statusCode": 500,
+			"template": 2,
+			"type": "POST",
+			"test":{
+				"filter":{},
+				"filterTypeId":1
+			  }
+		
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03_Verify that system should throw 500 status code after inserting null values to the saved_search and saved_search_parameter of dims table @Regression @SearchFilterAPI  ",
+			"statusCode": 500,
+			"template": 2,
+			"type": "POST",
+			"test":{
+				"filter":{
+				"filterElements": [
+				  {
+					"elementId": "12345",
+					"elementValue": "@#$%"
+				  }
+				],
+				"filterName": "1234",
+				"userId": "!@#$%^"
+				},
+				"filterTypeId":1
+			  }
+		
+		}
+	}
+	}

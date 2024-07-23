@@ -1,0 +1,81 @@
+{
+	"TestSuite": "Save Dynamic new search filter",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system insert the data in applied_search_parameters table of dims when valid data is inserted @Smoke @Regression @Sanity @SearchFilterAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"appliedFilter":
+				{
+					"filterId": 14,
+					"savedFilterElements": [
+					    {
+						  "elementId": "corp_14",
+						  "elementSequenceNumber": 1,
+						  "elementLabel": "Corporate",
+						  "elementCategoryName": "EXACT",
+						  "elementTypeName": "DYNAMIC_MULTISELECT",
+						  "elementMandatory": false
+						}
+					]
+			    }
+		
+		},
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system should throw 400 status code after providing null values  @Regression @SearchFilterAPI  ",
+			"statusCode": 400,
+			"template": 2,
+			"type": "POST",
+			"appliedFilter":{
+				
+			  }
+		
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03_Verify that system should throw 500 status code after providing invalid filterID values  @Regression @SearchFilterAPI  ",
+			"statusCode": 500,
+			"template": 2,
+			"type": "POST",
+			"appliedFilter":{
+				"filterId": "000",
+				"savedFilterElements": [
+				 {
+					  "elementId": "corp_14",
+					  "elementSequenceNumber": 1,
+					  "elementLabel": "Corporate",
+					  "elementCategoryName": "EXACT",
+					  "elementTypeName": "DYNAMIC_MULTISELECT",
+					  "elementMandatory": false
+					}
+				]
+			  }
+		
+		},
+		"TC_04": {
+			"TestCaseId": "04",
+			"TestCaseName": "TC_04_Verify that system insert the data in applied_search_parameters table of dims when valid data is inserted @Smoke @Regression @Sanity @SearchFilterAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"appliedFilter":
+				{
+					"filterId": 16,
+					"savedFilterElements": [
+					    {
+						  "elementId": "corp_16",
+						  "elementSequenceNumber": 1,
+						  "elementLabel": "Corporate",
+						  "elementCategoryName": "EXACT",
+						  "elementTypeName": "DYNAMIC_MULTISELECT",
+						  "elementMandatory": false
+						}
+					]
+			    }
+		
+		}
+	}
+	}

@@ -1,0 +1,24 @@
+[
+  {
+    "transaction_date": "2019-07-09",
+    "acquirer_reference_number": "76504009198320111140931",
+    "acquirer_bin_ica": "650400",
+    "transaction_amount": "1200.00",
+    "merchant_name": "LOW\u0027S WEDDING CENTER    ",
+    "masked_card_number": "601179xxxxxx1240",
+    "last_modified_by": "System",
+    "merchant_region_code": "NA",
+    "card_brand_region_code": "US",
+    "created_by": "System",
+    "acquirer_name": "GPN",
+    "authorization_code": "00968R",
+    "card_brand_code": "DI",
+    "global_token": "8875K99279782993",
+    "transaction_time": "21:17:36",
+    "case_number": "3930500006",
+    "merchant_token": "8840K52638563748",
+    "card_brand_name": "Discover",
+    "region_name": "United States",
+    "issuer_bin_ica": "601179"
+  }
+]

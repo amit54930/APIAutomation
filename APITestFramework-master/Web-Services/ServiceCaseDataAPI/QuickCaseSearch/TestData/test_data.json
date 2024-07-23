@@ -1,0 +1,62 @@
+{
+  "TestSuite": "Quick Search cases based on inputs",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 response code and show all required details in response as below when PAN is provided as input @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "cardNumber":"",
+            "page":"",
+            "size":""
+            }
+		     
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 200 response code and show all required details in response as below when Case Number is provided as input @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"",
+            "page":"",
+            "size":""
+            }
+		     
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 response code and show all required details in response as below when Merchant Number is provided as input @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "merchantNumber":"",
+            "page":"",
+            "size":""
+            }
+		     
+        },
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should receive 404 response code and show error response message when invalid data is provided as input @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 404,
+          "type":"GET",
+          "inputs":{
+            "cardNumber":"",
+            "page":"",
+            "size":""
+            }
+		     
+        }
+      }
+  }

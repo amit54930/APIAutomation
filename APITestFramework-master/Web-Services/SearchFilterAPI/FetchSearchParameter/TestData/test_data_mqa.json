@@ -1,0 +1,36 @@
+{
+  "TestSuite": "Fetch search parameters from DiMS table.",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid filterTypeId is passed as an argument @Smoke @Sanity @Regression @managed-dev @SearchFilterAPI ",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+         "filterTypeId" :1
+          
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when invalid filterTypeId is passed as an argument  @Regression @SearchFilterAPI",
+          "template":2,
+          "statusCode": 404,
+		      "type":"GET",
+          "filterTypeId" :100
+        
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 when filterTypeId is passed for queue_mgmt_merchant(my queue) @Regression @SearchFilterAPI",
+          "template":1,
+          "statusCode": 200,
+		      "type":"GET",
+          "filterTypeId" :18
+        
+        }
+    }
+ }

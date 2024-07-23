@@ -1,0 +1,104 @@
+{
+	"TestSuite": "Fetch authorization data from Datalake",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system Fetch data lake authorization data from “consumption_layer_dims.vw_wwmaster_authorization” DLAK table when mandatory fields i.e. cardNumber,merchantNumber passed as parameters  @Smoke @Sanity @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5978K65958328247",
+				"merchantNumber": "19000197752"
+			}
+		},
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system Fetch data lake authorization data from “consumption_layer_dims.vw_wwmaster_authorization” DLAK table when cardNumber,fromAuthorizationDate,merchantNumber,toAuthorizationDate,authorizationAmount passed as parameters @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5978K65958328247",
+				"fromAuthorizationDate": "2017-02-17",
+				"merchantNumber": "19000197752",
+				"toAuthorizationDate": "2019-02-17",
+				"authorizationAmount": "514"
+			}
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03_Verify that system Fetch data lake authorization data from “consumption_layer_dims.vw_wwmaster_authorization” DLAK table when cardNumber,fromAuthorizationDate,merchantNumber,toAuthorizationDate,authorizationAmount,authorizationCode passed as parameters  @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5978K65958328247",
+				"fromAuthorizationDate": "2017-02-17",
+				"merchantNumber": "19000197752",
+				"toAuthorizationDate": "2019-02-17",
+				"authorizationCode": "107243",
+				"authorizationAmount": "514"
+					}
+		},
+			"TC_04": {
+			"TestCaseId": "04",
+			"TestCaseName": "TC_04_Verify that system does not fetch the authorization data from DLAK with blank inputs @Regression @ReferenceDataAPI  ",
+			"statusCode": 400,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "",
+				"fromAuthorizationDate": "",
+				"merchantNumber": "",
+				"toAuthorizationDate": "",
+				"authorizationCode": "",
+				"authorizationAmount": "514"
+			}
+		},
+		"TC_05": {
+			"TestCaseId": "05",
+			"TestCaseName": "TC_05_Verify that system does not fetch the authorization data from DLAK with invalid authorization amount inputs @Regression @ReferenceDataAPI  ",
+			"statusCode": 400,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5978K65958328247",
+				"fromAuthorizationDate": "2017-02-17",
+				"merchantNumber": "19000197752",
+				"toAuthorizationDate": "2019-02-17",
+				"authorizationAmount": "nsdcvui",
+				"authorizationCode": "107243"
+			}
+		},
+
+		"TC_06": {
+			"TestCaseId": "06",
+			"TestCaseName": "TC_06_Verify that system does not fetch the authorization data from DLAK with invalid authorization code inputs @Regression @ReferenceDataAPI  ",
+			"statusCode": 400,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5978K65958328247",
+				"fromAuthorizationDate": "2017-02-17",
+				"merchantNumber": "19000197752",
+				"toAuthorizationDate": "2019-03-20",
+				"authorizationAmount": "514",
+				"authorizationCode": "dsdsdsd"
+			}
+		},
+		"TC_07": {
+			"TestCaseId": "07",
+			"TestCaseName": "TC_07_Verify that system Fetch data lake authorization data from “consumption_layer_dims.vw_wwmaster_authorization” DLAK table when cardNumber,fromAuthorizationDate,merchantNumber,toAuthorizationDate passed as parameters @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5978K65958328247",
+				"fromAuthorizationDate": "2017-02-17",
+				"merchantNumber": "19000197752",
+				"toAuthorizationDate": "2019-02-17"
+			}
+		}
+	}
+}

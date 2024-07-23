@@ -1,0 +1,162 @@
+{
+  "TestSuite": "It will get merchant case action from UI and store it in Dims database with required image operations for Take Action - Chargeback-AcceptLiability",
+  "TestCase":{
+
+			"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and insert take action details in merchant_action_detail and dispute_system_event table when valid values are passed as input for Take Action - Chargeback-AcceptLiability @Smoke @Sanity @Regression @ServiceCaseActionAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test": {
+				"actionCode": "AL",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3916400009,
+				  "caseStageId": 17962,
+				  "commentText": "",
+				  "merchantDocument": [
+					{
+					  "documentName": "",
+					  "documentSize":0,
+					  "originalDocumentName": "",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_02":
+		{
+
+			"TestCaseId": "TC_02",
+			"TestCaseName": "TC_02 It should throw 500 and not insert the take action details when invalid actionCode value is passed as input for Take Action - Chargeback-AcceptLiability @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 500,
+			"type": "POST",
+			"test":{
+				"actionCode": "asf",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3916400009,
+				  "caseStageId": 17962,
+				  "commentText": "",
+				  "merchantDocument": [
+					{
+					  "documentName": "",
+					  "documentSize":0,
+					  "originalDocumentName": "",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_03":
+		{
+
+			"TestCaseId": "TC_03",
+			"TestCaseName": "TC_03 It should throw 400 and not insert the take action details when invalid cardBrandCode value is passed as input for Take Action - Chargeback-AcceptLiability @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "AL",
+				"cardBrandCode": "PI",
+				"caseNumber": 3922100002,
+				"caseStageId": 44645,
+				"commentText": "string",
+				"merchantDocument": [
+				  {
+					"documentName": "string",
+					"documentSize": 0,
+					"originalDocumentName": "string",
+					"totalNumberOfPages": 0
+				  }
+				],
+				"regionCode": "US"
+			  }
+			},
+
+			"TC_04":
+		{
+
+			"TestCaseId": "TC_04",
+			"TestCaseName": "TC_04 It should throw 400 and not insert the take action details when invalid regionCode value is passed as input for Take Action - Chargeback-AcceptLiability @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "AL",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3916400009,
+				  "caseStageId": 17962,
+				  "commentText": "",
+				  "merchantDocument": [
+					{
+					  "documentName": "",
+					  "documentSize":0,
+					  "originalDocumentName": "",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "45"
+				}
+			},
+
+			"TC_05":
+		{
+
+			"TestCaseId": "TC_05",
+			"TestCaseName": "TC_05 It should throw 400 and not insert the take action details when invalid caseStageId value is passed as input for Take Action - Chargeback-AcceptLiability @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test": {
+				"actionCode": "AL",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3916400009,
+				  "caseStageId": 543543,
+				  "commentText": "",
+				  "merchantDocument": [
+					{
+					  "documentName": "",
+					  "documentSize":0,
+					  "originalDocumentName": "",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_06":
+		{
+
+			"TestCaseId": "TC_06",
+			"TestCaseName": "TC_06 It should throw 400 and not insert the take action details  when invalid key name is passed for Take Action - Chargeback-AcceptLiability @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test": {
+				"actionCode": "AL",
+				  "cardBrandCode": "DI",
+				  "caer": 3916400009,
+				  "caseStageId": 17962,
+				  "commentText": "",
+				  "merchcument": [
+					{
+					  "documentName": "",
+					  "documentSize":0,
+					  "originalDocumentName": "",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			}
+	}
+
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "take_action_code": "NRD",
+    "take_action_name": "Notify \u0026 Request Documents"
+  },
+  {
+    "take_action_code": "RAI",
+    "take_action_name": "Request Additional Information"
+  },
+  {
+    "take_action_code": "RTI",
+    "take_action_name": "Respond To Issuer"
+  },
+  {
+    "take_action_code": "UTD",
+    "take_action_name": "Unable To Defend/Pursue"
+  },
+  {
+    "take_action_code": "WOG",
+    "take_action_name": "Write Off or Goodwill"
+  },
+  {
+    "take_action_code": "CC",
+    "take_action_name": "Close Case"
+  },
+  {
+    "take_action_code": "ADCN",
+    "take_action_name": "Add Case Notes"
+  },
+  {
+    "take_action_code": "PC",
+    "take_action_name": "Pend a Case"
+  },
+  {
+    "take_action_code": "UPC",
+    "take_action_name": "Unpend Case"
+  },
+  {
+    "take_action_code": "TC",
+    "take_action_name": "Transfer Case"
+  },
+  {
+    "take_action_code": "VMD",
+    "take_action_name": "View More Details"
+  },
+  {
+    "take_action_code": "OC",
+    "take_action_name": "Open Case"
+  },
+  {
+    "take_action_code": "C",
+    "take_action_name": "Challenge"
+  },
+  {
+    "take_action_code": "AL",
+    "take_action_name": "Accept"
+  }
+]

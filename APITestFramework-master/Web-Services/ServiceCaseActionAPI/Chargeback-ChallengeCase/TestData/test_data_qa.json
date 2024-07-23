@@ -1,0 +1,188 @@
+{
+  "TestSuite": "It will get merchant case action from UI and store it in Dims database with required image operations for Chargeback-ChallengeCase",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and insert take action details in merchant_action_detail and dispute_system_event table when valid values are passed as input for Take Action - Chargeback-ChallengeCase @Smoke @Sanity @Regression @ServiceCaseActionAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3921800016,
+				  "caseStageId": 22641,
+				  "commentText": "test",
+				  "merchantDocument": [
+					{
+					  "documentName": "DISCOVERCT.00000650564.OTHR.20190308.125708000.TIF",
+					  "documentSize":15,
+					  "originalDocumentName": "DI.000047314059145.00000650564.OTHR.20190308.125708000.TIF",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_02":
+		{
+
+			"TestCaseId": "TC_02",
+			"TestCaseName": "TC_02 It should throw 500 and not insert the take action details when invalid actionCode value is passed as input for Take Action - Chargeback-ChallengeCase @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 500,
+			"type": "POST",
+			"test":{
+				"actionCode": "gh",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3921800016,
+				  "caseStageId": 22641,
+				  "commentText": "test",
+				  "merchantDocument": [
+					{
+					  "documentName": "DISCOVERCT.00000650564.OTHR.20190308.125708000.TIF",
+					  "documentSize":15,
+					  "originalDocumentName": "DI.000047314059145.00000650564.OTHR.20190308.125708000.TIF",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_03":
+		{
+
+			"TestCaseId": "TC_03",
+			"TestCaseName": "TC_03 It should throw 400 and not insert the take action details when invalid cardBrandCode value is passed as input for Take Action - Chargeback-ChallengeCase @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "gftg",
+				  "caseNumber": 3921800016,
+				  "caseStageId": 22641,
+				  "commentText": "test",
+				  "merchantDocument": [
+					{
+					  "documentName": "DISCOVERCT.00000650564.OTHR.20190308.125708000.TIF",
+					  "documentSize":15,
+					  "originalDocumentName": "DI.000047314059145.00000650564.OTHR.20190308.125708000.TIF",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_04":
+		{
+
+			"TestCaseId": "TC_04",
+			"TestCaseName": "TC_04 It should throw 400 and not insert the take action details when invalid regionCode value is passed as input for Take Action - Chargeback-ChallengeCase @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3921800016,
+				  "caseStageId": 22641,
+				  "commentText": "test",
+				  "merchantDocument": [
+					{
+					  "documentName": "DISCOVERCT.00000650564.OTHR.20190308.125708000.TIF",
+					  "documentSize":15,
+					  "originalDocumentName": "DI.000047314059145.00000650564.OTHR.20190308.125708000.TIF",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "dfas"
+				}
+			},
+
+			"TC_05":
+		{
+
+			"TestCaseId": "TC_05",
+			"TestCaseName": "TC_05 It should throw 400 and not insert the take action details when invalid caseStageId value is passed as input for Take Action - Chargeback-ChallengeCase @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test": {
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3921800016,
+				  "caseStageId": 2232,
+				  "commentText": "test",
+				  "merchantDocument": [
+					{
+					  "documentName": "DISCOVERCT.00000650564.OTHR.20190308.125708000.TIF",
+					  "documentSize":15,
+					  "originalDocumentName": "DI.000047314059145.00000650564.OTHR.20190308.125708000.TIF",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_06":
+		{
+
+			"TestCaseId": "TC_06",
+			"TestCaseName": "TC_06 It should throw 400 and not insert the take action details  when invalid key name is passed for Take Action - Chargeback-ChallengeCase @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3921800016,
+				  "case": 22641,
+				  "comtText": "test",
+				  "merchantDocument": [
+					{
+					  "documentName": "DISCOVERCT.00000650564.OTHR.20190308.125708000.TIF",
+					  "documentSize":15,
+					  "originalDocumentName": "DI.000047314059145.00000650564.OTHR.20190308.125708000.TIF",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+			"TC_07":
+		{
+
+			"TestCaseId": "TC_07",
+			"TestCaseName": "TC_07 It should throw 400 and not insert the take action details  when invalid case number is passed for Take Action - Chargeback-ChallengeCase @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3921800016,
+				  "case": 22641,
+				  "comtText": "test",
+				  "merchantDocument": [
+					{
+					  "documentName": "DISCOVERCT.00000650564.OTHR.20190308.125708000.TIF",
+					  "documentSize":15,
+					  "originalDocumentName": "DI.000047314059145.00000650564.OTHR.20190308.125708000.TIF",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			}
+
+			
+	}
+
+}

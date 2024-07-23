@@ -1,0 +1,39 @@
+{
+  "TestSuite": "Unassign a case from a user",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and Unassign a case from a user @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"POST",
+           "input":
+          [ {
+            "caseStageID": "19333",
+      "userID": "5",
+      "caseAssignmentID": "1272"
+           }]
+           
+          },
+          
+          "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 400 and Unassign a case from a user @Smoke @Sanity @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 400,
+          "type":"POST",
+           "input":
+          [ {
+            "caseStageID": "17993",
+            "userID": "3",
+            "caseAssignmentID": "1259"
+           }]
+           
+          }
+          
+            }}
+         
+ 

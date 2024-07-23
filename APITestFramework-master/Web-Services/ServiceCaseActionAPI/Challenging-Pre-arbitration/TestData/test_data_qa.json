@@ -1,0 +1,162 @@
+{
+  "TestSuite": "It will get merchant case action from UI and store it in Dims database with required image operations for Challenging-Pre-arbitration",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and insert take action details in merchant_action_detail,case_documents,dispute_system_event,dispute_comments table when valid values are passed as input for Take Action - Challenging-Pre-arbitration @Smoke @Sanity @Regression @ServiceCaseActionAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3922200010,
+				  "caseStageId": 31675,
+				"commentText":"QA_testing",
+				  "merchantDocument": [
+					{
+					  "documentName": "MerchantDocumentation.Fax.NA.20190715.124332.TIFF",
+					  "documentSize":15,
+					  "originalDocumentName": "Note.pdf",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_02":
+		{
+			"TestCaseId": "TC_02",
+			"TestCaseName": "TC_02 It should throw 500 and not insert the take action details when invalid actionCode value is passed as input for Take Action - Challenging-Pre-arbitration @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 500,
+			"type": "POST",
+			"test":{
+				"actionCode": "ABC",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3922200010,
+				  "caseStageId": 31675,
+				"commentText":"QA_testing",
+				  "merchantDocument": [
+					{
+					  "documentName": "MerchantDocumentation.Fax.NA.20190715.124332.TIFF",
+					  "documentSize":15,
+					  "originalDocumentName": "Note.pdf",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_03":
+		{
+
+			"TestCaseId": "TC_03",
+			"TestCaseName": "TC_03 It should throw 400 and not insert the take action details when invalid cardBrandCode value is passed as input for Take Action - Challenging-Pre-arbitration  @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "XYZ",
+				  "caseNumber": 3922200010,
+				  "caseStageId": 31675,
+				"commentText":"QA_testing",
+				  "merchantDocument": [
+					{
+					  "documentName": "MerchantDocumentation.Fax.NA.20190715.124332.TIFF",
+					  "documentSize":15,
+					  "originalDocumentName": "Note.pdf",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_04":
+		{
+			"TestCaseId": "TC_04",
+			"TestCaseName": "TC_04 It should throw 400 and not insert the take action details when invalid regionCode value is passed as input for Take Action - Challenging-Pre-arbitration @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3922200010,
+				  "caseStageId": 31675,
+				"commentText":"QA_testing",
+				  "merchantDocument": [
+					{
+					  "documentName": "MerchantDocumentation.Fax.NA.20190715.124332.TIFF",
+					  "documentSize":15,
+					  "originalDocumentName": "Note.pdf",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "AQWE"
+				}
+			},
+
+			"TC_05":
+		{
+
+			"TestCaseId": "TC_05",
+			"TestCaseName": "TC_05 It should throw 400 and not insert the take action details when invalid caseStageId value is passed as input for Take Action - challenge / Incoming Pre-arbitration @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test": {
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "caseNumber": 3922200010,
+				  "caseStageId": 145,
+				"commentText":"QA_testing",
+				  "merchantDocument": [
+					{
+					  "documentName": "MerchantDocumentation.Fax.NA.20190715.124332.TIFF",
+					  "documentSize":15,
+					  "originalDocumentName": "Note.pdf",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			},
+
+			"TC_06":
+		{
+
+			"TestCaseId": "TC_06",
+			"TestCaseName": "TC_06 It should throw 400 and not insert the take action details  when invalid key name is passed for Take Action - Accept Liability / Incoming Pre-arbitration @Regression @ServiceCaseActionAPI",
+			"template": 2,
+			"statusCode": 400,
+			"type": "POST",
+			"test":{
+				"actionCode": "C",
+				  "cardBrandCode": "DI",
+				  "case": 3922200010,
+				  "caseStageId": 31675,
+				"commentText":"QA_testing",
+				  "merchan": [
+					{
+					  "documentName": "MerchantDocumentation.Fax.NA.20190715.124332.TIFF",
+					  "documentSize":15,
+					  "originalDocumentName": "Note.pdf",
+					  "totalNumberOfPages": 1
+					}
+				  ],
+				  "regionCode": "US"
+				}
+			}
+		
+
+			
+	}
+
+}

@@ -1,0 +1,97 @@
+{
+  "TestSuite": "Fetches data for given QueueDataInput",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and should Fetches data for given QueueDataInput @Smoke @Regression @Sanity @ServiceQueueManagerAPI @fetch ",
+          "template": 1,
+          "statusCode": 200,
+		      "type": "POST",
+		      "input": {
+            "orderByProperties": [
+              "disputeAmount"
+            ],
+            "pageNumber": 0,
+            "propertyDirections": [
+              "ASC"
+            ],
+            "queueId":66,
+            "queueSearchView": {
+              "filterTypeId":14,
+              "searchFilterInputElements": [
+                {
+                  "elementId": "corp_14",
+                  "elementValue": "052"
+                }
+              ]
+            },
+            "regionCode": "AP",
+            "size": 25,
+            "userId": 0
+          }
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 400 and should not Fetches data for given invalid QueueDataInput @Smoke @Regression @Sanity @ServiceQueueManagerAPI @fetch ",
+          "template": 1,
+          "statusCode": 400,
+		      "type": "POST",
+		      "input": {
+            "orderByProperties": [
+              "disputeAmount"
+            ],
+            "pageNumber": 0,
+            "propertyDirections": [
+              "ASC"
+            ],
+            "queueId":66,
+            "queueSearchView": {
+              "filterTypeId":14,
+              "searchFilterInputElements": [
+                {
+                  "elementId": "corp_14",
+                  "elementValue": "052"
+                }
+              ]
+            },
+            "regionCode": "AB",
+            "userId": 0
+          }
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 and should Fetches data for given QueueDataInput @Smoke @Regression @Sanity @ServiceQueueManagerAPI @fetch ",
+          "template": 1,
+          "statusCode": 200,
+		      "type": "POST",
+		      "input": {
+            "orderByProperties": [
+              "disputeAmount"
+            ],
+            "pageNumber": 0,
+            "propertyDirections": [
+              "ASC"
+            ],
+            "queueId":66,
+            "queueSearchView": {
+              "filterTypeId":15,
+              "searchFilterInputElements": [
+                {
+                  "elementId": "corp_15",
+                  "elementValue": "052"
+                }
+              ]
+            },
+            "regionCode": "AP",
+            "size": 25,
+            "userId": 0
+          }
+        }
+
+      
+    }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "acquirer_reference_number": "55181369087579591772804",
+    "acquirer_bin_ica": "518136",
+    "transaction_amount": "0.00",
+    "last_modified_timestamp": "2019-08-04 17:45:32.819017",
+    "merchant_region_code": "NA",
+    "authorization_code": "604302",
+    "card_brand_code": "DI",
+    "transaction_time": "07:13:52",
+    "transaction_master_id": "2864",
+    "case_number": "3921600005",
+    "merchant_heirarchy_id": "58167",
+    "transaction_date": "2019-01-09",
+    "merchant_name": "BITWISE  CORPORATION    ",
+    "masked_card_number": "564512xxxxxx7889",
+    "created_timestamp": "2019-08-04 17:45:32.819017",
+    "last_modified_by": "System",
+    "card_brand_region_code": "US",
+    "created_by": "System",
+    "acquirer_name": "GPN",
+    "global_token": "7249K55288905184",
+    "merchant_token": "7274K69628388650",
+    "issuer_bin_ica": "564512"
+  }
+]

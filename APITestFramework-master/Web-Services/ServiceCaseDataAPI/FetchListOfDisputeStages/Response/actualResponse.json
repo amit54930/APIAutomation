@@ -1,0 +1,94 @@
+[
+  {
+    "dispute_stage_name": "Retrieval Request",
+    "dispute_stage_id": "1"
+  },
+  {
+    "dispute_stage_name": "Chargeback",
+    "dispute_stage_id": "2"
+  },
+  {
+    "dispute_stage_name": "Representment",
+    "dispute_stage_id": "3"
+  },
+  {
+    "dispute_stage_name": "Chargeback Reversal",
+    "dispute_stage_id": "4"
+  },
+  {
+    "dispute_stage_name": "Pre-Arbitration",
+    "dispute_stage_id": "5"
+  },
+  {
+    "dispute_stage_name": "Arbitration",
+    "dispute_stage_id": "6"
+  },
+  {
+    "dispute_stage_name": "Incoming Pre-Arbitration",
+    "dispute_stage_id": "7"
+  },
+  {
+    "dispute_stage_name": "Incoming Arbitration",
+    "dispute_stage_id": "8"
+  },
+  {
+    "dispute_stage_name": "Incoming Pre-Compliance",
+    "dispute_stage_id": "9"
+  },
+  {
+    "dispute_stage_name": "Incoming Compliance",
+    "dispute_stage_id": "10"
+  },
+  {
+    "dispute_stage_name": "Outgoing Pre-Compliance",
+    "dispute_stage_id": "11"
+  },
+  {
+    "dispute_stage_name": "Outgoing Compliance",
+    "dispute_stage_id": "12"
+  },
+  {
+    "dispute_stage_name": "Incoming Goodfaith ",
+    "dispute_stage_id": "13"
+  },
+  {
+    "dispute_stage_name": "Outgoing Goodfaith",
+    "dispute_stage_id": "14"
+  },
+  {
+    "dispute_stage_name": "Merchant Responses",
+    "dispute_stage_id": "15"
+  },
+  {
+    "dispute_stage_name": "Financials",
+    "dispute_stage_id": "16"
+  },
+  {
+    "dispute_stage_name": "Others",
+    "dispute_stage_id": "17"
+  },
+  {
+    "dispute_stage_name": "Arbitration Chargeback",
+    "dispute_stage_id": "18"
+  },
+  {
+    "dispute_stage_name": "Outgoing Pre-Arbitration",
+    "dispute_stage_id": "19"
+  },
+  {
+    "dispute_stage_name": "Outgoing Arbitration",
+    "dispute_stage_id": "20"
+  },
+  {
+    "dispute_stage_name": "Pre-Arbitration - Accept Financial Liability",
+    "dispute_stage_id": "21"
+  },
+  {
+    "dispute_stage_name": "Arbitration - Request Not Fulfiled",
+    "dispute_stage_id": "22"
+  },
+  {
+    "dispute_stage_name": "Arbitration - Aceept Financial Liability",
+    "dispute_stage_id": "23"
+  }
+]

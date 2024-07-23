@@ -1,0 +1,53 @@
+{
+	"TestSuite": "Create Events and Security Audit Log",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01 It should receive 200 response code if events and security log is successfully created in database with logic 1 @Smoke @Regression @Sanity @EventManagerAPI @Smoke-Managed-QA ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"message": {
+					"data": "ewoiZXZlbnRUZW1wbGF0ZU5hbWUiOiJDUlRFX05FV19BRE1JTiIsCiJnZW5lcmF0ZWRCeVVzZXIiOiJBYXJ0aSIsCiJleHRlcm5hbEV2ZW50SW5kaWNhdG9yIjogMCwKImV2ZW50VGVtcGxhdGVQYXJhbXMiOnsiR2VuZXJhdGVkRm9yVXNlciI6IkFsbGlzb24iLCJFdmVudFRpbWVTdGFtcCI6IjIwMTktMDctMjIgMTA6NDE6MzkuNjgwOTA3In0KfQ==",
+					"messageId": "136969346975",
+											"attributes": {"CUSTOM_JWT_TOKEN":"system eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Njg4MTI3MjEsImVtYWlsIjoiZ2xvYmFscGF5IiwiaXNzIjoiaHR0cHM6Ly9kaW1zLmdsb2JhbHBheS5jb20iLCJhdWQiOiIwZjY2OTg1ZC01M2UyLTQ0MzctYjE3NC00NDNlNjUzMjI5NTcifQ.cyY7VV6Lj5Gy8m48A7KF3EOxsb0-OUl3MQ1F3Vnleas"}
+				},
+				"subscription": "https://service-event-manager.qancde.bitwise-digital.info/api/v1/casemanager/case/stage"
+			}
+				
+		},
+
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02 It should receive 200 response code if events and security log is successfully created in database with logic 2 @Smoke @Regression @Sanity @EventManagerAPI @Smoke-Managed-QA",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"message": {
+					"data": "ewoJCQkJImNhc2VTdGFnZUlkIjogbnVsbCwKCQkJCSJldmVudFRlbXBsYXRlTmFtZSI6ICJBVVRIX1NVQ0NFU1MiLAoJCQkJICJleHRlcm5hbEV2ZW50SW5kaWNhdG9yIjogMSwKCQkJCSJldmVudFRlbXBsYXRlUGFyYW1zIjogewoJCQkiRXZlbnRUaW1lU3RhbXAiOiIyMDE5LTAyLTAyIDA1OjQ2OjM5LjY4MDkwNyIKCQkJCX0sCgkJCQkiZ2VuZXJhdGVkQnlVc2VyIjogIlFBIgoJCQl9",
+					"messageId": "136969346975",
+											"attributes": {"CUSTOM_JWT_TOKEN":"system eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Njg4MTI3MjEsImVtYWlsIjoiZ2xvYmFscGF5IiwiaXNzIjoiaHR0cHM6Ly9kaW1zLmdsb2JhbHBheS5jb20iLCJhdWQiOiIwZjY2OTg1ZC01M2UyLTQ0MzctYjE3NC00NDNlNjUzMjI5NTcifQ.cyY7VV6Lj5Gy8m48A7KF3EOxsb0-OUl3MQ1F3Vnleas"}
+				},
+				"subscription": "https://service-event-manager.qancde.bitwise-digital.info/api/v1/casemanager/case/stage"
+			}
+		},
+
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03 It should receive 400 response code on providing invalid input and events and security log is not created in database @Regression @EventManagerAPI @Regression-Managed-QA",
+			"statusCode": 400,
+			"template": 2,
+			"type": "POST",
+			"test":{
+				"message": {
+				  "data": "ewogICAgICAgICAgICAgICAgImV2ZW50VGVtcGxhdGVOYW1lIjoiTU9ESUZJRURfVVNFUl9TRVRUSU5HIiwKICAgICAgICAgICAgICAgICJnZW5lcmF0ZWRCeVVzZXIiOiJRQTIiLAogICAgICAgICAgICAgICAgImV2ZW50VGVtcGxhdGVQYXJhbXMiOnsiRXZlbnRUaW1lU3RhbXAiOiIyMDE5LTAyLTAyIDA1OjQ2OjM5LjY4MDkwNyJ9Cn0=",
+				  "messageId": "136969346975",
+					"attributes": {"CUSTOM_JWT_TOKEN":"system eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Njg4MTI3MjEsImVtYWlsIjoiZ2xvYmFscGF5IiwiaXNzIjoiaHR0cHM6Ly9kaW1zLmdsb2JhbHBheS5jb20iLCJhdWQiOiIwZjY2OTg1ZC01M2UyLTQ0MzctYjE3NC00NDNlNjUzMjI5NTcifQ.cyY7VV6Lj5Gy8m48A7KF3EOxsb0-OUl3MQ1F3Vnleas"}
+				},
+				"subscription": "https://service-event-manager-dev-ncde.np-disputes.globalpay.com/api/v1/eventmanager/event"
+			  }
+		}
+}
+}

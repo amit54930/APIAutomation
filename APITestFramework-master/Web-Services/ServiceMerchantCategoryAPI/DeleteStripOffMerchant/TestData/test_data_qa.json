@@ -1,0 +1,32 @@
+{
+  "TestSuite": "Delete Strip Off Merchant",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and should delete the data from exception_merchant table @Smoke @Sanity @Regression @ServiceMerchantCategoryAPI",
+			"template": 1,
+			"statusCode": 200,
+			"type": "DELETE",
+			"input":{
+        "merchantNumber" : "9958802",
+        "lastModifiedBy": "Test"
+}
+	},
+
+	"TC_02":
+	{
+		"TestCaseId": "TC_02",
+		"TestCaseName": "TC_02 It should throw 400 and should not delete the data @Regression @ServiceMerchantCategoryAPI",
+		"template": 2,
+		"statusCode": 400,
+		"type": "DELETE",
+		"input":{
+        "merchantNumber" : "5666",
+        "lastModifiedBy" : "DIMS TEAM"
+}
+	}
+	}
+
+}

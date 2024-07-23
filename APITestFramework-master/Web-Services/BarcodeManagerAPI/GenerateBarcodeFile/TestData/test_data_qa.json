@@ -1,0 +1,25 @@
+{
+	"TestSuite": "MerchantImage - GenerateBarcodeFile",
+	"TestCase":{
+		  "TC_01":
+		  {
+  
+			  "TestCaseId": "TC_01",
+			  "TestCaseName": "TC_01 It should receive 200 and should generate a file @Sanity @Smoke @Regression @BarcodeManagerAPI",
+			  "template": 1,
+			  "statusCode": 200,
+			  "type": "POST",
+			  "test": {
+				  "internalCaseNumber": "987655161",
+				  "letterGenerationDate": "20191212",
+				  "scheme": "DI",
+				"stageReceiptDateFromScheme": "20191213",
+				"disputeStage": "1292",
+				"reasonCode": "no",
+				"stageSequenceNumber":"1292"
+				}
+  
+	  }
+  }
+  }
+  

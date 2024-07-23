@@ -1,0 +1,20 @@
+[
+  {
+    "acquirer_reference_number": "31963499028110211474027",
+    "merchant_name": "BITWISE  CORPORATION    ",
+    "case_number": "3915600003",
+    "masked_card_number": "801120xxxxxx1239",
+    "created_timestamp": "2019-06-05 09:02:10.642366",
+    "merchant_number": "2",
+    "retreival_response_due_date": "2019-01-30"
+  },
+  {
+    "acquirer_reference_number": "31963499028110214216540",
+    "merchant_name": "BITWISE  CORPORATION    ",
+    "case_number": "3915600001",
+    "masked_card_number": "801120xxxxxx1237",
+    "created_timestamp": "2019-06-05 06:52:08.183018",
+    "merchant_number": "33162701",
+    "retreival_response_due_date": "2019-01-30"
+  }
+]

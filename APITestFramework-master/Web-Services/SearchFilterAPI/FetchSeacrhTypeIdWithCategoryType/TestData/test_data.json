@@ -1,0 +1,21 @@
+{
+	"TestSuite": "Fetch Search Type Id from DiMS database",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system should receive 200 status code when valid category Type is given as input @Smoke @Regression @Sanity @SearchFilterAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"input":"Transaction"
+		},
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system should throw 404 status code when Invalid category Type is given as input @Regression @SearchFilterAPI",
+			"statusCode": 404,
+			"template": 2,
+			"type": "GET",
+			"input":"xyz"
+		}
+	}
+}

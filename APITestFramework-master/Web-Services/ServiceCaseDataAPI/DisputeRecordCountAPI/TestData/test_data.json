@@ -1,0 +1,14 @@
+{
+	"TestSuite": "Count of Records respected to queue_id from DiMS database",
+	"TestCase": {
+		
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system returns count of all Records respected to queue_id @Smoke @Regression @Sanity @ServiceCaseDataAPI @la123",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET"
+		
+				}
+	}
+}

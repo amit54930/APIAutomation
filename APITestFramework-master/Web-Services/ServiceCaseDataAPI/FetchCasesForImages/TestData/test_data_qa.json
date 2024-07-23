@@ -1,0 +1,267 @@
+ {
+  "TestSuite": "Fetch Cases for unmatched Merchant images",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should fetch all the records of unmatched merchant images when valid caseNumber is passed as an argument @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"987655564"
+            }
+		     
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should fetch all the records of unmatched merchant images when valid merchantNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "merchantNumber": "193194008821"
+          }
+		     
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should fetch all the records of unmatched merchant images when valid caseNumber  and valid acqReferenceNumber are passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"987655564",
+            "acqReferenceNumber":"76200544215473140591459"
+          }
+		     
+        },
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should fetch all the records of unmatched merchant images when valid caseNumber and transactionAmount are passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"987655564",
+           "transactionAmount":"144.16"
+          }
+		     
+        },
+        "TC_05":
+        {
+          "TestCaseId": "TC_05",
+          "TestCaseName": "TC_05 It should fetch all the records of unmatched merchant images when valid caseNumber and merchantNumber are passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"987655564",
+            "merchantNumber": "193194008821"
+          }
+		     
+        },
+        "TC_06":
+        {
+          "TestCaseId": "TC_06",
+          "TestCaseName": "TC_06 It should fetch all the records of unmatched merchant images when valid caseNumber ,valid acqReferenceNumber,valid transactionAmount are passed as an argument  @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"987655564",
+            "acqReferenceNumber":"76200544215473140591459",
+            "transactionAmount":"144.16"
+          }
+		    },
+        "TC_07":
+        {
+          "TestCaseId": "TC_07",
+          "TestCaseName": "TC_07 It should fetch all the records of unmatched merchant images when valid caseNumber valid acqReferenceNumber, valid merchantNumber are passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"987655564",
+            "acqReferenceNumber":"76200544215473140591459",
+           "merchantNumber": "193194008821"
+          }
+		     
+        },
+        "TC_08":
+        {
+          "TestCaseId": "TC_08",
+          "TestCaseName": "TC_08 It should fetch all the records of unmatched merchant images when valid caseNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"987655564",
+            "acqReferenceNumber":"76200544215473140591459",
+            "transactionAmount":"144.16",
+            "merchantNumber": "193194008821"
+          }
+		     
+        },
+        "TC_09":
+        {
+          "TestCaseId": "TC_09",
+          "TestCaseName": "TC_09 It should fetch all the records of unmatched merchant images when valid caseNumber ,valid acqReferenceNumber,valid transactionAmount,valid merchantNumber,, valid firstSixcardNumber, valid lastFourCardNumber are passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"987655564",
+            "acqReferenceNumber":"76200544215473140591459",
+            "transactionAmount":"144.16",
+            "merchantNumber": "193194008821",
+            "firstSixcardNumber": "123456",
+            "lastFourCardNumber": "7895"
+          }
+		     
+        },
+        "TC_10":
+        {
+          "TestCaseId": "TC_10",
+          "TestCaseName": "TC_10 It should not  fetch the records of unmatched merchant images when Invalid caseNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "inputs":{
+            "caseNumber":"123456789"
+          
+          }
+		     
+        },
+        "TC_11":
+        {
+          "TestCaseId": "TC_11",
+          "TestCaseName": "TC_11 It should not  fetch the records of unmatched merchant images when Invalid acqReferenceNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "inputs":{
+            "acqReferenceNumber":"123456789"
+          
+          }
+		     
+        },
+        "TC_12":
+        {
+          "TestCaseId": "TC_12",
+          "TestCaseName": "TC_12 It should not  fetch the records of unmatched merchant images when Invalid transactionAmount is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "inputs":{
+            "transactionAmount":"123456789"
+         }
+		     
+        },"TC_13":
+        {
+          "TestCaseId": "TC_13",
+          "TestCaseName": "TC_13 It should not  fetch the records of unmatched merchant images when Invalid merchantNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "inputs":{
+            "merchantNumber":"123456789"
+         }
+		     
+        },
+        "TC_14":
+        {
+          "TestCaseId": "TC_14",
+          "TestCaseName": "TC_14 It should fetch all the records of unmatched Scheme images when valid merchantNumber and valid cardBrandCaseNumber is passed as an argument  @Regression @ServiceCaseDataAPI ",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "merchantNumber": "193194008821",
+            "cardBrandCaseNumber":"1803284731"
+          }
+		     
+        },
+        "TC_15":
+        {
+          "TestCaseId": "TC_15",
+          "TestCaseName": "TC_15 It should fetch all the records of unmatched Scheme images when valid firstSixcardNumber and valid merchantNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+           
+            "firstSixcardNumber": "123456",
+            "merchantNumber": "193194008821"
+          }
+		     
+        },
+        "TC_16":
+        {
+          "TestCaseId": "TC_16",
+          "TestCaseName": "TC_16 It should fetch all the records of unmatched Scheme images when valid lastFourCardNumber and valid merchantNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "lastFourCardNumber": "7895",
+            "merchantNumber": "193194008821",
+            "cardBrandCaseNumber":"1803284731"
+          }
+		     
+        },
+        "TC_17":{
+          "TestCaseId": "TC_17",
+          "TestCaseName": "TC_17 It should fetch all the records of unmatched Scheme images when valid acqReferenceNumber and valid merchantNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "acqReferenceNumber":"76200544215473140591459",
+            "merchantNumber": "193194008821"
+          }
+		     
+        },
+        "TC_18":{
+          "TestCaseId": "TC_18",
+          "TestCaseName": "TC_18 It should fetch all the records of unmatched Scheme images when valid acqReferenceNumber, valid firstSixcardNumber, valid lastFourCardNumber and valid merchantNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "inputs":{
+            "acqReferenceNumber":"76200544215473140591459",
+            "merchantNumber": "193194008821",
+            "firstSixcardNumber": "123456",
+            "lastFourCardNumber": "7895"
+          }
+		     
+        },
+        "TC_19":{
+          "TestCaseId": "TC_19",
+          "TestCaseName": "TC_19 It should throw 404 status code for unmatched Scheme images when Invalid cardBrandCaseNumber is passed as an argument @Regression @ServiceCaseDataAPI @anand",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "inputs":{
+            "cardBrandCaseNumber":"525412563254"
+          }
+		     
+        },
+        "TC_20":{
+          "TestCaseId": "TC_20",
+          "TestCaseName": "TC_20 Itshould throw 404 status code for  unmatched Scheme images when valid acqReferenceNumber and Invalid merchantNumber is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "inputs":{
+            "acqReferenceNumber":"76200544215473140591459",
+            "merchantNumber": "852741963"
+          }
+		     
+        }
+    }
+  }

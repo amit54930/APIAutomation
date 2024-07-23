@@ -1,0 +1,106 @@
+{
+	"TestSuite": "Fetch transaction data from Datalake",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system get transaction data from datalake table with matching logic 1 @Smoke @Regression @Sanity @ReferenceDataAPI @123",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"acqRefNumber":"76504009198320111141145",
+				"cardNumber": "5940K20854668458"
+			}
+		},
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system get transaction data from datalake table with matching logic 2 @Regression @ReferenceDataAPI @123",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5940K20854668458",
+				"acqRefNumber":"76504009198320111141145",
+				"transactionDate":"2019-07-09"
+			}
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03_Verify that system get transaction data from datalake table  with matching logic 3 @Regression @ReferenceDataAPI @123",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5940K20854668458",
+				"acqRefNumber":"76504009198320111141145",
+				"transactionAmount":"96.96"
+			}
+		},
+
+		"TC_04": {
+			"TestCaseId": "04",
+			"TestCaseName": "TC_04_Verify that system get transaction data from datalake table  with matching logic 4 @Regression @ReferenceDataAPI @123",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5940K20854668458",
+				"acqRefNumber":"76504009198320111141145",
+				"transactionAmount":"96.96",
+				"transactionDate":"2019-07-09"
+			}
+		},
+
+			"TC_05": {
+			"TestCaseId": "05",
+			"TestCaseName": "TC_05_Verify that system does not get the transaction data from DLAK with blank inputs @Regression @ReferenceDataAPI @123",
+			"statusCode": 500,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "",
+				"acqRefNumber":"",
+				"authCode":""
+			}
+		},
+		"TC_06": {
+			"TestCaseId": "06",
+			"TestCaseName": "TC_06_Verify that system does not fetch the transaction data from DLAK with invalid inputs @Regression @ReferenceDataAPI @123",
+			"statusCode": 500,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "7392K",
+				"acqRefNumber":"5424",
+				"authCode":""
+			}
+		},
+		"TC_07": {
+			"TestCaseId": "07",
+			"TestCaseName": "TC_07_Verify that system get transaction data from datalake table  with matching logic 7 @Regression @ReferenceDataAPI @123",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5940K20854668458",
+				"acqRefNumber":"76504009198320111141145",
+				"firstSixDigitsCardNumber": "601130",
+				"lastFourDigitsCardNumber":"1248",
+				"merchantNumber":"601101331610707"
+				
+			}
+		},
+		"TC_08": {
+			"TestCaseId": "08",
+			"TestCaseName": "TC_08_Verify that system get transaction data from datalake table  with matching logic 8 @Regression @ReferenceDataAPI @123",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"cardNumber": "5940K20854668458",
+				"acqRefNumber":"76504009198320111141145",
+				"merchantNumber":"601101331610707"
+			}
+		}
+	}
+}

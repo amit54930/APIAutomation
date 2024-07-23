@@ -1,0 +1,71 @@
+ {
+  "TestSuite": "Fetch the list of the ledger values on Adjust Financial Page",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and fetch the list of ledger values from dims db on passing the acquirer code as GPN and merchant region code as AP @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+           "input":
+           {
+           "acquirerCode":"GPN",
+             "merchantRegionCode":"AP"
+           }
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should receive 200 and fetch the case details for all card brand from dims db on passing the valid acquirer code as GPN and merchant region codes as UK @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "input":
+          {
+          "acquirerCode":"GPN",
+            "merchantRegionCode":"UK"
+          }
+        },
+        "TC_03":
+        {
+          "TestCaseId": "TC_03",
+          "TestCaseName": "TC_03 It should receive 200 and should fetch the ledger list from dims db on passing the acquirer code as GPN and merchant region codes as US @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "input":
+          {
+          "acquirerCode":"GPN",
+            "merchantRegionCode":"US"
+          }
+        },
+        "TC_04":
+        {
+          "TestCaseId": "TC_04",
+          "TestCaseName": "TC_04 It should receive 404 and should not fetch the ledger list from dims db on passing the invalid merchant region code @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "input":
+          {
+          "acquirerCode":"GPN",
+            "merchantRegionCode":"OL"
+          }
+        },
+        "TC_05":
+        {
+          "TestCaseId": "TC_05",
+          "TestCaseName": "TC_05 It should receive 404 and should not fetch the ledger list from dims db on passing the invalid acquirer code @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "input":
+          {
+          "acquirerCode":"ABC",
+            "merchantRegionCode":"CA"
+          }
+        }
+    }
+ }

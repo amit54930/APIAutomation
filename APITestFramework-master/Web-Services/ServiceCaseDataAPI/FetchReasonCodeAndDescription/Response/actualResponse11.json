@@ -1,0 +1,158 @@
+[
+  {
+    "reason_code": "01",
+    "reason_description": "Transaction Documentation Request"
+  },
+  {
+    "reason_code": "03",
+    "reason_description": "Transaction Documentation Request Due to Cardholder Dispute"
+  },
+  {
+    "reason_code": "04",
+    "reason_description": "Transaction Documentation Request for Fraud Analysis"
+  },
+  {
+    "reason_code": "05",
+    "reason_description": "Good Faith Investigation"
+  },
+  {
+    "reason_code": "4808",
+    "reason_description": "Authorization-related Chargeback"
+  },
+  {
+    "reason_code": "4834",
+    "reason_description": "Point-of-Interaction Error"
+  },
+  {
+    "reason_code": "4837",
+    "reason_description": "No Cardholder Authorization"
+  },
+  {
+    "reason_code": "4849",
+    "reason_description": "Questionable Merchant Activity"
+  },
+  {
+    "reason_code": "4853",
+    "reason_description": "Cardholder Dispute Chargeback"
+  },
+  {
+    "reason_code": "4863",
+    "reason_description": "Cardholder Does Not Recognize - Potential Fraud"
+  },
+  {
+    "reason_code": "4870",
+    "reason_description": "Chip Liability Shift"
+  },
+  {
+    "reason_code": "4871",
+    "reason_description": "Chip Liability Shift—Lost/Stolen/Never Received Issue (NRI) Fraud"
+  },
+  {
+    "reason_code": "6305",
+    "reason_description": "Cardholder does not agree with amount billed"
+  },
+  {
+    "reason_code": "6321",
+    "reason_description": "Cardholder does not recognize transaction"
+  },
+  {
+    "reason_code": "6322",
+    "reason_description": "Request Transaction Certificate for a chip transaction"
+  },
+  {
+    "reason_code": "6323",
+    "reason_description": "Cardholder needs information for personal records"
+  },
+  {
+    "reason_code": "6341",
+    "reason_description": "Fraud investigation"
+  },
+  {
+    "reason_code": "6342",
+    "reason_description": "Potential chargeback or compliance documentation is required"
+  },
+  {
+    "reason_code": "6343",
+    "reason_description": "Real-time Substantiation Audit Request"
+  },
+  {
+    "reason_code": "6390",
+    "reason_description": "Identifies a syntax error return"
+  },
+  {
+    "reason_code": "AA",
+    "reason_description": "Does Not Recognize"
+  },
+  {
+    "reason_code": "AP",
+    "reason_description": "Recurring Payment"
+  },
+  {
+    "reason_code": "AT",
+    "reason_description": "Authorization Non Compliance"
+  },
+  {
+    "reason_code": "AW",
+    "reason_description": "Altered Amount"
+  },
+  {
+    "reason_code": "CD",
+    "reason_description": "Credit/Debit Posted Incorrectly"
+  },
+  {
+    "reason_code": "DC",
+    "reason_description": " Disputes Compliance"
+  },
+  {
+    "reason_code": "DP",
+    "reason_description": "Duplicate Processing"
+  },
+  {
+    "reason_code": "IN",
+    "reason_description": "Invalid Cardholder Number"
+  },
+  {
+    "reason_code": "LP",
+    "reason_description": "Late Presentation"
+  },
+  {
+    "reason_code": "NF",
+    "reason_description": "Non Receipt Of Cash From ATM"
+  },
+  {
+    "reason_code": "PM",
+    "reason_description": "Paid By Other Means"
+  },
+  {
+    "reason_code": "RG",
+    "reason_description": "Non-Receipt of Goods or Services"
+  },
+  {
+    "reason_code": "RM",
+    "reason_description": "Cardholder Disputes Quality of Goods or Services"
+  },
+  {
+    "reason_code": "RN2",
+    "reason_description": "Credit Not Processed"
+  },
+  {
+    "reason_code": "TF",
+    "reason_description": "Violation of Operating Regulations"
+  },
+  {
+    "reason_code": "UA01",
+    "reason_description": "Fraud Card Present Transaction"
+  },
+  {
+    "reason_code": "UA02",
+    "reason_description": "Fraud Card Not Present Transaction"
+  },
+  {
+    "reason_code": "UA05",
+    "reason_description": "Fraud Chip Card Counterfeit Transaction"
+  },
+  {
+    "reason_code": "UA06",
+    "reason_description": "Fraud Chip Card and PIN Transaction"
+  }
+]

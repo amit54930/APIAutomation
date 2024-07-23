@@ -1,0 +1,49 @@
+{
+	"TestSuite": "Fetch Active, Available columns data from DiMS database",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system returns Active,Available columns from dims table for valid page_id and existing user_id is passed as an argument @Smoke @Regression @Sanity @ServiceCaseDataAPI ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"pageId": "tran_unmatched",
+			"test": {
+				"userId": "system"
+			}
+		},
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system returns Active,Available columns from dims table for valid page_id and Invalid new user_id is passed as an argument @Regression @ServiceCaseDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"pageId": "tran_unmatched",
+			"test": {
+				"userId": "abc"
+			}
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03_Verify that system should not return Active,Available columns from dims table for Invalid page_id and new user_id is passed as an argument @Regression @ServiceCaseDataAPI ",
+			"statusCode": 404,
+			"template": 2,
+			"type": "GET",
+			"pageId": "xyz",
+			"test": {
+				"userId": "xyz"
+			}
+		},
+		"TC_04": {
+			"TestCaseId": "04",
+			"TestCaseName": "TC_04_Verify that system should not return Active,Available columns from dims table for Invalid page_id and existing user_id is passed as an argument @Regression @ServiceCaseDataAPI ",
+			"statusCode": 404,
+			"template": 2,
+			"type": "GET",
+			"pageId": "xyz",
+			"test": {
+				"userId": "system"
+			}
+		}
+	}
+}

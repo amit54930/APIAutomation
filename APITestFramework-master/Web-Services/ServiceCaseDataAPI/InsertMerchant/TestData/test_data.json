@@ -1,0 +1,72 @@
+{
+  "TestSuite": "MerchantMatch",
+  "TestCase":{
+		"TC_01":
+		{
+
+			"TestCaseId": "TC_01",
+			"TestCaseName": "TC_01 It should receive 200 and should insert the merchant hierarchy into Dims Merchant_Hierarchy table and returns generated Merchant_Hierarchy_Id after linking it with unmatched case details  @Smoke @Regression @Sanity @ServiceCaseDataAPI ",
+			"template": 1,
+			"statusCode": 200,
+			"type": "POST",
+			"test":{
+			"associate": "2",
+			"caseNumber": 987654321,
+			"chain": "2",
+			"corporate": "2",
+			"createdBy": "2",
+			"hierarchyNumber": "2",
+			"lastModifiedBy": "2",
+			"merchantHierarchyId": 0,
+			"merchantNumber": "2",
+			"principal": "2",
+			"region": "2"
+		}
+	},
+
+	"TC_02":
+	{
+		"TestCaseId": "TC_02",
+		"TestCaseName": "TC_02 It should throw 500 after giving invalid input @Regression @ServiceCaseDataAPI ",
+		"template": 2,
+		"statusCode": 500,
+		"type": "POST",
+		"test":{
+		"associate": "qqqrrrs",
+		  "caseNumber": 6,
+		  "chain": "q",
+		 "corporate": "00534",
+		  "createdBy": "q",
+		  "hierarchyNumber": "q",
+		  "lastModifiedBy": "q",
+		  "merchantHierarchyId": 0,
+		  "merchantNumber": "110",
+		  "principal": "04434",
+		  "region": "0143"
+		}
+	},
+
+	"TC_03":
+	{
+		"TestCaseId": "TC_03",
+		"TestCaseName": "TC_03 It should throw 500 and should return failed to insert merchant hierarchy in table @Regression @ServiceCaseDataAPI",
+		"template": 2,
+		"statusCode": 500,
+		"type": "POST",
+		"test":{
+			"associate": "q",
+			"caseNumber":98,
+			"chain": "q",
+			"corporate": "q",
+			"createdBy": "q",
+			"hierarchyNumber": "q",
+			"lastModifiedBy": "q",
+			"merchantHierarchyId": 0,
+			"merchantNumber": "101",
+			"principal": "q",
+			"region": "q"
+		}
+	}
+	}
+
+}

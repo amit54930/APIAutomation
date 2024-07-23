@@ -1,0 +1,55 @@
+{
+	"TestSuite": "pend case from DiMS database",
+	"TestCase": {
+		
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system pend the case with given input when forcefulupdate is false @Smoke @Regression @Sanity @ServiceCaseDataAPI @Smoke-Managed-Dev ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "PUT",
+			"test1": {				
+					"casePendBy": "testing ",
+					"caseStageId": 17952,
+				  	"forcefulUpdate": false,
+					"isExternalNote": true,
+					"note": "note",
+					"pendIndicator": true,
+					"pendUntilDate": "06/06/2019"
+					}
+		
+		},
+		
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system pend the case with given input when forcefulupdate is true @Regression @ServiceCaseDataAPI @Regression-Managed-Dev ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "PUT",
+			"test1":{
+				"casePendBy": "testing ",
+				"caseStageId": 17952,
+				  "forcefulUpdate": true,
+				"isExternalNote": true,
+				"note": "note",
+				"pendIndicator": true,
+				"pendUntilDate": "07/06/2019"
+					}
+		
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03_Verify that system unpend the case with given input when pendIndicator is false @Regression @ServiceCaseDataAPI @Regression-Managed-Dev ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "PUT",
+			"test1":{
+				"caseStageId": 17952,
+				"caseUnpendBy": "tester",
+				"isExternalNote": true,
+				"note": "unpend case",
+				"pendIndicator": false
+					}
+		}
+	}
+	}

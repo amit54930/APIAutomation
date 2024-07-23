@@ -1,0 +1,69 @@
+{
+  "searchTypeId": null,
+  "searchTypeName": "",
+  "viewElements": [
+    {
+      "elementId": "",
+      "elementSequenceNumber": null,
+      "elementLabel": "",
+      "elementCategoryName": "",
+      "elementTypeName": "",
+      "elementMandatory": null
+    },
+    { "elementId": "",
+      "elementSequenceNumber": null,
+      "elementLabel": "",
+      "elementCategoryName": "",
+      "elementTypeName": "",
+      "elementMandatory": null
+    },
+    {
+      "elementId": "tran_card_number",
+      "elementSequenceNumber": null,
+      "elementLabel": "Card Number",
+      "elementCategoryName": "EXACT",
+      "elementTypeName": "TEXT",
+      "elementMandatory": null
+    },
+    {
+      "elementId": "trans_merch_number",
+      "elementSequenceNumber":null,
+      "elementLabel": "Merchant Number",
+      "elementCategoryName": "EXACT",
+      "elementTypeName": "TEXT",
+      "elementMandatory": null
+    },
+    {
+      "elementId": "",
+      "elementSequenceNumber": null,
+      "elementLabel": "",
+      "elementCategoryName": "",
+      "elementTypeName": "",
+      "elementMandatory": null
+    },
+    {
+      "elementId": "",
+      "elementSequenceNumber": null,
+      "elementLabel": "",
+      "elementCategoryName": "",
+      "elementTypeName": "",
+      "elementMandatory": null
+    },
+    {
+      "elementId": "",
+      "elementSequenceNumber": null,
+      "elementLabel": "",
+      "elementCategoryName": "",
+      "elementTypeName": "",
+      "elementMandatory": null
+    },
+    {
+      "elementId": "",
+      "elementSequenceNumber": null,
+      "elementLabel": "",
+      "elementCategoryName": "",
+      "elementTypeName": "",
+      "elementMandatory": null
+    }
+  ]
+}

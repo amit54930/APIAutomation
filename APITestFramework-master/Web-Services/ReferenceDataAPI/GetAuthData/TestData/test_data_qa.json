@@ -1,0 +1,185 @@
+{
+	"TestSuite": "Fetch auth data from Datalake",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01_Verify that system Fetch data lake authorization data from “vw_wwmaster_authorization” DLAK table when authorizationCode,merchantNumber,globalToken,direction,orderByProperties,pageNumber,size passed as parameter @Smoke @Sanity @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"authorizationCode": "107243",
+				"merchantNumber":"19000197752",
+				"direction": "ASC",
+				"orderByProperties":"authDate",
+				"globalToken":"5978K65958328247",
+				"pageNumber":0,
+				"size": 25
+			}
+		},
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02_Verify that system Fetch data lake authorization data from “vw_wwmaster_authorization” DLAK table when firstSixDigitsCardNumber,authorizationCode ,merchantNumber,pageNumber,size passed as parameter @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"firstSixDigitsCardNumber": "6SFFD5",
+				"authorizationCode": "107243",
+				"merchantNumber":"19000197752",
+				"globalToken":"5978K65958328247",
+				"pageNumber":0,
+				"size": 25,
+				"direction": "ASC",
+				"orderByProperties":"authDate"
+			}
+		},
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03_Verify that system Fetch data lake authorization data from “vw_wwmaster_authorization” DLAK table when fromAuthorizationDate,lastFourDigitsCardNumber, toAuthorizationDate,firstSixDigitsCardNumber,authorizationCode,pageNumber,size,direction, orderByPropertiespassed as parameter @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"fromAuthorizationDate": "2017-02-17",
+				"lastFourDigitsCardNumber":"1078",
+				"toAuthorizationDate":"2019-02-17",
+				"firstSixDigitsCardNumber": "6SFFD5",
+				"authorizationCode": "107243",
+				"direction": "ASC",
+				"orderByProperties":"authDate",
+				"pageNumber":0,
+				"size": 25
+			}
+		},
+			"TC_04": {
+			"TestCaseId": "04",
+			"TestCaseName": "TC_04_Verify that system does not fetch the authorization data from DLAK when size is not provided @Regression @ReferenceDataAPI  ",
+			"statusCode": 400,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"authorizationCode": "123456",
+				"direction": "ASC",
+				"orderByProperties":"authDate"
+			}
+		},
+		"TC_05": {
+			"TestCaseId": "05",
+			"TestCaseName": "TC_05_Verify that system does not fetch the authorization data from DLAK  when only direction and size is provided @Regression @ReferenceDataAPI  ",
+			"statusCode": 400,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"orderByProperties":"authDate",
+				"direction": "ASC",
+				"size": 1
+				
+			}
+		},
+
+		"TC_06": {
+			"TestCaseId": "06",
+			"TestCaseName": "TC_06_Verify that system does not fetch the authorization data from DLAK with invalid authorization code @Regression @ReferenceDataAPI  ",
+			"statusCode": 400,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"authorizationCode": "424",
+				"orderByProperties":"authDate",				
+				"lastFourDigitsCardNumber":"1078",
+				"firstSixDigitsCardNumber": "6SFFD5",
+				"merchantNumber":"19000197752",
+				"direction": "DESC",
+				"size": 3
+			}
+		},
+		"TC_07": {
+			"TestCaseId": "07",
+			"TestCaseName": "TC_07_Verify that system Fetch data lake authorization data from “vw_wwmaster_authorization” DLAK table when lastFourDigitsCardNumber,firstSixDigitsCardNumber,authorizationCode,merchantNumber,direction,orderByProperties,pageNumber,size passed as parameter @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"lastFourDigitsCardNumber":"1078",
+				"firstSixDigitsCardNumber": "6SFFD5",
+				"authorizationCode": "107243",
+				"merchantNumber":"19000197752",
+				"direction": "ASC",
+				"orderByProperties":"authDate",
+				"size": 25
+			}
+		},
+		"TC_08": {
+			"TestCaseId": "08",
+			"TestCaseName": "TC_08_Verify that system Fetch data lake authorization data from “vw_wwmaster_authorization” DLAK table when lastFourDigitsCardNumber,firstSixDigitsCardNumber,authorizationCode,merchantNumber,globalToken,direction,orderByProperties,pageNumber,size passed as parameter @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"lastFourDigitsCardNumber":"1078",
+				"firstSixDigitsCardNumber": "6SFFD5",
+				"authorizationCode": "107243",
+				"merchantNumber":"19000197752",
+				"direction": "ASC",
+				"orderByProperties":"authDate",
+				"globalToken":"5978K65958328247",
+				"pageNumber":0,
+				"size": 25
+			}
+		},
+		"TC_09": {
+			"TestCaseId": "09",
+			"TestCaseName": "TC_09_Verify that system Fetch data lake authorization data from “vw_wwmaster_authorization” DLAK table when lastFourDigitsCardNumber,firstSixDigitsCardNumber,authorizationCode,merchantNumber,direction,orderByProperties,pageNumber,size passed as parameter @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"lastFourDigitsCardNumber":"1078",
+				"firstSixDigitsCardNumber": "6SFFD5",
+				"authorizationCode": "107243",
+				"merchantNumber":"19000197752",
+				"direction": "ASC",
+				"orderByProperties":"authDate",				
+				"pageNumber":0,
+				"size": 25
+			}
+		},
+		"TC_10": {
+			"TestCaseId": "10",
+			"TestCaseName": "TC_10_Verify that system Fetch data lake authorization data from “vw_wwmaster_authorization” DLAK table when lastFourDigitsCardNumber,fromAuthorizationDate,toAuthorizationDate,firstSixDigitsCardNumber,authorizationCode,globalToken,direction,orderByProperties,pageNumber,size passed as parameter @Regression @ReferenceDataAPI  ",
+			"statusCode": 200,
+			"template": 1,
+			"type": "GET",
+			"inputs": {
+				"fromAuthorizationDate": "2017-02-17",
+				"lastFourDigitsCardNumber":"1078",
+				"toAuthorizationDate":"2019-02-17",
+				"firstSixDigitsCardNumber": "6SFFD5",
+				"authorizationCode": "107243",
+				"direction": "ASC",
+				"orderByProperties":"authDate",
+				"globalToken":"5978K65958328247",
+				"pageNumber":0,
+				"size": 25
+			}
+		},
+		"TC_11": {
+			"TestCaseId": "11",
+			"TestCaseName": "TC_11_Verify that system  does not Fetch data lake authorization data from “vw_wwmaster_authorization” DLAK table if page number is greater than present record size  @Smoke @Sanity @Regression @ReferenceDataAPI  ",
+			"statusCode": 404,
+			"template": 2,
+			"type": "GET",
+			"inputs": {
+				"authorizationCode": "107243",
+				"merchantNumber":"19000197752",
+				"direction": "ASC",
+				"orderByProperties":"authDate",
+				"globalToken":"5978K65958328247",
+				"pageNumber":6,
+				"size": 25
+			}
+		}
+
+	}
+}

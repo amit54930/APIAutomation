@@ -1,0 +1,50 @@
+{
+	"TestSuite": "Create Events and Security Audit Log",
+	"TestCase": {
+		"TC_01": {
+			"TestCaseId": "01",
+			"TestCaseName": "TC_01 It should receive 200 response code if events and security log is successfully created in database with logic 1 @Smoke @Regression @Sanity @EventManagerAPI",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"message": {
+				  "data": "ewogICAgICAgICAgICAgICAgImV2ZW50VGVtcGxhdGVOYW1lIjoiQ1JURV9TVVBFUlZJU09SX1VTRVIiLAogICAgICAgICAgICAgICAgImdlbmVyYXRlZEJ5VXNlciI6IkMiLAogICAgICAgICAgICAgICAgImV2ZW50VGVtcGxhdGVQYXJhbXMiOnsiR2VuZXJhdGVkRm9yVXNlciI6IlhZWiIsIkV2ZW50VGltZVN0YW1wIjoiMjAxOS0wNi0wNSAxMDo0MTozOS42ODA5MDcifQp9",
+				  "messageId": "136969346975"
+				},
+				"subscription": "https://service-event-manager.devncde.bitwise-digital.info/api/v1/eventmanager/event"
+			  }
+				
+		},
+
+		"TC_02": {
+			"TestCaseId": "02",
+			"TestCaseName": "TC_02 It should receive 200 response code if events and security log is successfully created in database with logic 2 @Smoke @Sanity @Regression @EventManagerAPI",
+			"statusCode": 200,
+			"template": 1,
+			"type": "POST",
+			"test":{
+				"message": {
+				  "data": "ewogICAgICAgICAgICAgICAgImV2ZW50VGVtcGxhdGVOYW1lIjoiQVVUSF9TVUNDRVNTIiwKICAgICAgICAgICAgICAgICJnZW5lcmF0ZWRCeVVzZXIiOiJRQSIsCiAgICAgICAgICAgICAgICAiZXZlbnRUZW1wbGF0ZVBhcmFtcyI6eyJFdmVudFRpbWVTdGFtcCI6IjIwMTktMDItMDIgMDU6NDY6MzkuNjgwOTA3In0KfQ==",
+				  "messageId": "136969346975"
+				},
+				"subscription": "https://service-event-manager.devncde.bitwise-digital.info/api/v1/eventmanager/event"
+			  }
+		},
+
+		"TC_03": {
+			"TestCaseId": "03",
+			"TestCaseName": "TC_03 It should receive 400 response code on providing invalid input and events and security log is not created in database @Regression @EventManagerAPI",
+			"statusCode": 400,
+			"template": 2,
+			"type": "POST",
+			"test":{
+				"message": {
+				  "data": "ewogICAgICAgICAgICAgICAgImV2ZW50VGVtcGxhdGVOYW1lIjoiTU9ESUZJRURfVVNFUl9TRVRUSU5HIiwKICAgICAgICAgICAgICAgICJnZW5lcmF0ZWRCeVVzZXIiOiJRQTIiLAogICAgICAgICAgICAgICAgImV2ZW50VGVtcGxhdGVQYXJhbXMiOnsiRXZlbnRUaW1lU3RhbXAiOiIyMDE5LTAyLTAyIDA1OjQ2OjM5LjY4MDkwNyJ9Cn0=",
+				  "messageId": "136969346975"
+				},
+				"subscription": "https://service-event-manager.devncde.bitwise-digital.info/api/v1/eventmanager/event"
+			  }
+		}
+}
+}

@@ -1,0 +1,27 @@
+ {
+  "TestSuite": "Fetch letter template data from DiMS database",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 when valid langaugeCode is passed as an argument @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET",
+          "languageCode":"FR"
+
+          
+        },
+        "TC_02":
+        {
+          "TestCaseId": "TC_02",
+          "TestCaseName": "TC_02 It should throw 404 when invalid langaugeCode is passed as an argument @Regression @ServiceCaseDataAPI",
+          "template":2,
+          "statusCode": 404,
+          "type":"GET",
+          "languageCode":"ABCDE"
+          
+        }
+    }
+ }

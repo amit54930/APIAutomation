@@ -1,0 +1,15 @@
+{
+  "TestSuite": "Fetch list of Dispute Stages from DiMS table",
+  "TestCase":
+    {
+        "TC_01":
+        {
+          "TestCaseId": "TC_01",
+          "TestCaseName": "TC_01 It should receive 200 and list all Dispute Stages from dims db @Smoke @Sanity @Regression @ServiceCaseDataAPI",
+          "template":1,
+          "statusCode": 200,
+          "type":"GET"
+        }
+    }
+ }
+
